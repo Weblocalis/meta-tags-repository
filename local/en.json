@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "keywords": "List of keywords for SEO.",
+    "description": "A concise description of the page for search engines.",
+    "robots": "Controls indexing and crawling by search engines."
+  },
+  "buttons": {
+    "generate": "Generate",
+    "copy": "Copy",
+    "viewOnGitHub": "View on GitHub"
+  },
+  "header": {
+    "title": "META Tags Documentation",
+    "languageSelector": "Change Language"
+  },
+  "footer": {
+    "contact": "Contact",
+    "privacyPolicy": "Privacy Policy",
+    "contribute": "Contribute to the project"
+  }
+}

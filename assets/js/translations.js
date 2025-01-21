@@ -1,79 +1,32 @@
-// Paths
-const translationsPath = 'data/translations.json';
-const metaDescriptionsPath = 'data/meta-tags-details.json';
-const metaTagsPath = 'data/meta-tags.json';
+let currentLanguage = "fr"; // Langue par défaut
 
-// Language state
-let currentLanguage = 'en';
-
-// Function to load translations and update the page
-async function loadTranslations() {
-  try {
-    const translationsResponse = await fetch(translationsPath);
-    const translations = await translationsResponse.json();
-
-    const descriptionsResponse = await fetch(metaDescriptionsPath);
-    const metaDescriptions = await descriptionsResponse.json();
-
-    updatePage(translations[currentLanguage], metaDescriptions[currentLanguage]);
-  } catch (error) {
-    console.error('Error loading translations or descriptions:', error);
-  }
+// Fonction pour charger les traductions
+async function loadTranslations(language) {
+  const response = await fetch(`locales/${language}.json`);
+  const translations = await response.json();
+  applyTranslations(translations);
 }
 
-// Function to update the page with the selected language
-function updatePage(translations, metaDescriptions) {
-  // Update static texts
-  document.title = translations.title;
-  document.querySelector('h1').textContent = translations.title;
+// Appliquer les traductions dans le DOM
+function applyTranslations(translations) {
+  // Exemple d'application
+  document.querySelector("#header-title").innerText = translations.header.title;
+  document.querySelector("#language-selector").ariaLabel = translations.header.languageSelector;
+  document.querySelector("#generate-btn").innerText = translations.buttons.generate;
+  document.querySelector("#copy-btn").innerText = translations.buttons.copy;
+  document.querySelector("#github-link").innerText = translations.buttons.viewOnGitHub;
 
-  // Update the placeholder for the search input
-  const searchInput = document.getElementById('search-input');
-  if (searchInput) {
-    searchInput.setAttribute('placeholder', translations.searchPlaceholder);
-  }
-
-  // Update sections dynamically
-  fetch(metaTagsPath)
-    .then(response => response.json())
-    .then(data => {
-      const metaContent = document.getElementById('meta-content');
-      metaContent.innerHTML = ''; // Clear current content
-
-      Object.keys(data.metaTypes).forEach(type => {
-        const section = document.createElement('section');
-        section.classList.add('meta-section');
-        section.innerHTML = `
-          <h2>${translations.sections[type]}</h2>
-          <div class="row">
-            ${data.metaTypes[type]
-              .map(tag => {
-                const description = metaDescriptions[type][tag.attribute] || "No description available.";
-                return `
-                  <div class="col-md-4">
-                    <div class="card meta-card">
-                      <div class="card-body">
-                        <h5 class="card-title">${tag.attribute}</h5>
-                        <p class="card-text">${description}</p>
-                        <pre class="code-block">&lt;meta ${type}="${tag.attribute}" content="..."&gt;</pre>
-                      </div>
-                    </div>
-                  </div>
-                `;
-              }).join('')}
-          </div>
-        `;
-        metaContent.appendChild(section);
-      });
-    })
-    .catch(error => console.error('Error loading meta-tags.json:', error));
+  // Footer
+  document.querySelector("#footer-contact").innerText = translations.footer.contact;
+  document.querySelector("#footer-privacy").innerText = translations.footer.privacyPolicy;
+  document.querySelector("#footer-contribute").innerText = translations.footer.contribute;
 }
 
-// Event listener for language change
-document.getElementById('language-selector').addEventListener('change', (event) => {
-  currentLanguage = event.target.value;
-  loadTranslations();
+// Gestion du changement de langue
+document.querySelector("#language-selector").addEventListener("change", (e) => {
+  currentLanguage = e.target.value;
+  loadTranslations(currentLanguage);
 });
 
-// Initial load
-loadTranslations();
+// Charger la langue par défaut
+loadTranslations(currentLanguage);
