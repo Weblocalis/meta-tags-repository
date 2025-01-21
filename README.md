@@ -32,7 +32,7 @@ Ce projet offre :
 - **Facilité de contribution :** Structure flexible pour ajouter de nouvelles balises ou traductions.
 
 
-## 1. Forkez le projet via GitHub
+## Forkez le projet via GitHub
 2. Clonez votre fork
 git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
 cd meta-tags-repository
