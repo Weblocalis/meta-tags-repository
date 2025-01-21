@@ -1,5 +1,7 @@
 # META Tags Repository
-Un référentiel complet des balises META pour optimiser vos sites web, avec des descriptions, exemples et compatibilités pour chaque balise.
+## Introduction
+Bienvenue dans le **META Tags Repository** !  
+Ce projet offre une documentation complète des balises META pour optimiser vos sites web. Chaque balise est accompagnée d'une description, d'exemples d'utilisation et d'informations sur sa compatibilité.
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Weblocalis/meta-tags-repository)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Weblocalis/meta-tags-repository)
