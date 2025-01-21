@@ -35,7 +35,7 @@ Ce projet offre :
 Clonez votre fork
 ```bash
 git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
-cd meta-tags-repository'
+cd meta-tags-repository```
 
 Configurez le dépôt distant
 ```bash
