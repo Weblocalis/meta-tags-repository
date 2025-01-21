@@ -35,8 +35,7 @@ Ce projet offre :
 ## Installation
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/Weblocalis/meta-tags-repository.git
-cd meta-tags-repository
+   git clone https://github.com/Weblocalis/meta-tags-repository.git cd meta-tags-repository
 
 
 ---
