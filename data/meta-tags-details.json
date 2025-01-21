@@ -1,0 +1,36 @@
+{
+  "en": {
+    "name": {
+      "keywords": "List of keywords for SEO.",
+      "description": "A concise description of the page for search engines.",
+      "robots": "Controls indexing and crawling by search engines."
+    },
+    "http-equiv": {
+      "content-type": "Defines the content type and character encoding of the page.",
+      "expires": "Indicates when the content expires.",
+      "cache-control": "Specifies caching rules for the page."
+    },
+    "property": {
+      "og:title": "Title used for social media sharing (Open Graph).",
+      "og:description": "Description displayed during social sharing.",
+      "og:image": "Link to the image used for social sharing."
+    }
+  },
+  "fr": {
+    "name": {
+      "keywords": "Liste des mots-clés pour le SEO.",
+      "description": "Une description concise de la page pour les moteurs de recherche.",
+      "robots": "Contrôle l'indexation et l'exploration par les moteurs de recherche."
+    },
+    "http-equiv": {
+      "content-type": "Définit le type de contenu et l'encodage des caractères de la page.",
+      "expires": "Indique quand le contenu expire.",
+      "cache-control": "Spécifie les règles de mise en cache pour la page."
+    },
+    "property": {
+      "og:title": "Titre utilisé pour le partage sur les réseaux sociaux (Open Graph).",
+      "og:description": "Description affichée lors du partage sur les réseaux sociaux.",
+      "og:image": "Lien vers l'image utilisée pour le partage social."
+    }
+  }
+}

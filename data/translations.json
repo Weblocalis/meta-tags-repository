@@ -7,9 +7,13 @@
       "http-equiv": "HTTP-EQUIV",
       "property": "Property"
     },
-    "copyButton": "Copy",
+    "searchPlaceholder": "Search for a META tag...",
     "backToTop": "Back to Top"
   },
+  
+  
+  
+  
   "fr": {
     "title": "Documentation des balises META",
     "description": "Ce document est généré automatiquement à partir de meta-tags.json.",
@@ -18,7 +22,7 @@
       "http-equiv": "HTTP-EQUIV",
       "property": "Propriété"
     },
-    "copyButton": "Copier",
+    "searchPlaceholder": "Recherchez une balise META...",
     "backToTop": "Retour en haut"
   }
 }
