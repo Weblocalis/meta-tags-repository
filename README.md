@@ -31,9 +31,9 @@ Ce projet offre :
 - **Support multilingue :** Documentation disponible en plusieurs langues (ex. : anglais, français).
 - **Facilité de contribution :** Structure flexible pour ajouter de nouvelles balises ou traductions.
 
-
 ## Forkez le projet via GitHub
-2. Clonez votre fork
+Clonez votre fork
+'''bash
 git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
 cd meta-tags-repository
 
@@ -51,6 +51,7 @@ git commit -m "Ajout de [description de votre modification]"
 git push origin feature/ma-nouvelle-fonctionnalite
 
 7. Créez une Pull Request depuis GitHub
+
 
 ---
 
