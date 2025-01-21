@@ -56,7 +56,6 @@ Créez une Pull Request depuis GitHub
 ### **7. Utilisation**
 Donnez des instructions claires sur l’utilisation du projet, y compris pour les contributeurs.
 
-```markdown
 ## Utilisation
 1. Naviguez dans les catégories pour découvrir les balises META.
 2. Consultez les exemples et les compatibilités.
