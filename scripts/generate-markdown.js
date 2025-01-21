@@ -32,9 +32,6 @@ Object.keys(jsonData.metaTypes).forEach((type) => {
     markdownContent += `${metaTag}\n`;
     markdownContent += "```\n\n";
 
-    // Add a "Copy" button
-    markdownContent += `<button onclick="copyToClipboard('${metaTag.replace(/"/g, '&quot;')}')">Copy</button>\n\n`;
-
     markdownContent += `---\n\n`;
   });
 });
