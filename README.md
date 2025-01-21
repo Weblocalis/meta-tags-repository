@@ -32,14 +32,25 @@ Ce projet offre :
 - **Facilité de contribution :** Structure flexible pour ajouter de nouvelles balises ou traductions.
 
 
-## Installation
+# 1. Forkez le projet via GitHub
+# 2. Clonez votre fork
+git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
+cd meta-tags-repository
 
-1. Clonez le dépôt et exécutez les commandes suivantes dans votre terminal :
-   ```bash
-   git clone https://github.com/Weblocalis/meta-tags-repository.git
-   cd meta-tags-repository
-   npm install
-   npm start
+# 3. Configurez le dépôt distant
+git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
+
+# 4. Créez une branche pour vos modifications
+git checkout -b feature/ma-nouvelle-fonctionnalite
+
+# 5. Faites vos modifications, puis commitez-les
+git add .
+git commit -m "Ajout de [description de votre modification]"
+
+# 6. Poussez les modifications
+git push origin feature/ma-nouvelle-fonctionnalite
+
+# 7. Créez une Pull Request depuis GitHub
 
 ---
 
