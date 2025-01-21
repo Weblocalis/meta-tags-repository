@@ -31,8 +31,6 @@ Object.keys(jsonData.metaTypes).forEach((type) => {
     markdownContent += "```html\n";
     markdownContent += `${metaTag}\n`;
     markdownContent += "```\n\n";
-
-    markdownContent += `---\n\n`;
   });
 });
 
