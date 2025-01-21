@@ -50,7 +50,7 @@ Faites vos modifications, puis commitez-les
 git add .
 git commit -m "Ajout de [description de votre modification]"
 
-'''bash
+```bash
 Poussez les modifications
 git push origin feature/ma-nouvelle-fonctionnalite
 
