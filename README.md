@@ -6,8 +6,6 @@ Un référentiel complet des balises META pour optimiser vos sites web, avec des
 ![GitHub issues](https://img.shields.io/github/issues/Weblocalis/meta-tags-repository)
 ![GitHub license](https://img.shields.io/github/license/Weblocalis/meta-tags-repository)
 
-## Aperçu
-Consultez la démo en ligne ici : [Meta Tags Documentation](https://weblocalis.github.io/meta-tags-repository/)
 
 Ce projet offre :
 - Une documentation complète des balises META.
