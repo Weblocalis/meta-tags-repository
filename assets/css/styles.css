@@ -63,7 +63,7 @@ header .text-center a:hover {
   background: var(--primary-color);
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
-  padding: var(--spacing-small);
+  
   font-family: monospace;
   overflow-x: auto;
 }
