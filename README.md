@@ -66,10 +66,10 @@ Nous accueillons toutes les contributions avec plaisir ! 🚀
 
 
 6. Créez une Pull Request depuis GitHub :
-6.1 Accédez à votre fork.
-6.3 Cliquez sur "Compare & pull request".
-6.4 Ajoutez une description détaillée.
-6.5 Soumettez la Pull Request pour examen.
+   1. Accédez à votre fork.
+   2. Cliquez sur **"Compare & pull request"**.
+   3. Ajoutez une description détaillée de vos modifications.
+   4. Soumettez la Pull Request pour examen.
 
 Pour plus de détails, consultez le fichier CONTRIBUTING.md.
 
