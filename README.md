@@ -53,6 +53,21 @@ git push origin feature/ma-nouvelle-fonctionnalite
 Créez une Pull Request depuis GitHub
 
 
+
+
+## Forkez le projet via GitHub
+
+Clonez votre fork :
+```bash
+git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
+cd meta-tags-repository
+git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
+git checkout -b feature/ma-nouvelle-fonctionnalite
+git add .
+git commit -m "Ajout de [description de votre modification]"
+git push origin feature/ma-nouvelle-fonctionnalite
+
+
 ---
 
 ### **7. Utilisation**
