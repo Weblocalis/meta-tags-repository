@@ -34,7 +34,7 @@ Ce projet offre une documentation complète des balises META pour optimiser vos 
    git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
 ---
 
-##Contribuer
+## Contribuer
 
 Nous accueillons toutes les contributions avec plaisir ! 🚀
 
