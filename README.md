@@ -95,8 +95,8 @@ Ce projet vise à créer une référence complète et détaillée sur les balise
 
 Chaque entrée doit suivre ce format JSON standard :
 
-```json
-{
+  ```json
+  {
   "attribute": "Nom de la balise META",
   "description": "Description détaillée de la balise.",
   "compatibility": ["Navigateur1", "Navigateur2"],
