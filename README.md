@@ -105,21 +105,21 @@ Chaque entrée doit suivre ce format JSON standard :
   "category": "Catégorie (par ex. SEO, HTTP, Mobile)",
   "required": true/false,
   "reference": "Lien vers des ressources officielles ou de la documentation.",
-  "examples": [
+    "examples": [
     "Exemple d'utilisation valide de la balise META."
-  ],
-  "tags": ["Mots-clés pertinents"],
-  "deprecated": true/false,
-  "default_value": "Valeur par défaut si applicable.",
-  "value_constraints": "Règles ou limites de valeur pour la balise.",
-  "related_tags": ["Autres balises associées"],
-  "usage_notes": "Conseils ou recommandations d'utilisation.",
-  "seo_impact": "Impact potentiel sur le SEO.",
+    ],
+    "tags": ["Mots-clés pertinents"],
+    "deprecated": true/false,
+    "default_value": "Valeur par défaut si applicable.",
+    "value_constraints": "Règles ou limites de valeur pour la balise.",
+    "related_tags": ["Autres balises associées"],
+    "usage_notes": "Conseils ou recommandations d'utilisation.",
+    "seo_impact": "Impact potentiel sur le SEO.",
   "common_mistakes": ["Liste des erreurs fréquentes"],
-  "performance_tips": "Conseils pour améliorer les performances.",
-  "security_risks": "Risques de sécurité associés à une mauvaise utilisation.",
-  "future_proofing": "Notes sur l'évolutivité ou la dépréciation future.",
-  "internationalization": "Considérations liées à la localisation ou aux langues.",
+    "performance_tips": "Conseils pour améliorer les performances.",
+    "security_risks": "Risques de sécurité associés à une mauvaise utilisation.",
+    "future_proofing": "Notes sur l'évolutivité ou la dépréciation future.",
+    "internationalization": "Considérations liées à la localisation ou aux langues.",
   "last_updated": "YYYY-MM-DD"
 }
 
