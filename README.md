@@ -33,21 +33,6 @@ Ce projet offre :
 
 ---
 
-### **7. Utilisation**
-Donnez des instructions claires sur l’utilisation du projet, y compris pour les contributeurs.
-
-## Utilisation
-1. Naviguez dans les catégories pour découvrir les balises META.
-2. Consultez les exemples et les compatibilités.
-3. Ajoutez vos propres balises en suivant le guide de contribution.
-
-Pour contribuer :
-- Modifiez le fichier `data/meta-tags.json`.
-- Ajoutez vos balises ou traductions dans le fichier JSON.
-
-
-
-
 ## Contribuer
 Les contributions sont les bienvenues !
 
