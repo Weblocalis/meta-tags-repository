@@ -31,7 +31,7 @@ Ce projet offre une documentation complète des balises META pour optimiser vos 
    cd meta-tags-repository
 
 2. Configurez le dépôt distant pour synchroniser avec l'original :
-
+   ```bash
 git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
 
 
