@@ -29,23 +29,15 @@ Ce projet offre une documentation complète des balises META pour optimiser vos 
    ```bash
    git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
    cd meta-tags-repository
-
 2. Configurez le dépôt distant pour synchroniser avec l'original :
    ```bash
    git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
-
 3. Installez les dépendances (si nécessaire) :
    ```bash
    npm install
-
-
 4. Lancez le projet localement :
    ```bash
    npm start
-
-
-
-
 ---
 
 ## Contribuer
