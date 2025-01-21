@@ -2,9 +2,13 @@
 Un référentiel complet des balises META pour optimiser vos sites web, avec des descriptions, exemples et compatibilités pour chaque balise.
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Weblocalis/meta-tags-repository)
+![GitHub stars](https://img.shields.io/github/stars/Weblocalis/meta-tags-repository)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Weblocalis/meta-tags-repository)
 ![GitHub issues](https://img.shields.io/github/issues/Weblocalis/meta-tags-repository)
 ![GitHub license](https://img.shields.io/github/license/Weblocalis/meta-tags-repository)
+
+![GitHub code size](https://img.shields.io/github/languages/code-size/Weblocalis/meta-tags-repository)
+![GitHub language count](https://img.shields.io/github/languages/count/Weblocalis/meta-tags-repository)
 
 ## Table des matières
 1. [Aperçu](#aperçu)
