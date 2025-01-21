@@ -1,5 +1,17 @@
 # META Tags Repository
 
+Prêt à découvrir et contribuer à un projet collaboratif ? Rejoignez-nous pour enrichir cette documentation !
+
+![GitHub contributors](https://img.shields.io/github/contributors/Weblocalis/meta-tags-repository)
+![GitHub stars](https://img.shields.io/github/stars/Weblocalis/meta-tags-repository)
+![GitHub last commit](https://img.shields.io/github/last-commit/Weblocalis/meta-tags-repository)
+![GitHub issues](https://img.shields.io/github/issues/Weblocalis/meta-tags-repository)
+![GitHub license](https://img.shields.io/github/license/Weblocalis/meta-tags-repository)
+
+
+![GitHub code size](https://img.shields.io/github/languages/code-size/Weblocalis/meta-tags-repository)
+![GitHub language count](https://img.shields.io/github/languages/count/Weblocalis/meta-tags-repository)
+
 ## Introduction
 
 Bienvenue dans le **META Tags Repository** ! 🎉  
@@ -29,30 +41,6 @@ Ce référentiel est idéal pour :
 4. **Balises HTTP et personnalisées** : Gagnez en flexibilité et contrôlez les comportements techniques.
 
 ---
-
-Prêt à découvrir et contribuer à un projet collaboratif ? Rejoignez-nous pour enrichir cette documentation !
-
-![GitHub contributors](https://img.shields.io/github/contributors/Weblocalis/meta-tags-repository)
-![GitHub stars](https://img.shields.io/github/stars/Weblocalis/meta-tags-repository)
-![GitHub last commit](https://img.shields.io/github/last-commit/Weblocalis/meta-tags-repository)
-![GitHub issues](https://img.shields.io/github/issues/Weblocalis/meta-tags-repository)
-![GitHub license](https://img.shields.io/github/license/Weblocalis/meta-tags-repository)
-
-<<<<<<< HEAD
-![GitHub code size](https://img.shields.io/github/languages/code-size/Weblocalis/meta-tags-repository)
-![GitHub language count](https://img.shields.io/github/languages/count/Weblocalis/meta-tags-repository)
-
-## Table des matières
-1. [Aperçu](#aperçu)
-2. [Caractéristiques](#caractéristiques)
-3. [Installation](#installation)
-4. [Utilisation](#utilisation)
-5. [Contribuer](#contribuer)
-6. [Feuille de route](#feuille-de-route)
-7. [Ressources et Références](#ressources-et-références)
-8. [Licence](#licence)
-=======
->>>>>>> fe43f74635f332d85dc42aa3473122bca4e2b8ed
 
 ## Fonctionnalités
 
