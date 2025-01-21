@@ -33,7 +33,7 @@ Ce projet offre :
 
 ## Forkez le projet via GitHub
 **Clonez votre fork**
-```bashgit clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
+git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
 cd meta-tags-repository
 
 **Configurez le dépôt distant**
