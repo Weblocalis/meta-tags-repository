@@ -33,9 +33,9 @@ Ce projet offre :
 
 ## Forkez le projet via GitHub
 **Clonez votre fork**
-```bash
+\`bash
 git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
-cd meta-tags-repository```
+cd meta-tags-repository
 
 **Configurez le dépôt distant**
 git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
