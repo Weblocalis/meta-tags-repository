@@ -149,3 +149,17 @@ footer ul {
 footer ul li {
   margin-bottom: 10px;
 }
+
+
+
+.tag {
+  color: #61afef; /* Bleu pour les balises HTML */
+}
+
+.attribute {
+  color: #e06c75; /* Rouge pour les attributs */
+}
+
+.value {
+  color: #98c379; /* Vert pour les valeurs */
+}

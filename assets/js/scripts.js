@@ -21,7 +21,10 @@ fetch('data/meta-tags.json')
                   <div class="card-body">
                     <h5 class="card-title">${tag.attribute}</h5>
                     <p class="card-text">${tag.description}</p>
-                    <pre class="code-block">&lt;meta ${type}="${tag.attribute}" content="..."&gt;</pre>
+                    <pre class="code-block">
+<span class="tag">&lt;meta</span> <span class="attribute">${type}</span>=<span class="value">"${tag.attribute}"</span> 
+      <span class="attribute">content</span>=<span class="value">"..."</span><span class="tag">&gt;</span>
+</pre>
                   </div>
                 </div>
               </div>
