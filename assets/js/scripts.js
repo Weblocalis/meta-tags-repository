@@ -16,7 +16,7 @@ fetch('data/meta-tags.json')
         <div class="row">
           ${metaTypes[type]
             .map(tag => `
-              <div class="col-md-4">
+              <div class="col-12">
                 <div class="card meta-card">
                   <div class="card-body">
                     <h5 class="card-title">${tag.attribute}</h5>
