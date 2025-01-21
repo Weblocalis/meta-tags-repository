@@ -14,10 +14,29 @@ markdownContent += `This document is automatically generated from [meta-tags.jso
 
 Object.keys(jsonData.metaTypes).forEach((type) => {
   markdownContent += `## ${type.toUpperCase()}\n\n`;
+
   jsonData.metaTypes[type].forEach(({ attribute, description }) => {
-    markdownContent += `- **${attribute}**: ${description}\n`;
+    // Generate the full meta tag
+    const metaTag = type === "name"
+      ? `<meta name="${attribute}" content="...">`
+      : type === "http-equiv"
+      ? `<meta http-equiv="${attribute}" content="...">`
+      : `<meta property="${attribute}" content="...">`;
+
+    // Add to Markdown
+    markdownContent += `### ${attribute}\n`;
+    markdownContent += `Description: ${description}\n\n`;
+
+    // Add the full meta tag with syntax highlighting
+    markdownContent += "```html\n";
+    markdownContent += `${metaTag}\n`;
+    markdownContent += "```\n\n";
+
+    // Add a "Copy" button
+    markdownContent += `<button onclick="copyToClipboard('${metaTag.replace(/"/g, '&quot;')}')">Copy</button>\n\n`;
+
+    markdownContent += `---\n\n`;
   });
-  markdownContent += `\n`;
 });
 
 // Write Markdown file
