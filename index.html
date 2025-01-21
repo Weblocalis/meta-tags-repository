@@ -1,75 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>META Tags Documentation</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>META Tags Documentation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <style>
+    .meta-section {
+      margin-bottom: 50px;
+    }
+    .meta-card {
+      margin-bottom: 15px;
+    }
+    .code-block {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      font-family: monospace;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>META Tags Documentation</h1>
-        <p>This document is generated automatically from <strong>meta-tags.json</strong>.</p>
-<h2>NAME</h2>
-
-        <h3>keywords</h3>
-        <p>List of keywords for SEO.</p>
-        <div class="code-block"><meta name="keywords" content="..."></div>
-        <button class="copy-btn" onclick="copyToClipboard('<meta name=&quot;keywords&quot; content=&quot;...&quot;>')">Copy</button>
-        <hr>
+  <div class="container py-5">
+    <h1 class="text-center mb-5">META Tags Documentation</h1>
     
-        <h3>description</h3>
-        <p>A concise description of the page for search engines.</p>
-        <div class="code-block"><meta name="description" content="..."></div>
-        <button class="copy-btn" onclick="copyToClipboard('<meta name=&quot;description&quot; content=&quot;...&quot;>')">Copy</button>
-        <hr>
-    
-        <h3>robots</h3>
-        <p>Controls indexing and crawling by search engines.</p>
-        <div class="code-block"><meta name="robots" content="..."></div>
-        <button class="copy-btn" onclick="copyToClipboard('<meta name=&quot;robots&quot; content=&quot;...&quot;>')">Copy</button>
-        <hr>
-    <h2>HTTP-EQUIV</h2>
-
-        <h3>content-type</h3>
-        <p>Defines the content type and character encoding of the page.</p>
-        <div class="code-block"><meta http-equiv="content-type" content="..."></div>
-        <button class="copy-btn" onclick="copyToClipboard('<meta http-equiv=&quot;content-type&quot; content=&quot;...&quot;>')">Copy</button>
-        <hr>
-    
-        <h3>expires</h3>
-        <p>Indicates when the content expires.</p>
-        <div class="code-block"><meta http-equiv="expires" content="..."></div>
-        <button class="copy-btn" onclick="copyToClipboard('<meta http-equiv=&quot;expires&quot; content=&quot;...&quot;>')">Copy</button>
-        <hr>
-    
-        <h3>cache-control</h3>
-        <p>Specifies caching rules for the page.</p>
-        <div class="code-block"><meta http-equiv="cache-control" content="..."></div>
-        <button class="copy-btn" onclick="copyToClipboard('<meta http-equiv=&quot;cache-control&quot; content=&quot;...&quot;>')">Copy</button>
-        <hr>
-    <h2>PROPERTY</h2>
-
-        <h3>og:title</h3>
-        <p>Title used for social media sharing (Open Graph).</p>
-        <div class="code-block"><meta property="og:title" content="..."></div>
-        <button class="copy-btn" onclick="copyToClipboard('<meta property=&quot;og:title&quot; content=&quot;...&quot;>')">Copy</button>
-        <hr>
-    
-        <h3>og:description</h3>
-        <p>Description displayed during social sharing.</p>
-        <div class="code-block"><meta property="og:description" content="..."></div>
-        <button class="copy-btn" onclick="copyToClipboard('<meta property=&quot;og:description&quot; content=&quot;...&quot;>')">Copy</button>
-        <hr>
-    
-        <h3>og:image</h3>
-        <p>Link to the image used for social sharing.</p>
-        <div class="code-block"><meta property="og:image" content="..."></div>
-        <button class="copy-btn" onclick="copyToClipboard('<meta property=&quot;og:image&quot; content=&quot;...&quot;>')">Copy</button>
-        <hr>
-    
+    <div id="meta-content">
+      <!-- Sections will be dynamically injected here -->
     </div>
-    <script src="assets/js/scripts.js"></script>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
