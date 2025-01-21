@@ -32,7 +32,7 @@ Ce projet offre une documentation complète des balises META pour optimiser vos 
 
 2. Configurez le dépôt distant pour synchroniser avec l'original :
    ```bash
-git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
+   git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
 
 
 3. Installez les dépendances (si nécessaire) :
