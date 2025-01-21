@@ -81,19 +81,10 @@ Pour plus de détails, consultez le fichier CONTRIBUTING.md.
   - [ ] Autres langues selon les contributions.
 - [ ] Intégration avec des outils de validation :
   - [ ] Détection des balises obsolètes ou incorrectes.
-  - [ ] Recommandations automatiques pour améliorer les balises.
-- [ ] Amélioration de l'interface utilisateur :
-  - [ ] Ajout de filtres par catégorie et compatibilité.
-  - [ ] Mode sombre pour la lecture.
-  - [ ] Aperçu interactif des balises.
 
 ### **Projets futurs :**
-- [ ] Développement d'un générateur automatique de balises META :
-  - Basé sur les besoins des utilisateurs (SEO, réseaux sociaux, HTTP, etc.).
 - [ ] Création d'un guide interactif pour chaque balise :
   - Avec des tutoriels détaillés et des cas d’utilisation.
-- [ ] Intégration avec des services tiers :
-  - Validation avec Google, Facebook (Open Graph) et Twitter (Twitter Cards).
 
 ## Ressources et Références
 - [MDN Web Docs - Meta Tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)
