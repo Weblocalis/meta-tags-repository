@@ -15,44 +15,23 @@ Prêt à découvrir et contribuer à un projet collaboratif ? Rejoignez-nous pou
 ## Introduction
 
 Bienvenue dans le **META Tags Repository** ! 🎉  
-Ce projet est conçu pour fournir une **documentation exhaustive et accessible** des balises META, un élément crucial pour l'optimisation de vos sites web.  
-
-### **Ce que vous trouverez ici :**
-- 📄 **Descriptions détaillées** : Chaque balise META est accompagnée d'une explication claire de son rôle.
-- 💻 **Exemples pratiques** : Copiez facilement les balises et intégrez-les dans vos projets.
-- 🌐 **Compatibilité des navigateurs** : Découvrez quels navigateurs supportent les différentes balises.
-- 🌍 **Support multilingue** : Explorez la documentation en plusieurs langues pour une accessibilité globale.
-
-Explorez la documentation en ligne ici :  
-[Meta Tags Repository Documentation](https://weblocalis.github.io/meta-tags-repository/)
-
-### **Pourquoi utiliser ce projet ?**
-Ce référentiel est idéal pour :
-- Les développeurs web cherchant à optimiser leurs sites pour le SEO.
-- Les créateurs de contenu souhaitant améliorer la visibilité de leurs pages sur les moteurs de recherche et les réseaux sociaux.
-- Toute personne intéressée par les bonnes pratiques liées aux balises META.
+Ce projet est conçu pour fournir une **documentation exhaustive et accessible** des balises META, un élément crucial pour l'optimisation de vos sites web.
 
 ---
 
-### **Aperçu rapide des catégories disponibles :**
-1. **SEO et Indexation** : Améliorez votre classement sur les moteurs de recherche.
-2. **Optimisation Mobile** : Garantissez une expérience utilisateur optimale sur tous les appareils.
-3. **Partage sur les Réseaux Sociaux** : Contrôlez l'apparence de vos liens partagés.
-4. **Balises HTTP et personnalisées** : Gagnez en flexibilité et contrôlez les comportements techniques.
+### Fonctionnalités clés
 
----
+#### **Ce que propose ce projet :**
 
-## Fonctionnalités
+- **Descriptions détaillées :** Vous incluez des références, des alternatives dépréciées et des conseils pour maximiser l'impact des balises.
+- **Impact professionnel :** Des notes sur l'impact SEO, les implications légales et les considérations d'accessibilité ajoutent de la valeur pour un usage professionnel.
+- **Informations complètes :** Chaque balise inclut des informations importantes comme :
+  - Compatibilité avec les navigateurs.
+  - Exemples pratiques.
+  - Usages conseillés.
+  - Erreurs courantes et conseils de performance.
 
-- Documentation des balises META, classées par catégories :
-  - SEO et Indexation
-  - Optimisation mobile
-  - Partage sur les réseaux sociaux
-  - Balises personnalisées
-- **Compatibilité des navigateurs** : Informations sur les navigateurs supportés.
-- **Exemples prêts à l'emploi** : Copiez facilement les balises dans vos projets.
-- **Multilingue** : Support des langues (actuellement Français et Anglais).
-- **Contributions ouvertes** : Ajoutez vos propres balises ou traductions.
+Ces fonctionnalités font de ce référentiel une ressource indispensable pour les développeurs et professionnels du web.
 
 ---
 
@@ -94,19 +73,55 @@ Nous accueillons toutes les contributions avec plaisir ! 🚀
 
 Pour plus de détails, consultez le fichier CONTRIBUTING.md.
 
-## Comment contribuer ?
+# Guide pour les Contributeurs du Projet Meta-Tags Repository
 
-Nous acceptons toutes les suggestions pour enrichir notre base de balises META. Pour proposer une nouvelle balise ou améliorer une existante :
+Bienvenue et merci de contribuer à notre projet ! Votre aide est précieuse pour enrichir notre base de données sur les balises META. Voici un guide pour vous aider à structurer vos contributions de manière efficace.
 
-1. Rendez-vous sur [Issues GitHub](https://github.com/Weblocalis/meta-tags-repository/issues).
-2. Cliquez sur **New Issue**.
-3. Fournissez les détails suivants :
-   - Nom de la balise (attribute).
-   - Description de son rôle.
-   - Catégorie appropriée (SEO, Mobile, HTTP, etc.).
-   - Informations de compatibilité (navigateurs supportés ou non).
-   - Toute autre information pertinente.
-4. Envoyez votre proposition.
+---
+
+## 1. Objectif du Projet
+
+Ce projet vise à créer une référence complète et détaillée sur les balises META pour les développeurs web. Les informations incluent :
+- Description des balises.
+- Compatibilités et incompatibilités des navigateurs.
+- Notes sur la sécurité, l'accessibilité et l'impact SEO.
+- Exemples et cas d'utilisation.
+
+---
+
+## 2. Format des Contributions
+
+### Structure des Entrées
+
+Chaque entrée doit suivre ce format JSON standard :
+
+```json
+{
+  "attribute": "Nom de la balise META",
+  "description": "Description détaillée de la balise.",
+  "compatibility": ["Navigateur1", "Navigateur2"],
+  "incompatibility": ["Navigateur3"],
+  "creator": "Source ou organisation d'origine (par ex. W3C, Microsoft)",
+  "category": "Catégorie (par ex. SEO, HTTP, Mobile)",
+  "required": true/false,
+  "reference": "Lien vers des ressources officielles ou de la documentation.",
+  "examples": [
+    "Exemple d'utilisation valide de la balise META."
+  ],
+  "tags": ["Mots-clés pertinents"],
+  "deprecated": true/false,
+  "default_value": "Valeur par défaut si applicable.",
+  "value_constraints": "Règles ou limites de valeur pour la balise.",
+  "related_tags": ["Autres balises associées"],
+  "usage_notes": "Conseils ou recommandations d'utilisation.",
+  "seo_impact": "Impact potentiel sur le SEO.",
+  "common_mistakes": ["Liste des erreurs fréquentes"],
+  "performance_tips": "Conseils pour améliorer les performances.",
+  "security_risks": "Risques de sécurité associés à une mauvaise utilisation.",
+  "future_proofing": "Notes sur l'évolutivité ou la dépréciation future.",
+  "internationalization": "Considérations liées à la localisation ou aux langues.",
+  "last_updated": "YYYY-MM-DD"
+}
 
 Merci de contribuer à améliorer ce projet !
 

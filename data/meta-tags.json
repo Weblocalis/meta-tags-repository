@@ -1,544 +1,3427 @@
 {
-"metaTypes": {
-  "name": [
-    { "attribute": "keywords", 
-      "description": "Liste de mots-clés pour le SEO."
-      "compatibility": ["chrome", "firefox"],
-      "incompatibility": ["safari", "ie"],
-      "creator": "W3C",
-      "category": "Seo"
-      
-    },
-    { "attribute": "description", 
-      "description": "Une description concise de la page pour les moteurs de recherche." 
-      "compatibility": ["chrome", "firefox"],
-      "incompatibility": ["safari", "ie"],
-      "creator": "W3C",
-      "category": "Seo"
-    },
-     
-    { 
-    "attribute": "robots", 
-    "description": "Contrôle l'indexation et l'exploration par les moteurs de recherche."
-    "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": ""
-    },
-    
-    { "attribute": "author", 
-      "description": "Spécifie le nom de l'auteur de la page."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-      
-    
-    { "attribute": "viewport", 
-      "description": "Définit comment la page doit être affichée sur les appareils mobiles."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Mobile" },
-    
-    { "attribute": "generator", 
-      "description": "Indique le logiciel utilisé pour générer la page."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "revisit-after", 
-      "description": "Spécifie l'intervalle après lequel les moteurs de recherche doivent revisiter la page."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "rating", 
-      "description": "Indique la classification du contenu (par exemple, Général, Mature)."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "distribution", 
-      "description": "Définit la distribution prévue du document (par exemple, Global, Local)."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "copyright", 
-      "description": "Affiche les informations sur les droits d'auteur pour le contenu de la page."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "language", 
-      "description": "Spécifie la langue du contenu (par exemple, 'en', 'fr')."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "subject", 
-      "description": "Spécifie le sujet de la page."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "coverage", 
-      "description": "Définit la portée géographique ou temporelle du document."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "topic", 
-      "description": "Spécifie le sujet principal de la page."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "summary", "description": "Fournit un résumé bref du contenu de la page."
-    "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "target", 
-      "description": "Spécifie l'appareil cible pour le rendu (par exemple, 'all', 'screen')."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "HandheldFriendly", 
-      "description": "Indique si la page est optimisée pour les appareils portables."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Mobile"
-    },
-    
-    { "attribute": "MobileOptimized", 
-      "description": "Définit la largeur du contenu pour l'optimisation mobile."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Mobile" },
-    
-    { "attribute": "date", 
-      "description": "Spécifie la date de publication ou de modification."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "identifier-URL", 
-      "description": "Définit l'URL canonique de la page."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "reply-to", 
-      "description": "Spécifie une adresse e-mail pour les retours des utilisateurs."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "url", 
-      "description": "Spécifie l'URL de la page."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "designer", 
-      "description": "Spécifie le nom du designer de la page."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "owner", 
-      "description": "Indique le propriétaire de la page."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "DC.title", 
-      "description": "Définit le titre selon le Dublin Core de la page."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "medium",
-      "description": "Spécifie le support du contenu (par exemple, 'blog', 'news')."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "syndication-source", 
-      "description": "Spécifie la source originale du contenu syndiqué."
-      "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "" },
-    
-    { "attribute": "original-source", 
-      "description": "Indique l'URL source originale du contenu."
-    "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": ""
+    "metaTypes": {
+        "name": [
+            {
+                "attribute": "keywords",
+                "description": "Liste de mots-clés pour le SEO. Permet aux moteurs de recherche de comprendre le contenu principal de la page.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari",
+                    "Internet Explorer"
+                ],
+                "creator": "W3C",
+                "category": "SEO",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-name-keywords",
+                "examples": [
+                    "<meta name='keywords' content='seo, balises meta, optimisation, mots-clés'>",
+                    "<meta name='keywords' content='web development, HTML, CSS'>"
+                ],
+                "tags": [
+                    "SEO",
+                    "Mots-Clés",
+                    "Meta"
+                ],
+                "deprecated": true,
+                "default_value": "",
+                "value_constraints": "Chaîne de caractères contenant des mots-clés séparés par des virgules.",
+                "related_tags": [
+                    "description",
+                    "robots"
+                ],
+                "usage_notes": "Bien que cette balise soit dépréciée par de nombreux moteurs de recherche modernes comme Google, elle peut encore être utile pour certains outils ou moteurs spécifiques.",
+                "seo_impact": "Faible impact sur les moteurs de recherche modernes, mais peut être pertinent pour les moteurs de niche.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez des mots-clés pertinents pour des moteurs de recherche spécifiques.",
+                "common_mistakes": [
+                    "Ajouter trop de mots-clés non pertinents (keyword stuffing).",
+                    "Ne pas actualiser les mots-clés en fonction du contenu réel de la page."
+                ],
+                "performance_tips": "Évitez de surcharger cette balise ; concentrez-vous sur d'autres techniques modernes comme les balises Open Graph ou les données structurées.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "description",
+                "description": "Une description concise de la page pour les moteurs de recherche, utilisée pour les extraits affichés dans les résultats de recherche.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari",
+                    "Internet Explorer"
+                ],
+                "creator": "W3C",
+                "category": "SEO",
+                "required": true,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-name-description",
+                "examples": [
+                    "<meta name='description' content='Découvrez les meilleures pratiques en SEO avec nos outils.'>",
+                    "<meta name='description' content='Tout savoir sur les balises META et leur impact sur le SEO.'>"
+                ],
+                "tags": [
+                    "SEO",
+                    "Meta",
+                    "Snippet"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Chaîne de caractères de 50 à 160 caractères.",
+                "related_tags": [
+                    "keywords",
+                    "robots"
+                ],
+                "usage_notes": "Assurez-vous que la description est pertinente, concise et incite à cliquer.",
+                "seo_impact": "Impact direct sur le taux de clics (CTR) via les extraits affichés dans les SERP.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Utilisez une description claire et attrayante pour inciter les utilisateurs à visiter votre page.",
+                "common_mistakes": [
+                    "Répéter les mots-clés inutilement (keyword stuffing).",
+                    "Laisser la description vide ou trop générique."
+                ],
+                "performance_tips": "Vérifiez comment la description s'affiche dans les résultats de recherche pour maximiser l'impact.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "robots",
+                "description": "Contrôle l'indexation et l'exploration par les moteurs de recherche, avec des valeurs comme 'index', 'noindex', 'follow', et 'nofollow'.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari",
+                    "Internet Explorer"
+                ],
+                "creator": "W3C",
+                "category": "SEO",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Robots_meta_tag",
+                "examples": [
+                    "<meta name='robots' content='index, follow'>",
+                    "<meta name='robots' content='noindex, nofollow'>"
+                ],
+                "tags": [
+                    "SEO",
+                    "Indexation",
+                    "Crawling"
+                ],
+                "deprecated": false,
+                "default_value": "index, follow",
+                "value_constraints": "'index', 'noindex', 'follow', 'nofollow', combinés par des virgules.",
+                "related_tags": [
+                    "description"
+                ],
+                "usage_notes": "Utilisez 'noindex' pour empêcher l'indexation de pages spécifiques.",
+                "seo_impact": "Peut empêcher certaines pages d'être indexées ou explorées.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'robots' pour contrôler l'accès des moteurs de recherche à votre contenu.",
+                "common_mistakes": [
+                    "Oublier d'ajouter 'index' pour les pages importantes.",
+                    "Utiliser 'nofollow' sur des liens internes critiques."
+                ],
+                "performance_tips": "Testez vos directives avec Google Search Console pour éviter des erreurs d'exploration.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "author",
+                "description": "Spécifie le nom de l'auteur de la page, souvent utilisé pour les crédits ou les informations légales.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox"
+                ],
+                "incompatibility": [
+                    "Safari",
+                    "Internet Explorer"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-name-author",
+                "examples": [
+                    "<meta name='author' content='John Doe'>",
+                    "<meta name='author' content='Agence WebLocalis'>"
+                ],
+                "tags": [
+                    "Auteur",
+                    "Crédits",
+                    "Meta"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Nom ou entité de l'auteur.",
+                "related_tags": [],
+                "usage_notes": "Utilisez pour donner des informations sur l'auteur, surtout sur des sites collaboratifs.",
+                "seo_impact": "Aucun impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'author' pour fournir des informations sur l'écrivain ou l'organisation.",
+                "common_mistakes": [
+                    "Oublier de mettre à jour l'auteur lors des modifications.",
+                    "Utiliser un format incorrect ou peu clair."
+                ],
+                "performance_tips": "Combinez avec d'autres balises de métadonnées pour enrichir les informations sur la page.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "viewport",
+                "description": "Définit comment la page doit être affichée sur les appareils mobiles, avec des options pour le zoom, la largeur et l'échelle.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 8 et versions antérieures."
+                ],
+                "creator": "W3C",
+                "category": "Mobile",
+                "required": true,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag",
+                "examples": [
+                    "<meta name='viewport' content='width=device-width, initial-scale=1'>",
+                    "<meta name='viewport' content='width=1024'>"
+                ],
+                "tags": [
+                    "Mobile",
+                    "Responsive",
+                    "Meta"
+                ],
+                "deprecated": false,
+                "default_value": "width=device-width, initial-scale=1",
+                "value_constraints": "Chaîne définissant la largeur, l'échelle et d'autres paramètres.",
+                "related_tags": [],
+                "usage_notes": "Utilisez pour garantir que votre site est bien affiché sur les appareils mobiles.",
+                "seo_impact": "Améliore l'expérience utilisateur mobile, ce qui est un facteur important pour le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'viewport' pour rendre votre site responsive sur tous les appareils.",
+                "common_mistakes": [
+                    "Oublier d'inclure cette balise pour des sites mobiles.",
+                    "Configurer des valeurs incorrectes ou non optimisées pour les mobiles."
+                ],
+                "performance_tips": "Testez votre site sur différents appareils pour vous assurer qu'il est parfaitement responsive.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "generator",
+                "description": "Indique le logiciel ou l'outil utilisé pour générer la page, tel qu'un CMS ou un éditeur.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-name-generator",
+                "examples": [
+                    "<meta name='generator' content='WordPress 6.0'>",
+                    "<meta name='generator' content='Joomla 4.2'>"
+                ],
+                "tags": [
+                    "CMS",
+                    "Metadata",
+                    "Meta"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Nom de l'outil ou du logiciel, suivi de la version (facultatif).",
+                "related_tags": [],
+                "usage_notes": "Cette balise est souvent utilisée pour indiquer quel CMS ou éditeur a été utilisé.",
+                "seo_impact": "Aucun impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'generator' pour identifier l'outil ou le logiciel utilisé pour créer la page.",
+                "common_mistakes": [
+                    "Oublier de mettre à jour cette balise lors de la migration vers un autre CMS.",
+                    "Laisser une valeur par défaut qui divulgue des informations non nécessaires."
+                ],
+                "performance_tips": "N'incluez cette balise que si nécessaire, car elle peut divulguer des informations sensibles.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "revisit-after",
+                "description": "Spécifie l'intervalle après lequel les moteurs de recherche doivent revisiter la page. Cette balise n'est pas officiellement supportée par les principaux moteurs comme Google.",
+                "compatibility": [
+                    "Bing"
+                ],
+                "incompatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Google"
+                ],
+                "creator": "Historique",
+                "category": "SEO",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='revisit-after' content='7 days'>",
+                    "<meta name='revisit-after' content='1 month'>"
+                ],
+                "tags": [
+                    "SEO",
+                    "Indexation",
+                    "Meta"
+                ],
+                "deprecated": true,
+                "default_value": "",
+                "value_constraints": "Valeurs possibles : '1 day', '7 days', '1 month', etc.",
+                "related_tags": [
+                    "robots"
+                ],
+                "usage_notes": "Cette balise est principalement ignorée par les moteurs de recherche modernes.",
+                "seo_impact": "Aucun impact sur les moteurs principaux, mais pourrait influencer des moteurs moins connus.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [
+                    "robots"
+                ],
+                "example_usage": "Ajoutez 'revisit-after' uniquement si vous ciblez des moteurs non conventionnels.",
+                "common_mistakes": [
+                    "Supposer que Google utilise cette balise pour ses robots.",
+                    "Configurer un intervalle trop court sans pertinence."
+                ],
+                "performance_tips": "Testez son effet sur des moteurs comme Bing ou des moteurs locaux spécifiques.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "rating",
+                "description": "Indique la classification du contenu de la page, comme 'Général' ou 'Mature'.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "SEO",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='rating' content='General'>",
+                    "<meta name='rating' content='Mature'>"
+                ],
+                "tags": [
+                    "Classification",
+                    "Meta",
+                    "SEO"
+                ],
+                "deprecated": false,
+                "default_value": "General",
+                "value_constraints": "'General', 'Mature', ou autres classifications personnalisées.",
+                "related_tags": [],
+                "usage_notes": "Utilisé pour fournir des informations sur la classification du contenu.",
+                "seo_impact": "Faible impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'rating' pour indiquer si le contenu est approprié pour un public général.",
+                "common_mistakes": [
+                    "Omettre cette balise sur des sites contenant du contenu sensible.",
+                    "Utiliser des termes non standard pour la classification."
+                ],
+                "performance_tips": "Incluez cette balise pour clarifier le public cible de votre contenu.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "distribution",
+                "description": "Définit la distribution prévue du contenu du document, comme 'Global' ou 'Local'.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='distribution' content='Global'>",
+                    "<meta name='distribution' content='Local'>"
+                ],
+                "tags": [
+                    "Distribution",
+                    "Meta",
+                    "Metadata"
+                ],
+                "deprecated": false,
+                "default_value": "Global",
+                "value_constraints": "'Global', 'Local', ou autres valeurs personnalisées.",
+                "related_tags": [],
+                "usage_notes": "Utilisez pour spécifier la portée de votre contenu.",
+                "seo_impact": "Peut influencer certains moteurs locaux.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'distribution' pour indiquer si votre contenu cible un public mondial ou local.",
+                "common_mistakes": [
+                    "Ne pas aligner cette balise avec l'objectif réel du contenu.",
+                    "Utiliser une valeur non standard comme 'Regional' sans support."
+                ],
+                "performance_tips": "Configurez cette balise uniquement si la distribution est cruciale pour votre audience.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "copyright",
+                "description": "Affiche les informations sur les droits d'auteur pour le contenu de la page, comme le propriétaire ou l'année de publication.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='copyright' content='© 2025 WebLocalis'>",
+                    "<meta name='copyright' content='© 2025 Tous droits réservés'>"
+                ],
+                "tags": [
+                    "Copyright",
+                    "Metadata",
+                    "Legal"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Chaîne indiquant les informations de copyright.",
+                "related_tags": [],
+                "usage_notes": "Utilisez pour préciser les droits d'auteur sur votre contenu.",
+                "seo_impact": "Impact faible, mais aide à protéger le contenu.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'copyright' pour indiquer le propriétaire des droits.",
+                "common_mistakes": [
+                    "Oublier de mettre à jour l'année.",
+                    "Utiliser des termes vagues ou génériques."
+                ],
+                "performance_tips": "Assurez-vous que le contenu de la balise correspond à vos mentions légales.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "language",
+                "description": "Spécifie la langue du contenu de la page, utile pour les moteurs de recherche et les navigateurs.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": true,
+                "reference": "",
+                "examples": [
+                    "<meta name='language' content='en'>",
+                    "<meta name='language' content='fr'>"
+                ],
+                "tags": [
+                    "Langue",
+                    "Metadata",
+                    "SEO"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Code de langue ISO 639-1 (ex: 'en', 'fr', 'es').",
+                "related_tags": [],
+                "usage_notes": "Spécifiez la langue pour améliorer l'accessibilité et le SEO.",
+                "seo_impact": "Améliore l'expérience utilisateur et le classement dans des recherches localisées.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'language' pour indiquer la langue principale de votre page.",
+                "common_mistakes": [
+                    "Ne pas aligner cette balise avec le contenu réel.",
+                    "Oublier de configurer la balise pour les sites multilingues."
+                ],
+                "performance_tips": "Utilisez conjointement avec l'attribut 'lang' dans la balise <html>.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "subject",
+                "description": "Spécifie le sujet principal de la page, souvent utilisé pour organiser ou catégoriser le contenu.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='subject' content='Optimisation SEO'>",
+                    "<meta name='subject' content='Tutoriels sur les balises META'>"
+                ],
+                "tags": [
+                    "Sujet",
+                    "Metadata",
+                    "SEO"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Chaîne de caractères décrivant le sujet.",
+                "related_tags": [],
+                "usage_notes": "Utilisez pour fournir des informations claires sur le contenu de la page.",
+                "seo_impact": "Faible impact direct, mais utile pour l'organisation et la clarté.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'subject' pour définir le sujet principal de la page.",
+                "common_mistakes": [
+                    "Utiliser des descriptions vagues ou non informatives.",
+                    "Ne pas actualiser la balise en cas de mise à jour du contenu."
+                ],
+                "performance_tips": "Incluez un sujet spécifique et pertinent pour les utilisateurs.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "coverage",
+                "description": "Définit la portée géographique ou temporelle du contenu du document, utile pour des sites ciblant des zones spécifiques.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='coverage' content='Worldwide'>",
+                    "<meta name='coverage' content='Europe'>"
+                ],
+                "tags": [
+                    "Couverture",
+                    "Metadata",
+                    "SEO"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Chaîne de caractères comme 'Worldwide', 'Europe', 'Local'.",
+                "related_tags": [],
+                "usage_notes": "Utilisez pour indiquer la portée prévue du contenu.",
+                "seo_impact": "Impact limité mais peut aider pour le ciblage géographique.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'coverage' pour clarifier la portée géographique ou temporelle.",
+                "common_mistakes": [
+                    "Ne pas aligner cette balise avec le public ciblé.",
+                    "Utiliser une valeur incorrecte ou non standard."
+                ],
+                "performance_tips": "Configurez cette balise pour les sites avec un contenu ciblant des zones spécifiques.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "topic",
+                "description": "Spécifie le sujet principal de la page pour fournir un contexte aux moteurs de recherche et utilisateurs.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='topic' content='Optimisation des balises META'>",
+                    "<meta name='topic' content='Tutoriels SEO'>"
+                ],
+                "tags": [
+                    "Sujet",
+                    "Meta",
+                    "SEO"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Chaîne décrivant le sujet principal.",
+                "related_tags": [
+                    "subject",
+                    "keywords"
+                ],
+                "usage_notes": "Utilisé pour fournir des informations supplémentaires sur le sujet de la page.",
+                "seo_impact": "Impact indirect sur le SEO en enrichissant le contexte du contenu.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'topic' pour clarifier le sujet principal.",
+                "common_mistakes": [
+                    "Utiliser des sujets trop vagues.",
+                    "Ne pas aligner cette balise avec le contenu réel de la page."
+                ],
+                "performance_tips": "Assurez-vous que cette balise est cohérente avec les autres balises META.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "summary",
+                "description": "Fournit un résumé bref du contenu de la page pour un aperçu rapide.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='summary' content='Découvrez comment optimiser vos balises META pour le SEO.'>",
+                    "<meta name='summary' content='Guide complet sur l'utilisation des balises META.'>"
+                ],
+                "tags": [
+                    "Résumé",
+                    "Meta",
+                    "SEO"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Chaîne de caractères décrivant succinctement la page.",
+                "related_tags": [
+                    "description",
+                    "keywords"
+                ],
+                "usage_notes": "Utilisé pour compléter la balise 'description' avec un résumé additionnel.",
+                "seo_impact": "Peu d'impact direct, mais améliore le contexte général pour certains moteurs.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'summary' pour offrir un aperçu rapide et concis du contenu.",
+                "common_mistakes": [
+                    "Répéter les mêmes informations que dans 'description'.",
+                    "Ne pas mettre à jour la balise lors de modifications du contenu."
+                ],
+                "performance_tips": "Évitez les répétitions ; fournissez des informations complémentaires.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "target",
+                "description": "Spécifie l'appareil ou média cible pour le rendu de la page (par exemple, 'all', 'screen', 'print').",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Rendering",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='target' content='all'>",
+                    "<meta name='target' content='screen'>"
+                ],
+                "tags": [
+                    "Média",
+                    "Meta",
+                    "Rendering"
+                ],
+                "deprecated": false,
+                "default_value": "all",
+                "value_constraints": "'all', 'screen', 'print' ou autres valeurs compatibles.",
+                "related_tags": [],
+                "usage_notes": "Utilisé pour indiquer si la page est destinée à un type spécifique d'appareil ou de média.",
+                "seo_impact": "Aucun impact direct sur le SEO, mais améliore l'expérience utilisateur.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'target' pour spécifier le média de destination.",
+                "common_mistakes": [
+                    "Utiliser des valeurs non standard ou obsolètes.",
+                    "Omettre la balise pour des pages spécifiques comme les impressions."
+                ],
+                "performance_tips": "Utilisez cette balise avec parcimonie et uniquement si nécessaire.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "HandheldFriendly",
+                "description": "Indique si la page est optimisée pour les appareils portables.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer"
+                ],
+                "creator": "W3C",
+                "category": "Mobile",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='HandheldFriendly' content='true'>"
+                ],
+                "tags": [
+                    "Mobile",
+                    "Responsive",
+                    "Meta"
+                ],
+                "deprecated": true,
+                "default_value": "true",
+                "value_constraints": "'true' ou 'false'.",
+                "related_tags": [
+                    "viewport",
+                    "MobileOptimized"
+                ],
+                "usage_notes": "Cette balise est principalement utilisée sur les appareils portables anciens.",
+                "seo_impact": "Peu ou pas d'impact SEO direct aujourd'hui.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [
+                    "viewport"
+                ],
+                "example_usage": "Ajoutez 'HandheldFriendly' pour les appareils plus anciens.",
+                "common_mistakes": [
+                    "Utiliser cette balise avec des valeurs incorrectes.",
+                    "Ne pas combiner avec 'viewport' pour les appareils modernes."
+                ],
+                "performance_tips": "Préférez 'viewport' pour des résultats modernes et fiables.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "MobileOptimized",
+                "description": "Définit la largeur du contenu pour les appareils mobiles afin d'améliorer l'expérience utilisateur.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer"
+                ],
+                "creator": "Microsoft",
+                "category": "Mobile",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='MobileOptimized' content='320'>"
+                ],
+                "tags": [
+                    "Mobile",
+                    "Responsive",
+                    "Optimization"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Entier positif représentant la largeur en pixels.",
+                "related_tags": [
+                    "viewport",
+                    "HandheldFriendly"
+                ],
+                "usage_notes": "Utilisé principalement pour les appareils anciens où 'viewport' n'est pas supporté.",
+                "seo_impact": "Améliore l'expérience utilisateur sur mobile, ce qui peut indirectement influencer le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'MobileOptimized' pour spécifier la largeur en pixels de la page sur mobile.",
+                "common_mistakes": [
+                    "Utiliser des valeurs incohérentes avec la conception réelle de la page.",
+                    "Ne pas combiner avec 'viewport' pour les appareils modernes."
+                ],
+                "performance_tips": "Privilégiez 'viewport' pour des appareils modernes.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "date",
+                "description": "Spécifie la date de publication ou de modification de la page, souvent au format ISO 8601.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='date' content='2025-01-21'>",
+                    "<meta name='date' content='2025-01-21T10:30:00Z'>"
+                ],
+                "tags": [
+                    "Date",
+                    "Metadata",
+                    "Publication"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Format ISO 8601 ou texte descriptif.",
+                "related_tags": [
+                    "last-modified",
+                    "expires"
+                ],
+                "usage_notes": "Utilisé pour indiquer des informations temporelles sur la page.",
+                "seo_impact": "Faible impact direct sur le SEO, mais utile pour le contexte temporel.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'date' pour indiquer la date de publication ou de mise à jour.",
+                "common_mistakes": [
+                    "Utiliser des formats non standard.",
+                    "Ne pas mettre à jour cette balise lors de modifications importantes."
+                ],
+                "performance_tips": "Respectez les normes ISO pour garantir la compatibilité.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "identifier-URL",
+                "description": "Définit l'URL canonique de la page pour éviter le contenu dupliqué.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "SEO",
+                "required": true,
+                "reference": "",
+                "examples": [
+                    "<meta name='identifier-URL' content='https://example.com'>"
+                ],
+                "tags": [
+                    "SEO",
+                    "Canonical",
+                    "Meta"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "URL valide et absolue.",
+                "related_tags": [
+                    "canonical",
+                    "url"
+                ],
+                "usage_notes": "Utilisez pour spécifier une URL unique pour le contenu de la page.",
+                "seo_impact": "Améliore le SEO en évitant les pénalités pour contenu dupliqué.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [
+                    "canonical"
+                ],
+                "example_usage": "Ajoutez 'identifier-URL' pour indiquer une URL canonique.",
+                "common_mistakes": [
+                    "Utiliser une URL non valide ou relative.",
+                    "Ne pas synchroniser cette balise avec 'canonical'."
+                ],
+                "performance_tips": "Assurez-vous que l'URL est correcte et correspond au contenu de la page.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "reply-to",
+                "description": "Spécifie une adresse e-mail pour recevoir les retours des utilisateurs.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Contact",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='reply-to' content='support@example.com'>"
+                ],
+                "tags": [
+                    "Contact",
+                    "Meta",
+                    "Support"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Adresse e-mail valide.",
+                "related_tags": [],
+                "usage_notes": "Utilisé pour fournir une adresse e-mail facilement accessible.",
+                "seo_impact": "Aucun impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'reply-to' pour fournir un contact de retour.",
+                "common_mistakes": [
+                    "Fournir une adresse incorrecte ou inactive.",
+                    "Oublier de protéger l'adresse contre les spams."
+                ],
+                "performance_tips": "Utilisez une adresse générique ou un alias pour éviter les abus.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "url",
+                "description": "Spécifie l'URL de la page actuelle ou d'un contenu particulier.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": true,
+                "reference": "",
+                "examples": [
+                    "<meta name='url' content='https://example.com'>"
+                ],
+                "tags": [
+                    "URL",
+                    "Meta",
+                    "Canonical"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "URL valide et absolue.",
+                "related_tags": [
+                    "identifier-URL",
+                    "canonical"
+                ],
+                "usage_notes": "Utilisez pour spécifier l'URL de la page ou d'une ressource spécifique.",
+                "seo_impact": "Améliore le SEO en indiquant clairement l'URL officielle.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'url' pour indiquer l'adresse de la page.",
+                "common_mistakes": [
+                    "Utiliser une URL relative ou incorrecte.",
+                    "Ne pas synchroniser cette balise avec 'canonical'."
+                ],
+                "performance_tips": "Vérifiez que l'URL correspond à celle affichée dans les moteurs de recherche.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "designer",
+                "description": "Spécifie le nom ou l'identité du designer de la page.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='designer' content='John Doe'>"
+                ],
+                "tags": [
+                    "Designer",
+                    "Metadata",
+                    "Attribution"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Nom ou identité textuelle.",
+                "related_tags": [
+                    "author",
+                    "owner"
+                ],
+                "usage_notes": "Utilisé pour donner crédit au designer de la page.",
+                "seo_impact": "Aucun impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'designer' pour attribuer la conception.",
+                "common_mistakes": [
+                    "Utiliser des pseudonymes non pertinents.",
+                    "Oublier de mettre à jour la balise après un changement de designer."
+                ],
+                "performance_tips": "Incluez cette balise uniquement si elle ajoute de la valeur au projet.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "owner",
+                "description": "Indique le propriétaire officiel de la page ou du site.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": true,
+                "reference": "",
+                "examples": [
+                    "<meta name='owner' content='Company Name'>"
+                ],
+                "tags": [
+                    "Owner",
+                    "Metadata",
+                    "Legal"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Nom de l'entreprise ou du propriétaire.",
+                "related_tags": [
+                    "copyright",
+                    "author"
+                ],
+                "usage_notes": "Utilisé pour identifier clairement le propriétaire du site.",
+                "seo_impact": "Impact faible mais utile pour la crédibilité.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'owner' pour indiquer le propriétaire.",
+                "common_mistakes": [
+                    "Utiliser un nom générique ou non représentatif.",
+                    "Ne pas mettre à jour cette balise en cas de transfert de propriété."
+                ],
+                "performance_tips": "Vérifiez que le nom correspond aux informations légales du site.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "DC.title",
+                "description": "Définit le titre de la page selon les normes Dublin Core.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "Dublin Core Metadata Initiative",
+                "category": "Metadata",
+                "required": false,
+                "reference": "https://www.dublincore.org/",
+                "examples": [
+                    "<meta name='DC.title' content='Introduction to META Tags'>"
+                ],
+                "tags": [
+                    "Dublin Core",
+                    "Title",
+                    "Metadata"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Titre textuel court et descriptif.",
+                "related_tags": [
+                    "title",
+                    "og:title"
+                ],
+                "usage_notes": "Utilisé pour les normes de métadonnées interopérables.",
+                "seo_impact": "Peu d'impact direct, mais utile pour des normes spécifiques.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'DC.title' pour répondre aux normes Dublin Core.",
+                "common_mistakes": [
+                    "Confondre avec la balise 'title'.",
+                    "Utiliser des titres trop longs ou vagues."
+                ],
+                "performance_tips": "Incluez cette balise si votre public cible utilise des standards Dublin Core.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "medium",
+                "description": "Spécifie le support ou le type de contenu (par exemple, 'blog', 'news').",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='medium' content='blog'>",
+                    "<meta name='medium' content='news'>"
+                ],
+                "tags": [
+                    "Medium",
+                    "Type",
+                    "Content"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Chaîne décrivant le type de contenu.",
+                "related_tags": [
+                    "type",
+                    "category"
+                ],
+                "usage_notes": "Utilisé pour catégoriser le type de contenu.",
+                "seo_impact": "Aucun impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'medium' pour indiquer le type de contenu.",
+                "common_mistakes": [
+                    "Utiliser des termes non reconnus ou non standardisés.",
+                    "Ne pas mettre à jour cette balise lors de changements de contenu."
+                ],
+                "performance_tips": "Assurez-vous que le support spécifié est cohérent avec le contenu réel.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "syndication-source",
+                "description": "Spécifie la source originale d'un contenu syndiqué.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "W3C",
+                "category": "Metadata",
+                "required": false,
+                "reference": "",
+                "examples": [
+                    "<meta name='syndication-source' content='https://example.com'>"
+                ],
+                "tags": [
+                    "Source",
+                    "Syndication",
+                    "Metadata"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "URL valide.",
+                "related_tags": [
+                    "original-source"
+                ],
+                "usage_notes": "Utilisé pour indiquer la source d'origine d'un contenu.",
+                "seo_impact": "Faible impact SEO, mais améliore la crédibilité.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'syndication-source' pour préciser la source.",
+                "common_mistakes": [
+                    "Confondre avec 'original-source'.",
+                    "Ne pas synchroniser cette balise avec la source réelle."
+                ],
+                "performance_tips": "Assurez-vous que l'URL pointe vers une source crédible.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            }
+        ],
+        "http-equiv": [
+            {
+                "attribute": "content-type",
+                "description": "Définit le type de contenu et l'encodage des caractères de la page. Utilisé pour indiquer aux navigateurs comment interpréter le contenu de la réponse HTTP.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer (anciennes versions) avec certains encodages rares"
+                ],
+                "creator": "W3C",
+                "category": "HTTP",
+                "required": true,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type",
+                "examples": [
+                    "<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>",
+                    "<meta http-equiv='Content-Type' content='application/xhtml+xml; charset=UTF-8'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Encodage",
+                    "Compatibilité"
+                ],
+                "deprecated": false,
+                "default_value": "text/html; charset=UTF-8",
+                "value_constraints": "Format MIME valide avec un encodage de caractères, tel que 'charset=UTF-8'.",
+                "related_tags": [
+                    "charset",
+                    "http-equiv"
+                ],
+                "usage_notes": "Utilisez 'charset=UTF-8' pour garantir la compatibilité avec la plupart des navigateurs modernes.",
+                "seo_impact": "Une définition incorrecte peut entraîner des problèmes d'affichage des caractères et nuire au SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'content-type' dans l'en-tête pour spécifier 'charset=UTF-8', garantissant une interprétation correcte des caractères.",
+                "common_mistakes": [
+                    "Oublier de définir 'charset', ce qui entraîne des problèmes d'encodage.",
+                    "Utiliser des encodages obsolètes comme 'ISO-8859-1'."
+                ],
+                "performance_tips": "Spécifiez 'charset=UTF-8' comme encodage par défaut pour prendre en charge la majorité des langues et des caractères.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "expires",
+                "description": "Indique la date d'expiration du contenu. Permet de contrôler combien de temps une ressource peut être mise en cache avant d'expirer.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Peut être ignoré si 'Cache-Control' est également défini."
+                ],
+                "creator": "HTTP/1.0",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expires",
+                "examples": [
+                    "<meta http-equiv='expires' content='Tue, 21 Jan 2025 10:00:00 GMT'>",
+                    "<meta http-equiv='expires' content='0'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Cache",
+                    "Expiration"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Date en format HTTP (RFC 7231).",
+                "related_tags": [
+                    "cache-control",
+                    "pragma"
+                ],
+                "usage_notes": "Préférez 'Cache-Control' pour une gestion plus fine des règles de cache.",
+                "seo_impact": "Permet de gérer l'obsolescence des ressources mises en cache, ce qui peut améliorer la vitesse de chargement des pages.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Utilisez 'expires' pour définir une durée de validité explicite des ressources.",
+                "common_mistakes": [
+                    "Oublier de synchroniser avec 'Cache-Control', créant des comportements inattendus.",
+                    "Utiliser un format de date incorrect."
+                ],
+                "performance_tips": "Pour un contrôle granulaire, combinez 'expires' avec 'Cache-Control'.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "cache-control",
+                "description": "Spécifie les règles de mise en cache pour la page. Permet un contrôle précis sur la manière dont les ressources sont mises en cache par le navigateur et les proxys.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [],
+                "creator": "HTTP/1.1",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control",
+                "examples": [
+                    "<meta http-equiv='cache-control' content='no-cache'>",
+                    "<meta http-equiv='cache-control' content='max-age=3600'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Cache",
+                    "Performances"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Directives HTTP valides comme 'no-cache', 'max-age', ou 'public'.",
+                "related_tags": [
+                    "expires",
+                    "pragma"
+                ],
+                "usage_notes": "Utilisez 'Cache-Control' pour remplacer ou compléter 'Expires'.",
+                "seo_impact": "Améliore les performances en réduisant les requêtes réseau pour les ressources mises en cache.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'cache-control' avec 'max-age=3600' pour permettre la mise en cache pendant 1 heure.",
+                "common_mistakes": [
+                    "Combiner des directives incompatibles comme 'no-cache' et 'max-age'.",
+                    "Oublier de tester les règles de cache sur différents navigateurs."
+                ],
+                "performance_tips": "Utilisez 'max-age' pour réduire les temps de chargement tout en gardant le contenu à jour.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "pragma",
+                "description": "Définit des directives de mise en cache, souvent utilisé avec 'no-cache'. Principalement destiné à HTTP/1.0 pour des règles de cache temporaires.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Obsolète pour HTTP/1.1 et ignoré dans certains cas."
+                ],
+                "creator": "HTTP/1.0",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Pragma",
+                "examples": [
+                    "<meta http-equiv='pragma' content='no-cache'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Cache",
+                    "Obsolète"
+                ],
+                "deprecated": true,
+                "default_value": "",
+                "value_constraints": "Généralement 'no-cache'.",
+                "related_tags": [
+                    "cache-control",
+                    "expires"
+                ],
+                "usage_notes": "Utilisez 'pragma' uniquement comme complément de compatibilité pour les anciens navigateurs.",
+                "seo_impact": "Négligeable pour le SEO dans les environnements modernes.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [
+                    "Cache-Control"
+                ],
+                "example_usage": "Incluez 'pragma' uniquement pour la compatibilité descendante.",
+                "common_mistakes": [
+                    "Confier la gestion complète du cache à 'pragma'.",
+                    "Ne pas synchroniser avec 'Cache-Control'."
+                ],
+                "performance_tips": "Utilisez 'Cache-Control' pour des configurations modernes et fiables.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "x-ua-compatible",
+                "description": "Spécifie le mode de compatibilité pour Internet Explorer. Permet de forcer un mode de rendu spécifique, comme 'IE=edge'.",
+                "compatibility": [
+                    "Internet Explorer"
+                ],
+                "incompatibility": [
+                    "Navigateurs modernes qui ignorent cette balise."
+                ],
+                "creator": "Microsoft",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/jj676915(v=vs.85)",
+                "examples": [
+                    "<meta http-equiv='X-UA-Compatible' content='IE=edge'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Compatibilité",
+                    "Internet Explorer"
+                ],
+                "deprecated": true,
+                "default_value": "",
+                "value_constraints": "Généralement 'IE=edge'.",
+                "related_tags": [],
+                "usage_notes": "Utilisez uniquement pour garantir une compatibilité avec les anciennes versions d'Internet Explorer.",
+                "seo_impact": "Négligeable pour les navigateurs modernes.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [
+                    "Standard HTML moderne"
+                ],
+                "example_usage": "Ajoutez 'x-ua-compatible' pour forcer IE à utiliser le dernier moteur de rendu disponible.",
+                "common_mistakes": [
+                    "Inclure cette balise dans des projets modernes inutiles.",
+                    "Oublier de tester sur les versions ciblées d'Internet Explorer."
+                ],
+                "performance_tips": "Limitez l'utilisation aux cas où le support d'Internet Explorer est nécessaire.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "refresh",
+                "description": "Définit un minuteur pour actualiser la page ou rediriger vers une autre URL.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Peut causer des problèmes d'accessibilité."
+                ],
+                "creator": "HTTP/1.0",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-http-equiv-refresh",
+                "examples": [
+                    "<meta http-equiv='refresh' content='30'>",
+                    "<meta http-equiv='refresh' content='5; url=https://example.com'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Redirection",
+                    "Actualisation"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Nombre entier (secondes) ou secondes suivies d'une URL.",
+                "related_tags": [],
+                "usage_notes": "Utilisez pour des redirections temporaires ou des actualisations automatiques.",
+                "seo_impact": "Peut avoir un impact négatif si mal configuré (redirections fréquentes).",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [
+                    "Utilisez des redirections serveur pour un contrôle précis."
+                ],
+                "example_usage": "Incluez 'refresh' pour rediriger vers une autre page après un délai.",
+                "common_mistakes": [
+                    "Utiliser une durée trop courte qui perturbe l'utilisateur.",
+                    "Oublier de fournir une URL valide pour les redirections."
+                ],
+                "performance_tips": "Évitez l'utilisation excessive pour améliorer l'expérience utilisateur.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "content-security-policy",
+                "description": "Définit des règles de sécurité pour le contenu afin de prévenir les attaques XSS et autres vulnérabilités.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Anciennes versions d'Internet Explorer."
+                ],
+                "creator": "W3C",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+                "examples": [
+                    "<meta http-equiv='Content-Security-Policy' content=\"default-src 'self'; script-src 'self' https://apis.google.com\">"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Sécurité",
+                    "XSS"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Directives CSP valides.",
+                "related_tags": [],
+                "usage_notes": "Définissez des règles strictes pour limiter l'exécution de scripts non autorisés.",
+                "seo_impact": "Améliore la sécurité, mais n'a pas d'impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'content-security-policy' pour restreindre les scripts à ceux de votre domaine.",
+                "common_mistakes": [
+                    "Configurer des règles trop permissives.",
+                    "Oublier d'inclure des exceptions nécessaires pour des API externes."
+                ],
+                "performance_tips": "Testez vos règles avec un outil comme la console du navigateur pour éviter de bloquer des ressources essentielles.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "default-style",
+                "description": "Spécifie la feuille de style préférée à utiliser pour la page.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Anciennes versions d'Internet Explorer."
+                ],
+                "creator": "W3C",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title#default-style",
+                "examples": [
+                    "<meta http-equiv='default-style' content='main'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Styles",
+                    "CSS"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Nom de la feuille de style préférée.",
+                "related_tags": [],
+                "usage_notes": "Utilisez pour définir la feuille de style par défaut dans un document HTML contenant plusieurs styles.",
+                "seo_impact": "Aucun impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'default-style' pour indiquer la feuille de style préférée 'main'.",
+                "common_mistakes": [
+                    "Ne pas spécifier un style existant dans le document.",
+                    "Utiliser un nom de style non valide."
+                ],
+                "performance_tips": "Assurez-vous que la feuille de style par défaut améliore l'expérience utilisateur.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "set-cookie",
+                "description": "Envoie des cookies du serveur au client dans les en-têtes de réponse.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Anciennes versions de certains navigateurs."
+                ],
+                "creator": "HTTP/1.1",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie",
+                "examples": [
+                    "<meta http-equiv='set-cookie' content='sessionId=abc123; Secure; HttpOnly'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Cookies",
+                    "Sécurité"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Chaîne de caractères respectant la syntaxe des cookies.",
+                "related_tags": [],
+                "usage_notes": "Utilisez pour transmettre des informations de session ou des préférences utilisateur.",
+                "seo_impact": "Aucun impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'set-cookie' pour transmettre un identifiant de session sécurisé.",
+                "common_mistakes": [
+                    "Oublier d'ajouter 'Secure' et 'HttpOnly' pour renforcer la sécurité.",
+                    "Utiliser des cookies sans règles de confidentialité claires."
+                ],
+                "performance_tips": "Optimisez l'utilisation des cookies pour éviter des charges inutiles sur le client.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "strict-transport-security",
+                "description": "Force les navigateurs à utiliser des connexions HTTPS pour accéder au site, protégeant contre les attaques de type man-in-the-middle.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Navigateurs très anciens ne supportant pas HTTPS."
+                ],
+                "creator": "IETF",
+                "category": "HTTP",
+                "required": true,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security",
+                "examples": [
+                    "<meta http-equiv='Strict-Transport-Security' content='max-age=31536000; includeSubDomains'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Sécurité",
+                    "HTTPS"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Doit inclure 'max-age' et éventuellement 'includeSubDomains' et 'preload'.",
+                "related_tags": [],
+                "usage_notes": "Activez cette directive uniquement si tout le site est servi via HTTPS.",
+                "seo_impact": "Renforce la confiance des utilisateurs et améliore la sécurité, bien que sans impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'strict-transport-security' pour forcer HTTPS sur toutes les requêtes.",
+                "common_mistakes": [
+                    "Ne pas inclure 'includeSubDomains' pour couvrir les sous-domaines.",
+                    "Utiliser cette balise sur des sites qui ont encore des pages accessibles via HTTP."
+                ],
+                "performance_tips": "Réduisez les redirections inutiles en configurant correctement HTTPS dès la première requête.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "x-dns-prefetch-control",
+                "description": "Contrôle si le navigateur doit effectuer une pré-résolution DNS pour les ressources liées, afin d'améliorer les performances.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Navigateurs très anciens sans support de pré-résolution DNS."
+                ],
+                "creator": "IETF",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control",
+                "examples": [
+                    "<meta http-equiv='X-DNS-Prefetch-Control' content='on'>",
+                    "<meta http-equiv='X-DNS-Prefetch-Control' content='off'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Performances",
+                    "Réseaux"
+                ],
+                "deprecated": false,
+                "default_value": "on",
+                "value_constraints": "'on' ou 'off'.",
+                "related_tags": [],
+                "usage_notes": "Utilisez 'off' si vous souhaitez désactiver la pré-résolution pour des raisons de confidentialité ou de performance.",
+                "seo_impact": "Améliore les temps de chargement des pages et, indirectement, le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'x-dns-prefetch-control' pour activer ou désactiver la pré-résolution DNS.",
+                "common_mistakes": [
+                    "Ne pas utiliser 'off' dans des contextes où la confidentialité est importante.",
+                    "Activer la pré-résolution sans optimiser les DNS liés."
+                ],
+                "performance_tips": "Activez uniquement pour les ressources critiques afin d'améliorer les temps de chargement.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "x-content-type-options",
+                "description": "Empêche les navigateurs d'interpréter les fichiers comme un autre type MIME que celui déclaré. Utilise généralement la valeur 'nosniff'.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [],
+                "creator": "IETF",
+                "category": "HTTP",
+                "required": true,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options",
+                "examples": [
+                    "<meta http-equiv='X-Content-Type-Options' content='nosniff'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Sécurité",
+                    "MIME"
+                ],
+                "deprecated": false,
+                "default_value": "nosniff",
+                "value_constraints": "Doit être 'nosniff'.",
+                "related_tags": [],
+                "usage_notes": "Empêche les attaques basées sur l'exécution de scripts interprétés comme des fichiers incorrects.",
+                "seo_impact": "Améliore la sécurité des pages, sans impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'x-content-type-options' avec 'nosniff' pour prévenir les interprétations incorrectes des fichiers.",
+                "common_mistakes": [
+                    "Ne pas inclure cette directive pour des pages sensibles.",
+                    "Essayer d'utiliser d'autres valeurs que 'nosniff'."
+                ],
+                "performance_tips": "Configurez cette option pour toutes les pages pour renforcer la sécurité.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "x-frame-options",
+                "description": "Empêche l'affichage de la page dans une frame ou iframe pour se protéger contre les attaques de clickjacking. Utilise généralement 'DENY' ou 'SAMEORIGIN'.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Anciennes versions de certains navigateurs."
+                ],
+                "creator": "Microsoft",
+                "category": "HTTP",
+                "required": true,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options",
+                "examples": [
+                    "<meta http-equiv='X-Frame-Options' content='DENY'>",
+                    "<meta http-equiv='X-Frame-Options' content='SAMEORIGIN'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Sécurité",
+                    "Frames"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "'DENY' ou 'SAMEORIGIN'.",
+                "related_tags": [],
+                "usage_notes": "Utilisez 'DENY' pour bloquer complètement les frames, ou 'SAMEORIGIN' pour autoriser uniquement les frames provenant du même domaine.",
+                "seo_impact": "Améliore la sécurité, sans impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'x-frame-options' pour éviter les attaques de clickjacking.",
+                "common_mistakes": [
+                    "Ne pas inclure cette directive sur des pages sensibles.",
+                    "Utiliser des valeurs incorrectes ou non standard."
+                ],
+                "performance_tips": "Utilisez 'SAMEORIGIN' pour préserver la flexibilité tout en maintenant la sécurité.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "x-permitted-cross-domain-policies",
+                "description": "Définit comment le contenu peut être chargé par des requêtes cross-domain. Les valeurs possibles incluent 'none', 'master-only', 'by-content-type', et 'all'.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Anciennes versions de navigateurs sans support des politiques cross-domain."
+                ],
+                "creator": "Adobe",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Permitted-Cross-Domain-Policies",
+                "examples": [
+                    "<meta http-equiv='X-Permitted-Cross-Domain-Policies' content='none'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Sécurité",
+                    "Cross-Domain"
+                ],
+                "deprecated": false,
+                "default_value": "none",
+                "value_constraints": "'none', 'master-only', 'by-content-type', ou 'all'.",
+                "related_tags": [],
+                "usage_notes": "Utilisez 'none' pour empêcher tout accès cross-domain non nécessaire.",
+                "seo_impact": "Renforce la sécurité, sans impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'x-permitted-cross-domain-policies' pour restreindre le chargement cross-domain.",
+                "common_mistakes": [
+                    "Oublier de restreindre les politiques cross-domain pour des données sensibles.",
+                    "Utiliser 'all' sans évaluer les implications de sécurité."
+                ],
+                "performance_tips": "Configurez avec 'none' pour améliorer la sécurité par défaut.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "referrer",
+                "description": "Contrôle les informations envoyées dans l'en-tête Referer lors de la navigation vers une autre page. Les valeurs possibles incluent 'no-referrer', 'same-origin', et 'strict-origin-when-cross-origin'.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [],
+                "creator": "W3C",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy",
+                "examples": [
+                    "<meta name='referrer' content='no-referrer'>",
+                    "<meta name='referrer' content='strict-origin'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Confidentialité",
+                    "Referer"
+                ],
+                "deprecated": false,
+                "default_value": "strict-origin-when-cross-origin",
+                "value_constraints": "'no-referrer', 'same-origin', 'origin', ou 'strict-origin-when-cross-origin'.",
+                "related_tags": [],
+                "usage_notes": "Utilisez 'no-referrer' pour maximiser la confidentialité de l'utilisateur.",
+                "seo_impact": "Affecte indirectement le SEO en modifiant les informations de provenance envoyées.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'referrer' avec 'no-referrer' pour protéger la confidentialité des utilisateurs.",
+                "common_mistakes": [
+                    "Ne pas spécifier de politique, laissant ainsi des informations sensibles exposées.",
+                    "Utiliser une valeur incorrecte ou inadaptée au contexte."
+                ],
+                "performance_tips": "Testez les effets des politiques sur les analyses web et les intégrations tierces.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "origin-trial",
+                "description": "Active temporairement des fonctionnalités expérimentales de la plateforme web, souvent utilisées pour les tests avant leur adoption générale.",
+                "compatibility": [
+                    "Chrome",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Firefox",
+                    "Safari"
+                ],
+                "creator": "Google",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://developer.chrome.com/docs/origin-trials/",
+                "examples": [
+                    "<meta http-equiv='origin-trial' content='TOKEN_PROVIDED_BY_GOOGLE'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Fonctionnalités Expérimentales",
+                    "Tests"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Doit inclure un jeton fourni par le fournisseur (par exemple, Google).",
+                "related_tags": [],
+                "usage_notes": "Réservé aux développeurs testant de nouvelles API ou fonctionnalités web.",
+                "seo_impact": "Aucun impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'origin-trial' pour activer des fonctionnalités expérimentales sur un domaine spécifique.",
+                "common_mistakes": [
+                    "Utiliser un jeton expiré ou incorrect.",
+                    "Oublier de désactiver après la période d'essai."
+                ],
+                "performance_tips": "Utilisez uniquement sur des environnements de test ou des pages spécifiques.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "x-download-options",
+                "description": "Suggère une gestion plus sécurisée des téléchargements pour empêcher l'exécution des fichiers téléchargés, en particulier avec 'noopen'.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Anciennes versions de navigateurs."
+                ],
+                "creator": "Microsoft",
+                "category": "HTTP",
+                "required": false,
+                "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Download-Options",
+                "examples": [
+                    "<meta http-equiv='X-Download-Options' content='noopen'>"
+                ],
+                "tags": [
+                    "HTTP",
+                    "Sécurité",
+                    "Téléchargements"
+                ],
+                "deprecated": false,
+                "default_value": "noopen",
+                "value_constraints": "Doit être 'noopen'.",
+                "related_tags": [],
+                "usage_notes": "Utilisez 'noopen' pour empêcher l'exécution automatique des fichiers téléchargés.",
+                "seo_impact": "Aucun impact direct sur le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'x-download-options' pour renforcer la sécurité des téléchargements.",
+                "common_mistakes": [
+                    "Ne pas inclure cette balise sur des pages permettant le téléchargement de fichiers.",
+                    "Utiliser une valeur autre que 'noopen'."
+                ],
+                "performance_tips": "Combinez avec d'autres en-têtes de sécurité pour un niveau de protection maximal.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            }
+        ],
+        "property": [
+            {
+                "attribute": "og:title",
+                "description": "Titre utilisé pour le partage sur les réseaux sociaux (Open Graph).",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": true,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:title' content='Apprenez les balises META'>",
+                    "<meta property='og:title' content='BoostifySEO - Le meilleur outil de balises META'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "SEO"
+                ],
+                "deprecated": false,
+                "default_value": "Titre de la page",
+                "value_constraints": "Chaîne de caractères de moins de 60 caractères",
+                "related_tags": [
+                    "og:description",
+                    "og:image"
+                ],
+                "usage_notes": "Utiliser des titres accrocheurs pour inciter au clic lors du partage.",
+                "seo_impact": "Améliore la visibilité sur les réseaux sociaux, ce qui peut indirectement influencer le SEO.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Lors du partage d'un article de blog, 'og:title' définit le titre affiché sur Facebook.",
+                "common_mistakes": [
+                    "Omettre le préfixe 'og:'",
+                    "Utiliser des titres trop longs"
+                ],
+                "performance_tips": "Assurez-vous que les balises Open Graph sont placées dans le <head> pour un chargement efficace.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:description",
+                "description": "Description affichée lors du partage sur les réseaux sociaux. Fournit un résumé attractif du contenu.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": true,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:description' content='Découvrez les meilleures pratiques SEO avec BoostifySEO.'>",
+                    "<meta property='og:description' content='Un guide complet pour améliorer votre présence en ligne.'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "SEO",
+                    "Description"
+                ],
+                "deprecated": false,
+                "default_value": "Résumé de la page",
+                "value_constraints": "Chaîne de caractères de moins de 200 caractères",
+                "related_tags": [
+                    "og:title",
+                    "og:image",
+                    "description"
+                ],
+                "usage_notes": "Assurez-vous que la description est concise, pertinente et incite à cliquer.",
+                "seo_impact": "Améliore l'engagement et le taux de clic lors du partage sur les réseaux sociaux.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Lors du partage sur Facebook ou Twitter, 'og:description' fournit un résumé du contenu affiché sous le titre.",
+                "common_mistakes": [
+                    "Ne pas inclure de description.",
+                    "Utiliser une description trop longue qui sera tronquée.",
+                    "Ne pas utiliser de mots-clés pertinents."
+                ],
+                "performance_tips": "Placez 'og:description' dans le <head> pour garantir un chargement optimal et un affichage correct sur les réseaux sociaux.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:image",
+                "description": "Lien vers l'image utilisée pour le partage sur les réseaux sociaux. Améliore l'attrait visuel lors du partage.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": true,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:image' content='https://example.com/image.jpg'>",
+                    "<meta property='og:image' content='https://example.com/featured-image.png'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Image",
+                    "Visuel"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Lien HTTPS valide pointant vers une image (PNG, JPEG ou GIF recommandé).",
+                "related_tags": [
+                    "og:description",
+                    "og:title",
+                    "og:image:alt"
+                ],
+                "usage_notes": "Assurez-vous que l'image est optimisée pour le web et dimensionnée correctement pour les réseaux sociaux (1200x630 pixels recommandé).",
+                "seo_impact": "Améliore la visibilité et l'engagement sur les réseaux sociaux grâce à un contenu visuel attrayant.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Lors du partage d'un article ou d'une page, 'og:image' spécifie l'image qui sera affichée en aperçu sur Facebook, Twitter, etc.",
+                "common_mistakes": [
+                    "Utiliser un lien cassé ou non valide.",
+                    "Fournir une image de mauvaise qualité ou avec une résolution insuffisante.",
+                    "Omettre de vérifier si l'image s'affiche correctement lors du partage."
+                ],
+                "performance_tips": "Utilisez un CDN pour héberger vos images afin d'assurer un chargement rapide et fiable.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:url",
+                "description": "URL canonique de la page pour Open Graph. Utilisée pour spécifier l'adresse exacte de la page à partager.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": true,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:url' content='https://example.com/page.html'>",
+                    "<meta property='og:url' content='https://example.com/article'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "URL"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Lien HTTPS valide pointant vers la page à partager.",
+                "related_tags": [
+                    "og:title",
+                    "og:description",
+                    "canonical"
+                ],
+                "usage_notes": "Assurez-vous que l'URL est canonique et correspond exactement à la page à partager pour éviter toute confusion.",
+                "seo_impact": "Renforce l'intégrité des liens partagés sur les réseaux sociaux et améliore le référencement en consolidant les partages vers une seule URL.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Lorsqu'une page est partagée, 'og:url' garantit que le lien redirige vers la version correcte de la page.",
+                "common_mistakes": [
+                    "Utiliser une URL non sécurisée (HTTP au lieu de HTTPS).",
+                    "Fournir une URL non canonique ou mal formatée.",
+                    "Oublier de mettre à jour l'URL après une migration ou un changement de structure du site."
+                ],
+                "performance_tips": "Toujours inclure l'URL complète avec HTTPS pour éviter les problèmes de compatibilité sur les réseaux sociaux.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:type",
+                "description": "Type de contenu, tel que 'article', 'website', ou 'video'. Définit la nature du contenu partagé.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": true,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:type' content='article'>",
+                    "<meta property='og:type' content='website'>",
+                    "<meta property='og:type' content='video'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Type de Contenu"
+                ],
+                "deprecated": false,
+                "default_value": "website",
+                "value_constraints": "Les valeurs autorisées incluent 'website', 'article', 'video', etc.",
+                "related_tags": [
+                    "og:title",
+                    "og:description",
+                    "og:image"
+                ],
+                "usage_notes": "Choisissez un type pertinent pour votre contenu pour garantir une meilleure catégorisation sur les réseaux sociaux.",
+                "seo_impact": "Améliore la contextualisation et la présentation du contenu lors du partage.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Lors du partage d'un article de blog, 'og:type' devrait être défini sur 'article'.",
+                "common_mistakes": [
+                    "Omettre de définir 'og:type', ce qui entraîne une interprétation incorrecte.",
+                    "Utiliser un type non standard ou invalide.",
+                    "Confondre les types (ex. : utiliser 'video' pour un article)."
+                ],
+                "performance_tips": "Validez le type avec des outils comme Facebook Debugger pour vérifier le rendu sur les réseaux sociaux.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:locale",
+                "description": "Locale de la page, par exemple 'en_US' ou 'fr_FR'. Indique la langue et la région associées au contenu.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:locale' content='en_US'>",
+                    "<meta property='og:locale' content='fr_FR'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Locale"
+                ],
+                "deprecated": false,
+                "default_value": "en_US",
+                "value_constraints": "Doit être au format langue_region, comme 'en_US' ou 'fr_FR'.",
+                "related_tags": [
+                    "og:title",
+                    "og:description",
+                    "og:site_name"
+                ],
+                "usage_notes": "Utilisez un code de locale cohérent avec le public cible de la page.",
+                "seo_impact": "Améliore la présentation localisée du contenu sur les réseaux sociaux.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Lors du partage d'une page en français, utilisez 'og:locale' avec la valeur 'fr_FR'.",
+                "common_mistakes": [
+                    "Utiliser un format incorrect comme 'fr' au lieu de 'fr_FR'.",
+                    "Oublier d'adapter la locale en cas de traduction du contenu."
+                ],
+                "performance_tips": "Si la page est multilingue, ajoutez des balises 'og:locale:alternate' pour chaque langue disponible.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:site_name",
+                "description": "Nom du site tel qu'il doit apparaître lors du partage. Fournit une identité claire pour la source du contenu.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:site_name' content='BoostifySEO'>",
+                    "<meta property='og:site_name' content='WebLocalis'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Nom du site"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Chaîne de caractères courte et descriptive (moins de 50 caractères recommandé).",
+                "related_tags": [
+                    "og:title",
+                    "og:description",
+                    "og:url"
+                ],
+                "usage_notes": "Assurez-vous que le nom du site est cohérent avec sa marque ou son identité.",
+                "seo_impact": "Renforce la crédibilité et la reconnaissance de votre marque lors du partage.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Lors du partage d'un article ou d'une page, 'og:site_name' affiche le nom du site en tant que source.",
+                "common_mistakes": [
+                    "Utiliser un nom trop long ou non descriptif.",
+                    "Ne pas aligner le nom avec celui utilisé dans d'autres plateformes ou contextes."
+                ],
+                "performance_tips": "Ajoutez une valeur claire et concise pour renforcer l'identité de votre marque.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:video",
+                "description": "URL vers un fichier vidéo représentant le contenu. Permet d'intégrer une vidéo lors du partage.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:video' content='https://example.com/video.mp4'>",
+                    "<meta property='og:video' content='https://cdn.example.com/promo-video.mp4'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Vidéo"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Lien HTTPS valide pointant vers une vidéo.",
+                "related_tags": [
+                    "og:video:type",
+                    "og:video:width",
+                    "og:video:height"
+                ],
+                "usage_notes": "Assurez-vous que la vidéo est hébergée sur un serveur rapide et compatible avec les réseaux sociaux.",
+                "seo_impact": "Améliore l'engagement et le temps passé sur la page lors du partage.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Lors du partage d'une page avec du contenu vidéo, 'og:video' spécifie le fichier vidéo intégré.",
+                "common_mistakes": [
+                    "Utiliser un lien non valide ou un fichier non pris en charge.",
+                    "Omettre d'inclure les dimensions de la vidéo avec 'og:video:width' et 'og:video:height'."
+                ],
+                "performance_tips": "Compressez les vidéos pour réduire leur taille et améliorer le temps de chargement.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:video:type",
+                "description": "Type MIME du fichier vidéo (par exemple, 'video/mp4'). Spécifie le format de la vidéo.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:video:type' content='video/mp4'>",
+                    "<meta property='og:video:type' content='video/webm'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Vidéo",
+                    "Type MIME"
+                ],
+                "deprecated": false,
+                "default_value": "video/mp4",
+                "value_constraints": "Doit être un type MIME valide comme 'video/mp4', 'video/webm', etc.",
+                "related_tags": [
+                    "og:video",
+                    "og:video:width",
+                    "og:video:height"
+                ],
+                "usage_notes": "Utilisez un type MIME supporté par les principaux navigateurs et réseaux sociaux.",
+                "seo_impact": "Assure une lecture fluide de la vidéo sur différentes plateformes.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'og:video:type' pour indiquer le format vidéo, par exemple 'video/mp4'.",
+                "common_mistakes": [
+                    "Oublier de spécifier le type MIME, ce qui peut entraîner des problèmes de compatibilité.",
+                    "Utiliser un type MIME non supporté comme 'video/avi'."
+                ],
+                "performance_tips": "Privilégiez les formats modernes comme MP4 ou WebM pour une meilleure compatibilité.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:video:width",
+                "description": "Largeur de la vidéo en pixels. Détermine les dimensions de l'aperçu vidéo.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:video:width' content='1920'>",
+                    "<meta property='og:video:width' content='1280'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Vidéo",
+                    "Dimensions"
+                ],
+                "deprecated": false,
+                "default_value": "1280",
+                "value_constraints": "Nombre entier indiquant la largeur en pixels.",
+                "related_tags": [
+                    "og:video:height",
+                    "og:video:type",
+                    "og:video"
+                ],
+                "usage_notes": "Ajoutez 'og:video:width' et 'og:video:height' pour définir les dimensions de la vidéo.",
+                "seo_impact": "Assure un affichage optimal de la vidéo sur les réseaux sociaux.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Pour une vidéo HD, utilisez une largeur de 1920 pixels.",
+                "common_mistakes": [
+                    "Utiliser des valeurs incorrectes ou incohérentes avec 'og:video:height'.",
+                    "Oublier de spécifier les dimensions, ce qui peut entraîner un mauvais rendu."
+                ],
+                "performance_tips": "Utilisez des dimensions optimisées pour les réseaux sociaux (par ex. : 1280x720 ou 1920x1080).",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:video:height",
+                "description": "Hauteur de la vidéo en pixels. Définit les dimensions de l'aperçu vidéo.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:video:height' content='1080'>",
+                    "<meta property='og:video:height' content='720'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Vidéo",
+                    "Dimensions"
+                ],
+                "deprecated": false,
+                "default_value": "720",
+                "value_constraints": "Nombre entier indiquant la hauteur en pixels.",
+                "related_tags": [
+                    "og:video:width",
+                    "og:video",
+                    "og:video:type"
+                ],
+                "usage_notes": "Ajoutez 'og:video:width' et 'og:video:height' ensemble pour spécifier les dimensions.",
+                "seo_impact": "Assure un affichage cohérent de la vidéo sur les réseaux sociaux.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Pour une vidéo HD, utilisez une hauteur de 1080 pixels.",
+                "common_mistakes": [
+                    "Oublier d'inclure 'og:video:width', ce qui entraîne des rendus incorrects.",
+                    "Utiliser des dimensions disproportionnées."
+                ],
+                "performance_tips": "Optimisez la hauteur en fonction des standards des réseaux sociaux, comme 720p ou 1080p.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:image:alt",
+                "description": "Texte alternatif pour l'image Open Graph. Fournit une description textuelle de l'image pour les lecteurs d'écran et en cas de chargement échoué.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:image:alt' content='Image de présentation pour BoostifySEO'>",
+                    "<meta property='og:image:alt' content='Capture d'écran de l'outil SEO'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Image",
+                    "Accessibilité"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Chaîne de caractères courte et descriptive.",
+                "related_tags": [
+                    "og:image",
+                    "og:title",
+                    "og:description"
+                ],
+                "usage_notes": "Assurez-vous que le texte alternatif décrit brièvement le contenu ou l'objectif de l'image.",
+                "seo_impact": "Améliore l'accessibilité et la compréhension des images par les moteurs de recherche.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Lorsqu'une image est partagée, 'og:image:alt' fournit un texte alternatif en cas de chargement échoué.",
+                "common_mistakes": [
+                    "Oublier d'inclure 'og:image:alt', ce qui réduit l'accessibilité.",
+                    "Utiliser un texte alternatif trop générique ou non descriptif."
+                ],
+                "performance_tips": "Utilisez des descriptions spécifiques pour maximiser l'accessibilité et l'engagement.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:image:width",
+                "description": "Largeur de l'image Open Graph en pixels. Détermine les dimensions de l'aperçu d'image.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:image:width' content='1200'>",
+                    "<meta property='og:image:width' content='800'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Image",
+                    "Dimensions"
+                ],
+                "deprecated": false,
+                "default_value": "1200",
+                "value_constraints": "Nombre entier indiquant la largeur en pixels.",
+                "related_tags": [
+                    "og:image:height",
+                    "og:image",
+                    "og:image:alt"
+                ],
+                "usage_notes": "Ajoutez 'og:image:width' et 'og:image:height' ensemble pour garantir un affichage optimal.",
+                "seo_impact": "Améliore la qualité visuelle des images partagées sur les réseaux sociaux.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Pour une image HD, utilisez une largeur de 1200 pixels.",
+                "common_mistakes": [
+                    "Utiliser des dimensions inexactes, entraînant un mauvais affichage.",
+                    "Oublier de spécifier 'og:image:height', ce qui peut causer des proportions incorrectes."
+                ],
+                "performance_tips": "Hébergez des images optimisées et respectez les recommandations des réseaux sociaux (exemple : 1200x630 pixels pour Facebook).",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "og:image:height",
+                "description": "Hauteur de l'image Open Graph en pixels. Détermine les dimensions de l'aperçu d'image.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Internet Explorer 11"
+                ],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='og:image:height' content='630'>",
+                    "<meta property='og:image:height' content='800'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Image",
+                    "Dimensions"
+                ],
+                "deprecated": false,
+                "default_value": "630",
+                "value_constraints": "Nombre entier indiquant la hauteur en pixels.",
+                "related_tags": [
+                    "og:image:width",
+                    "og:image",
+                    "og:image:alt"
+                ],
+                "usage_notes": "Ajoutez 'og:image:width' et 'og:image:height' ensemble pour garantir un affichage optimal.",
+                "seo_impact": "Améliore la qualité visuelle des images partagées sur les réseaux sociaux.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Pour une image HD, utilisez une hauteur de 630 pixels.",
+                "common_mistakes": [
+                    "Utiliser des dimensions incorrectes ou disproportionnées.",
+                    "Oublier d'inclure 'og:image:width', ce qui entraîne des rendus incorrects."
+                ],
+                "performance_tips": "Respectez les recommandations des réseaux sociaux, comme 1200x630 pixels pour Facebook.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "article:author",
+                "description": "Auteur de l'article, généralement un lien vers un profil ou un réseau social.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='article:author' content='https://www.example.com/profil/john-doe'>",
+                    "<meta property='article:author' content='https://twitter.com/johndoe'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Auteur"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "URL valide pointant vers le profil de l'auteur.",
+                "related_tags": [
+                    "article:published_time",
+                    "article:modified_time"
+                ],
+                "usage_notes": "Incluez un lien vers le profil professionnel ou personnel de l'auteur pour plus de crédibilité.",
+                "seo_impact": "Renforce l'autorité de l'article et la reconnaissance de l'auteur.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'article:author' pour attribuer clairement le contenu à un auteur spécifique.",
+                "common_mistakes": [
+                    "Fournir un lien invalide ou inexistant.",
+                    "Omettre d'inclure un auteur pour des articles importants."
+                ],
+                "performance_tips": "Assurez-vous que le lien de l'auteur est actif et pointe vers un profil complet.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "article:published_time",
+                "description": "Date et heure de publication de l'article au format ISO 8601.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": true,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='article:published_time' content='2025-01-21T10:00:00+00:00'>",
+                    "<meta property='article:published_time' content='2025-01-21T08:30:00+00:00'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Temps de publication"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Date et heure au format ISO 8601.",
+                "related_tags": [
+                    "article:modified_time",
+                    "og:title",
+                    "og:description"
+                ],
+                "usage_notes": "Utilisez le fuseau horaire correct pour refléter avec précision la publication.",
+                "seo_impact": "Améliore la contextualisation temporelle de l'article sur les réseaux sociaux.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'article:published_time' pour indiquer clairement la date de publication d'un article.",
+                "common_mistakes": [
+                    "Utiliser un format de date incorrect ou ambigu.",
+                    "Oublier d'inclure cette balise pour les articles importants."
+                ],
+                "performance_tips": "Assurez-vous que l'heure est synchronisée avec le fuseau horaire cible.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "article:modified_time",
+                "description": "Date et heure de la dernière modification de l'article au format ISO 8601.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='article:modified_time' content='2025-01-21T15:00:00+00:00'>",
+                    "<meta property='article:modified_time' content='2025-01-21T16:30:00+00:00'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Temps de modification"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Date et heure au format ISO 8601.",
+                "related_tags": [
+                    "article:published_time",
+                    "og:title",
+                    "og:description"
+                ],
+                "usage_notes": "Indiquez cette balise pour signaler que l'article a été mis à jour.",
+                "seo_impact": "Aide les moteurs de recherche à détecter les mises à jour du contenu.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'article:modified_time' pour signaler la mise à jour récente d'un article.",
+                "common_mistakes": [
+                    "Utiliser un format de date incorrect ou obsolète.",
+                    "Ne pas mettre à jour cette balise après une modification importante."
+                ],
+                "performance_tips": "Synchronisez cette balise avec les mises à jour réelles pour éviter les incohérences.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "article:section",
+                "description": "Section ou catégorie de l'article (par exemple, 'Technologie'). Spécifie la classification de l'article.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='article:section' content='Technologie'>",
+                    "<meta property='article:section' content='Santé'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Catégorie"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Chaîne de caractères définissant la catégorie de l'article.",
+                "related_tags": [
+                    "article:tag",
+                    "article:author"
+                ],
+                "usage_notes": "Utilisez une catégorie descriptive et pertinente pour le contenu.",
+                "seo_impact": "Améliore la catégorisation du contenu pour les réseaux sociaux.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'article:section' pour indiquer que l'article appartient à la section 'Technologie'.",
+                "common_mistakes": [
+                    "Utiliser des termes trop génériques ou imprécis.",
+                    "Oublier d'ajouter une section pour les articles complexes."
+                ],
+                "performance_tips": "Choisissez une section courte et descriptive pour maximiser la clarté.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "article:tag",
+                "description": "Mots-clés ou tags associés à l'article. Améliore la découverte et la classification du contenu.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Safari",
+                    "Edge"
+                ],
+                "incompatibility": [],
+                "creator": "Open Graph",
+                "category": "Social",
+                "required": false,
+                "reference": "https://ogp.me/",
+                "examples": [
+                    "<meta property='article:tag' content='SEO'>",
+                    "<meta property='article:tag' content='Marketing'>"
+                ],
+                "tags": [
+                    "Open Graph",
+                    "Réseaux Sociaux",
+                    "Tags"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Chaîne de caractères décrivant des mots-clés pertinents.",
+                "related_tags": [
+                    "article:section",
+                    "og:title",
+                    "og:description"
+                ],
+                "usage_notes": "Ajoutez plusieurs balises 'article:tag' pour couvrir différents mots-clés.",
+                "seo_impact": "Améliore la visibilité sur les réseaux sociaux grâce à une meilleure classification.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'article:tag' pour associer des mots-clés comme 'SEO', 'Marketing', ou 'Technologie'.",
+                "common_mistakes": [
+                    "Ajouter trop de tags, ce qui peut diluer la pertinence.",
+                    "Utiliser des tags non pertinents ou trop génériques."
+                ],
+                "performance_tips": "Limitez le nombre de tags pour garantir la pertinence et l'efficacité.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "twitter:card",
+                "description": "Type de carte Twitter à utiliser (par exemple, 'summary', 'summary_large_image').",
+                "compatibility": [
+                    "Twitter",
+                    "Chrome",
+                    "Firefox",
+                    "Safari"
+                ],
+                "incompatibility": [],
+                "creator": "Twitter",
+                "category": "Social",
+                "required": true,
+                "reference": "https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards",
+                "examples": [
+                    "<meta name='twitter:card' content='summary'>",
+                    "<meta name='twitter:card' content='summary_large_image'>"
+                ],
+                "tags": [
+                    "Twitter",
+                    "Réseaux Sociaux",
+                    "Cartes"
+                ],
+                "deprecated": false,
+                "default_value": "summary",
+                "value_constraints": "Valeurs acceptées : 'summary', 'summary_large_image', 'app', 'player'.",
+                "related_tags": [
+                    "twitter:title",
+                    "twitter:description",
+                    "twitter:image"
+                ],
+                "usage_notes": "Sélectionnez un type de carte adapté à votre contenu pour maximiser l'impact visuel.",
+                "seo_impact": "Améliore l'attrait visuel et l'engagement sur Twitter.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'twitter:card' avec 'summary_large_image' pour mettre en avant une grande image.",
+                "common_mistakes": [
+                    "Oublier d'inclure cette balise, ce qui entraîne un affichage par défaut.",
+                    "Utiliser une valeur incorrecte ou non supportée."
+                ],
+                "performance_tips": "Testez les cartes avec l'outil de validation Twitter Card Validator.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "twitter:title",
+                "description": "Titre du contenu pour les cartes Twitter. Correspond au titre affiché lors du partage.",
+                "compatibility": [
+                    "Twitter",
+                    "Chrome",
+                    "Firefox",
+                    "Safari"
+                ],
+                "incompatibility": [],
+                "creator": "Twitter",
+                "category": "Social",
+                "required": true,
+                "reference": "https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary",
+                "examples": [
+                    "<meta name='twitter:title' content='BoostifySEO - Le meilleur outil SEO'>",
+                    "<meta name='twitter:title' content='Apprenez à optimiser votre site web'>"
+                ],
+                "tags": [
+                    "Twitter",
+                    "Réseaux Sociaux",
+                    "Titre"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Titre descriptif de moins de 70 caractères.",
+                "related_tags": [
+                    "twitter:card",
+                    "twitter:description",
+                    "twitter:image"
+                ],
+                "usage_notes": "Créez un titre attrayant et pertinent pour inciter au clic.",
+                "seo_impact": "Améliore l'engagement et le taux de clics sur Twitter.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'twitter:title' pour afficher un titre optimisé lors du partage sur Twitter.",
+                "common_mistakes": [
+                    "Utiliser un titre trop long qui sera tronqué.",
+                    "Omettre d'inclure un titre, ce qui réduit l'impact visuel."
+                ],
+                "performance_tips": "Utilisez des mots-clés pertinents pour optimiser le titre pour les recherches sociales.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "twitter:description",
+                "description": "Description du contenu pour les cartes Twitter. Fournit un résumé court et attrayant du contenu partagé.",
+                "compatibility": [
+                    "Twitter",
+                    "Chrome",
+                    "Firefox",
+                    "Safari"
+                ],
+                "incompatibility": [],
+                "creator": "Twitter",
+                "category": "Social",
+                "required": true,
+                "reference": "https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary",
+                "examples": [
+                    "<meta name='twitter:description' content='Découvrez comment optimiser votre site pour le SEO.'>",
+                    "<meta name='twitter:description' content='Apprenez les meilleures pratiques de référencement.'>"
+                ],
+                "tags": [
+                    "Twitter",
+                    "Réseaux Sociaux",
+                    "Description"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Texte descriptif de moins de 200 caractères.",
+                "related_tags": [
+                    "twitter:title",
+                    "twitter:image",
+                    "twitter:card"
+                ],
+                "usage_notes": "Utilisez un texte clair et engageant pour inciter les utilisateurs à cliquer.",
+                "seo_impact": "Augmente le taux de clics sur Twitter grâce à une description convaincante.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'twitter:description' pour fournir un résumé optimisé du contenu.",
+                "common_mistakes": [
+                    "Utiliser une description trop longue qui sera tronquée.",
+                    "Oublier de mettre à jour la description après des modifications du contenu."
+                ],
+                "performance_tips": "Rédigez des descriptions uniques et spécifiques pour chaque page partagée.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "twitter:image",
+                "description": "URL de l'image à afficher dans les cartes Twitter. Permet d'ajouter un visuel attrayant à votre contenu.",
+                "compatibility": [
+                    "Twitter",
+                    "Chrome",
+                    "Firefox",
+                    "Safari"
+                ],
+                "incompatibility": [],
+                "creator": "Twitter",
+                "category": "Social",
+                "required": true,
+                "reference": "https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary",
+                "examples": [
+                    "<meta name='twitter:image' content='https://example.com/image.jpg'>",
+                    "<meta name='twitter:image' content='https://example.com/featured-image.png'>"
+                ],
+                "tags": [
+                    "Twitter",
+                    "Réseaux Sociaux",
+                    "Image"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Lien HTTPS valide pointant vers une image au format PNG, JPEG ou GIF.",
+                "related_tags": [
+                    "twitter:title",
+                    "twitter:description",
+                    "og:image"
+                ],
+                "usage_notes": "Choisissez une image de haute qualité et optimisée pour le partage.",
+                "seo_impact": "Améliore l'engagement et la visibilité sur Twitter grâce à des visuels attrayants.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'twitter:image' pour afficher une image captivante lors du partage.",
+                "common_mistakes": [
+                    "Utiliser une image de mauvaise qualité ou un lien non valide.",
+                    "Oublier d'adapter les dimensions aux recommandations de Twitter."
+                ],
+                "performance_tips": "Utilisez une taille d'image de 1200x628 pixels pour un rendu optimal.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "twitter:site",
+                "description": "Nom d'utilisateur Twitter du site ou de l'organisation. Ajoute de la crédibilité au contenu partagé.",
+                "compatibility": [
+                    "Twitter",
+                    "Chrome",
+                    "Firefox",
+                    "Safari"
+                ],
+                "incompatibility": [],
+                "creator": "Twitter",
+                "category": "Social",
+                "required": false,
+                "reference": "https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary",
+                "examples": [
+                    "<meta name='twitter:site' content='@BoostifySEO'>",
+                    "<meta name='twitter:site' content='@WebLocalis'>"
+                ],
+                "tags": [
+                    "Twitter",
+                    "Réseaux Sociaux",
+                    "Compte Twitter"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Doit être un nom d'utilisateur Twitter valide, commençant par '@'.",
+                "related_tags": [
+                    "twitter:creator",
+                    "twitter:title",
+                    "twitter:description"
+                ],
+                "usage_notes": "Incluez le nom d'utilisateur officiel de votre site ou organisation pour une meilleure visibilité.",
+                "seo_impact": "Améliore la crédibilité et la reconnaissance de la marque sur Twitter.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'twitter:site' pour mentionner votre compte officiel, comme '@BoostifySEO'.",
+                "common_mistakes": [
+                    "Utiliser un nom d'utilisateur invalide ou incorrect.",
+                    "Oublier d'inclure cette balise, ce qui réduit la crédibilité."
+                ],
+                "performance_tips": "Assurez-vous que le compte Twitter mentionné est actif et régulièrement mis à jour.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            {
+                "attribute": "twitter:creator",
+                "description": "Nom d'utilisateur Twitter du créateur du contenu. Identifie la personne responsable du contenu.",
+                "compatibility": [
+                    "Twitter",
+                    "Chrome",
+                    "Firefox",
+                    "Safari"
+                ],
+                "incompatibility": [],
+                "creator": "Twitter",
+                "category": "Social",
+                "required": false,
+                "reference": "https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary",
+                "examples": [
+                    "<meta name='twitter:creator' content='@JohnDoe'>",
+                    "<meta name='twitter:creator' content='@JaneSmith'>"
+                ],
+                "tags": [
+                    "Twitter",
+                    "Réseaux Sociaux",
+                    "Auteur"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Doit être un nom d'utilisateur Twitter valide, commençant par '@'.",
+                "related_tags": [
+                    "twitter:site",
+                    "twitter:title",
+                    "twitter:description"
+                ],
+                "usage_notes": "Incluez le nom d'utilisateur Twitter du créateur pour personnaliser le partage.",
+                "seo_impact": "Renforce la crédibilité du contenu en attribuant la création à une personne identifiable.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'twitter:creator' pour mentionner le compte personnel du créateur, comme '@JohnDoe'.",
+                "common_mistakes": [
+                    "Mentionner un compte inexistant ou incorrect.",
+                    "Ne pas inclure cette balise pour des contenus nécessitant une attribution personnelle."
+                ],
+                "performance_tips": "Assurez-vous que le créateur mentionné est actif sur Twitter pour renforcer l'engagement.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            }
+        ]
     }
-  ],
-    
-    
-
-
-
-
-"http-equiv": [
-  { 
-  "attribute": "content-type", 
-  "description": "Définit le type de contenu et l'encodage des caractères de la page.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-   
-  { "attribute": "expires", "description": "Indique la date d'expiration du contenu.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-  
-  { "attribute": "cache-control", "description": "Spécifie les règles de mise en cache pour la page.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
- 
-  { "attribute": "pragma", "description": "Définit des directives de mise en cache ; souvent utilisé avec 'no-cache'.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-
-  { "attribute": "x-ua-compatible", "description": "Spécifie le mode de compatibilité pour Internet Explorer (par exemple, 'IE=edge').",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-
-  { "attribute": "refresh", "description": "Définit un minuteur pour actualiser la page ou rediriger vers une autre URL.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-
-  { "attribute": "content-security-policy", "description": "Définit des règles de sécurité pour le contenu afin de prévenir les attaques XSS et autres vulnérabilités.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-
-  { "attribute": "default-style", "description": "Spécifie la feuille de style préférée à utiliser pour la page.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-
-  { "attribute": "set-cookie", "description": "Envoie des cookies du serveur au client dans les en-têtes de réponse.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-
-  { "attribute": "strict-transport-security", "description": "Force les navigateurs à utiliser des connexions HTTPS pour accéder au site.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-
-  { "attribute": "x-dns-prefetch-control", "description": "Contrôle si le navigateur doit effectuer une pré-résolution DNS pour les ressources liées.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-
-  { "attribute": "x-content-type-options", "description": "Empêche les navigateurs d'interpréter les fichiers comme un autre type MIME que celui déclaré (par exemple, 'nosniff').",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-
-  { "attribute": "x-frame-options", "description": "Empêche l'affichage de la page dans une frame ou iframe pour se protéger contre les attaques de clickjacking (par exemple, 'DENY' ou 'SAMEORIGIN').",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
- 
-  { "attribute": "x-permitted-cross-domain-policies", "description": "Définit comment le contenu peut être chargé par des requêtes cross-domain (par exemple, 'none', 'master-only').",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-
-  { "attribute": "referrer", "description": "Contrôle les informations envoyées dans l'en-tête Referer lors de la navigation vers une autre page.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-
-  { "attribute": "origin-trial", "description": "Active temporairement des fonctionnalités expérimentales de la plateforme web.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   },
-
-  { "attribute": "x-download-options", "description": "Suggère une gestion plus sécurisée des téléchargements pour empêcher l'exécution des fichiers téléchargés (par exemple, 'noopen').",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "HTTP"
-   }
-],
-
-
-    
-    
-    
-    
-    
-"property": [
-  { 
-  "attribute": "og:title", 
-  "description": "Titre utilisé pour le partage sur les réseaux sociaux (Open Graph).",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-  
-  { "attribute": "og:description", 
-  "description": "Description affichée lors du partage sur les réseaux sociaux.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-  
-  { "attribute": "og:image", 
-  "description": "Lien vers l'image utilisée pour le partage social.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-  
-  { "attribute": "og:url", 
-  "description": "URL canonique de la page pour Open Graph.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
- 
-  { "attribute": "og:type", 
-  "description": "Type de contenu, tel que 'article', 'website' ou 'video'.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
- 
-  { "attribute": "og:locale", 
-  "description": "Locale de la page, par exemple 'en_US' ou 'fr_FR'.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-  
-  { "attribute": "og:site_name", 
-  "description": "Nom du site tel qu'il doit apparaître lors du partage.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-
-  { "attribute": "og:video", 
-  "description": "URL vers un fichier vidéo représentant le contenu.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
- 
-  { "attribute": "og:video:type", 
-  "description": "Type MIME du fichier vidéo (par exemple, 'video/mp4').",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
- 
-  { "attribute": "og:video:width", 
-  "description": "Largeur de la vidéo en pixels.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-
-  { "attribute": "og:video:height", 
-  "description": "Hauteur de la vidéo en pixels.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-
-  { "attribute": "og:image:alt", 
-  "description": "Texte alternatif pour l'image Open Graph.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-
-  { "attribute": "og:image:width", 
-  "description": "Largeur de l'image Open Graph en pixels.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-
-  { "attribute": "og:image:height", 
-  "description": "Hauteur de l'image Open Graph en pixels.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-  },
- 
-  { "attribute": "article:author", 
-  "description": "Auteur de l'article, généralement un lien vers un profil ou un réseau social.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-  },
-
-  { "attribute": "article:published_time", 
-  "description": "Date et heure de publication de l'article au format ISO 8601.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-
-  { "attribute": "article:modified_time", 
-  "description": "Date et heure de la dernière modification de l'article au format ISO 8601.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-  },
-
-  { "attribute": "article:section", 
-  "description": "Section ou catégorie de l'article (par exemple, 'Technologie').",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-
-  { "attribute": "article:tag", 
-  "description": "Mots-clés ou tags associés à l'article.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-  },
-
-  { "attribute": "twitter:card", 
-  "description": "Type de carte Twitter à utiliser (par exemple, 'summary', 'summary_large_image').",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-
-  { "attribute": "twitter:title", 
-  "description": "Titre du contenu pour les cartes Twitter.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
- 
-  { "attribute": "twitter:description", 
-  "description": "Description du contenu pour les cartes Twitter.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-
-  { "attribute": "twitter:image", 
-  "description": "URL de l'image à afficher dans les cartes Twitter.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
- 
-  { "attribute": "twitter:site", 
-  "description": "Nom d'utilisateur Twitter du site ou de l'organisation.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   },
-
-  { "attribute": "twitter:creator", 
-  "description": "Nom d'utilisateur Twitter du créateur du contenu.",
-  "compatibility": ["", ""],
-    "incompatibility": ["", ""],
-    "creator": "",
-    "category": "Social"
-   }
-]
-  }
 }
