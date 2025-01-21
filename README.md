@@ -24,7 +24,6 @@ Ce projet offre une documentation complète des balises META pour optimiser vos 
 ---
 
 ## Installation
-
 1. Clonez votre fork du dépôt :
    ```bash
    git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
@@ -32,39 +31,28 @@ Ce projet offre une documentation complète des balises META pour optimiser vos 
 2. Configurez le dépôt distant pour synchroniser avec l'original :
    ```bash
    git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
+
 ---
 
 ## Contribuer
-
 Nous accueillons toutes les contributions avec plaisir ! 🚀
 
 Étapes pour contribuer :
-
 1. Forkez le projet.
-
-
 2. Clonez votre fork :
    ```bash
    git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
    cd meta-tags-repository
-
-
 3. Créez une branche pour vos modifications :
    ```bash
    git checkout -b feature/ma-nouvelle-fonctionnalite
-
-
 4. Apportez vos modifications, puis commitez-les :
    ```bash
    git add .
    git commit -m "Ajout de [description de votre modification]"
-
-
 5. Poussez vos modifications vers votre fork :
    ```bash
    ```bashgit push origin feature/ma-nouvelle-fonctionnalite
-
-
 6. Créez une Pull Request depuis GitHub :
    1. Accédez à votre fork.
    2. Cliquez sur **"Compare & pull request"**.
