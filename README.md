@@ -64,7 +64,6 @@ Pour plus de détails, consultez le fichier CONTRIBUTING.md.
 ---
 
 ## Feuille de route
-
 ### **Fonctionnalités déjà implémentées :**
 - [x] Documentation des balises SEO et HTTP.
 - [x] Compatibilité des navigateurs.
@@ -87,10 +86,36 @@ Pour plus de détails, consultez le fichier CONTRIBUTING.md.
   - Avec des tutoriels détaillés et des cas d’utilisation.
 
 ## Ressources et Références
-- [MDN Web Docs - Meta Tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)
-- [Open Graph Protocol](https://ogp.me/)
-- [Twitter Cards Documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
-- [Can I Use](https://caniuse.com/)
+
+### **Documentation Générale**
+- [MDN Web Docs - Meta Tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)  
+  Référence complète pour comprendre et utiliser les balises META.
+
+### **Partage sur les Réseaux Sociaux**
+- [Open Graph Protocol](https://ogp.me/)  
+  Documentation officielle pour les balises Open Graph utilisées par Facebook et d'autres plateformes.
+- [Twitter Cards Documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)  
+  Guide officiel pour configurer les balises Twitter Cards.
+
+### **Compatibilité des Navigateurs**
+- [Can I Use](https://caniuse.com/)  
+  Vérifiez la compatibilité des balises et des fonctionnalités avec les principaux navigateurs.
+
+### **Bonnes Pratiques SEO**
+- [Google Search Central - Meta Tags](https://developers.google.com/search/docs/advanced/crawling/special-tags)  
+  Conseils et recommandations de Google pour utiliser les balises META efficacement.
+- [Ahrefs Blog - A Guide to Meta Tags](https://ahrefs.com/blog/meta-tags/)  
+  Un guide pratique pour optimiser vos balises META pour le référencement.
+
+### **Accessibilité**
+- [W3C Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/)  
+  Standards pour rendre vos sites accessibles grâce aux balises META.
+
+### **Outils Pratiques**
+- [Meta Tags Tester](https://metatags.io/)  
+  Testez vos balises META et prévisualisez leur rendu sur les moteurs de recherche et réseaux sociaux.
+- [Meta Tags Generator](https://www.metatags.org/)  
+  Un outil simple pour générer des balises META.
 
 ## Licence
 Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plus d’informations.
