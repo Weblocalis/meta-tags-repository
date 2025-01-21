@@ -3,7 +3,7 @@ const path = require('path');
 
 // Paths
 const jsonFilePath = path.join(__dirname, '../data/meta-tags.json');
-const markdownFilePath = path.join(__dirname, '../docs/meta-tags.md');
+const markdownFilePath = path.join(__dirname, '../meta-tags-list/meta-tags.md');
 
 // Load JSON data
 const jsonData = require(jsonFilePath);
