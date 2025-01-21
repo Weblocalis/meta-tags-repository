@@ -31,7 +31,27 @@ Ce projet offre :
 - **Support multilingue :** Documentation disponible en plusieurs langues (ex. : anglais, français).
 - **Facilité de contribution :** Structure flexible pour ajouter de nouvelles balises ou traductions.
 
-## Forkez le projet via GitHub
+---
+
+### **7. Utilisation**
+Donnez des instructions claires sur l’utilisation du projet, y compris pour les contributeurs.
+
+## Utilisation
+1. Naviguez dans les catégories pour découvrir les balises META.
+2. Consultez les exemples et les compatibilités.
+3. Ajoutez vos propres balises en suivant le guide de contribution.
+
+Pour contribuer :
+- Modifiez le fichier `data/meta-tags.json`.
+- Ajoutez vos balises ou traductions dans le fichier JSON.
+
+
+
+
+## Contribuer
+Les contributions sont les bienvenues !
+
+### Forkez le projet via GitHub
 **Clonez votre fork**
 
 `git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
@@ -56,33 +76,6 @@ git commit -m "Ajout de [description de votre modification]"`
 
 Créez une Pull Request depuis GitHub
 
----
-
-### **7. Utilisation**
-Donnez des instructions claires sur l’utilisation du projet, y compris pour les contributeurs.
-
-## Utilisation
-1. Naviguez dans les catégories pour découvrir les balises META.
-2. Consultez les exemples et les compatibilités.
-3. Ajoutez vos propres balises en suivant le guide de contribution.
-
-Pour contribuer :
-- Modifiez le fichier `data/meta-tags.json`.
-- Ajoutez vos balises ou traductions dans le fichier JSON.
-
-
-
-
-## Contribuer
-Les contributions sont les bienvenues !
-
-1. Forkez le projet.
-2. Clonez votre fork.
-3. Créez une branche pour vos modifications :
-   ```bash
-   git checkout -b feature/your-feature
-   
-   
    ---
 
 ### **9. Feuille de route**
