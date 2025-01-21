@@ -32,25 +32,25 @@ Ce projet offre :
 - **Facilité de contribution :** Structure flexible pour ajouter de nouvelles balises ou traductions.
 
 
-# 1. Forkez le projet via GitHub
-# 2. Clonez votre fork
+## 1. Forkez le projet via GitHub
+- 2. Clonez votre fork
 git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
 cd meta-tags-repository
 
-# 3. Configurez le dépôt distant
+- 3. Configurez le dépôt distant
 git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
 
-# 4. Créez une branche pour vos modifications
+- 4. Créez une branche pour vos modifications
 git checkout -b feature/ma-nouvelle-fonctionnalite
 
-# 5. Faites vos modifications, puis commitez-les
+- 5. Faites vos modifications, puis commitez-les
 git add .
 git commit -m "Ajout de [description de votre modification]"
 
-# 6. Poussez les modifications
+- 6. Poussez les modifications
 git push origin feature/ma-nouvelle-fonctionnalite
 
-# 7. Créez une Pull Request depuis GitHub
+- 7. Créez une Pull Request depuis GitHub
 
 ---
 
