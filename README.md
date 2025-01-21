@@ -37,6 +37,8 @@ Ce projet offre :
    ```bash
    git clone https://github.com/Weblocalis/meta-tags-repository.git
 
+'''cd meta-tags-repository
+
 
 ---
 
