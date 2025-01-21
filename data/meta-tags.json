@@ -1,19 +1,98 @@
 {
-  "metaTypes": {
-    "name": [
-      { "attribute": "keywords", "description": "List of keywords for SEO." },
-      { "attribute": "description", "description": "A concise description of the page for search engines." },
-      { "attribute": "robots", "description": "Controls indexing and crawling by search engines." }
-    ],
-    "http-equiv": [
-      { "attribute": "content-type", "description": "Defines the content type and character encoding of the page." },
-      { "attribute": "expires", "description": "Indicates when the content expires." },
-      { "attribute": "cache-control", "description": "Specifies caching rules for the page." }
-    ],
-    "property": [
-      { "attribute": "og:title", "description": "Title used for social media sharing (Open Graph)." },
-      { "attribute": "og:description", "description": "Description displayed during social sharing." },
-      { "attribute": "og:image", "description": "Link to the image used for social sharing." }
-    ]
+"metaTypes": {
+  "name": [
+    { "attribute": "keywords", "description": "List of keywords for SEO." },
+    { "attribute": "description", "description": "A concise description of the page for search engines." },
+    { "attribute": "robots", "description": "Controls indexing and crawling by search engines." },
+    { "attribute": "author", "description": "Specifies the name of the author of the page." },
+    { "attribute": "viewport", "description": "Defines how the page should be displayed on mobile devices." },
+    { "attribute": "generator", "description": "Indicates the software used to generate the page." },
+    { "attribute": "revisit-after", "description": "Specifies the interval after which search engines should revisit the page." },
+    { "attribute": "rating", "description": "Indicates the content rating (e.g., General, Mature)." },
+    { "attribute": "distribution", "description": "Defines the intended distribution of the document (e.g., Global, Local)." },
+    { "attribute": "copyright", "description": "Displays copyright information for the page content." },
+    { "attribute": "language", "description": "Specifies the language of the content (e.g., 'en', 'fr')." },
+    { "attribute": "subject", "description": "Specifies the subject of the page." },
+    { "attribute": "coverage", "description": "Defines the geographical or temporal scope of the document." },
+    { "attribute": "topic", "description": "Specifies the main topic of the page." },
+    { "attribute": "summary", "description": "Provides a brief summary of the page content." },
+    { "attribute": "target", "description": "Specifies the intended rendering device (e.g., 'all', 'screen')." },
+    { "attribute": "HandheldFriendly", "description": "Indicates if the page is optimized for handheld devices." },
+    { "attribute": "MobileOptimized", "description": "Defines the width of the content for mobile optimization." },
+    { "attribute": "date", "description": "Specifies the date of publication or modification." },
+    { "attribute": "identifier-URL", "description": "Defines the canonical URL of the page." },
+    { "attribute": "reply-to", "description": "Specifies an email address for user feedback." },
+    { "attribute": "url", "description": "Specifies the URL of the page." },
+    { "attribute": "designer", "description": "Specifies the name of the page designer." },
+    { "attribute": "owner", "description": "Indicates the owner of the page." },
+    { "attribute": "DC.title", "description": "Defines the Dublin Core title of the page." },
+    { "attribute": "medium", "description": "Specifies the medium of the content (e.g., 'blog', 'news')." },
+    { "attribute": "syndication-source", "description": "Specifies the original source of the syndicated content." },
+    { "attribute": "original-source", "description": "Indicates the original source URL of the content." }
+  ],
+    
+    
+
+
+
+
+"http-equiv": [
+  { "attribute": "content-type", "description": "Defines the content type and character encoding of the page." },
+  { "attribute": "expires", "description": "Indicates when the content expires." },
+  { "attribute": "cache-control", "description": "Specifies caching rules for the page." },
+  { "attribute": "pragma", "description": "Sets directives for caching; often used with 'no-cache'." },
+  { "attribute": "x-ua-compatible", "description": "Specifies compatibility mode for Internet Explorer (e.g., 'IE=edge')." },
+  { "attribute": "refresh", "description": "Sets a timer to refresh the page or redirect to another URL." },
+  { "attribute": "content-security-policy", "description": "Defines rules for content security to prevent cross-site scripting (XSS) and other vulnerabilities." },
+  { "attribute": "default-style", "description": "Specifies the preferred stylesheet to use for the page." },
+  { "attribute": "set-cookie", "description": "Sends cookies from the server to the client in the response headers." },
+  { "attribute": "strict-transport-security", "description": "Forces browsers to use HTTPS connections to access the site." },
+  { "attribute": "x-dns-prefetch-control", "description": "Controls whether the browser should prefetch DNS queries for linked resources." },
+  { "attribute": "x-content-type-options", "description": "Prevents browsers from interpreting files as a different MIME type than declared (e.g., 'nosniff')." },
+  { "attribute": "x-frame-options", "description": "Prevents the page from being displayed in a frame or iframe to protect against clickjacking (e.g., 'DENY' or 'SAMEORIGIN')." },
+  { "attribute": "x-permitted-cross-domain-policies", "description": "Defines how content can be loaded by cross-domain requests (e.g., 'none', 'master-only')." },
+  { "attribute": "referrer", "description": "Controls the information sent in the Referer header when navigating to another page." },
+  { "attribute": "origin-trial", "description": "Enables experimental web platform features for a limited time." },
+  { "attribute": "x-download-options", "description": "Suggests safer download handling to prevent the execution of downloaded files (e.g., 'noopen')." }
+],
+
+
+    
+    
+    
+    
+    
+"property": [
+  { "attribute": "og:title", "description": "Title used for social media sharing (Open Graph)." },
+  { "attribute": "og:description", "description": "Description displayed during social sharing." },
+  { "attribute": "og:image", "description": "Link to the image used for social sharing." },
+  { "attribute": "og:url", "description": "Canonical URL of the page for Open Graph." },
+  { "attribute": "og:type", "description": "Type of content, such as 'article', 'website', or 'video'." },
+  { "attribute": "og:locale", "description": "The locale of the page, such as 'en_US' or 'fr_FR'." },
+  { "attribute": "og:site_name", "description": "Name of the website as it should appear during sharing." },
+  { "attribute": "og:video", "description": "URL to a video file to represent the content." },
+  { "attribute": "og:video:type", "description": "MIME type of the video file (e.g., 'video/mp4')." },
+  { "attribute": "og:video:width", "description": "Width of the video in pixels." },
+  { "attribute": "og:video:height", "description": "Height of the video in pixels." },
+  { "attribute": "og:image:alt", "description": "Alternative text for the Open Graph image." },
+  { "attribute": "og:image:width", "description": "Width of the Open Graph image in pixels." },
+  { "attribute": "og:image:height", "description": "Height of the Open Graph image in pixels." },
+  { "attribute": "article:author", "description": "Author of the article, usually a link to a profile or social media." },
+  { "attribute": "article:published_time", "description": "Publication date and time of the article in ISO 8601 format." },
+  { "attribute": "article:modified_time", "description": "Last modification date and time of the article in ISO 8601 format." },
+  { "attribute": "article:section", "description": "Section or category of the article (e.g., 'Technology')." },
+  { "attribute": "article:tag", "description": "Keywords or tags associated with the article." },
+  { "attribute": "twitter:card", "description": "Type of Twitter card to use (e.g., 'summary', 'summary_large_image')." },
+  { "attribute": "twitter:title", "description": "Title of the content for Twitter cards." },
+  { "attribute": "twitter:description", "description": "Description of the content for Twitter cards." },
+  { "attribute": "twitter:image", "description": "URL of the image to display in Twitter cards." },
+  { "attribute": "twitter:site", "description": "Twitter username of the website or organization." },
+  { "attribute": "twitter:creator", "description": "Twitter username of the content creator." }
+]    
+    
+    
+    
+    
+    
   }
 }
