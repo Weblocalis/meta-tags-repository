@@ -106,6 +106,22 @@ Nous accueillons toutes les contributions avec plaisir ! 🚀
 
 Pour plus de détails, consultez le fichier CONTRIBUTING.md.
 
+## Comment contribuer ?
+
+Nous acceptons toutes les suggestions pour enrichir notre base de balises META. Pour proposer une nouvelle balise ou améliorer une existante :
+
+1. Rendez-vous sur [Issues GitHub](https://github.com/Weblocalis/meta-tags-repository/issues).
+2. Cliquez sur **New Issue**.
+3. Fournissez les détails suivants :
+   - Nom de la balise (attribute).
+   - Description de son rôle.
+   - Catégorie appropriée (SEO, Mobile, HTTP, etc.).
+   - Informations de compatibilité (navigateurs supportés ou non).
+   - Toute autre information pertinente.
+4. Envoyez votre proposition.
+
+Merci de contribuer à améliorer ce projet !
+
 ---
 
 ## Feuille de route
