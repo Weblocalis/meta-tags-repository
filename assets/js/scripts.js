@@ -12,7 +12,7 @@ fetch('data/meta-tags.json')
 
       // Add section title
       section.innerHTML = `
-        <h2 class="text-uppercase">${type}</h2>
+        <h2>${type}</h2>
         <div class="row">
           ${metaTypes[type]
             .map(tag => `

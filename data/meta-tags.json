@@ -1,6 +1,6 @@
 {
 "metaTypes": {
-  "name": [
+  "Attribut name": [
     { "attribute": "keywords", "description": "Liste de mots-clés pour le SEO." },
     { "attribute": "description", "description": "Une description concise de la page pour les moteurs de recherche." },
     { "attribute": "robots", "description": "Contrôle l'indexation et l'exploration par les moteurs de recherche." },
@@ -36,7 +36,7 @@
 
 
 
-"http-equiv": [
+"Attribut http-equiv": [
   { "attribute": "content-type", "description": "Définit le type de contenu et l'encodage des caractères de la page." },
   { "attribute": "expires", "description": "Indique la date d'expiration du contenu." },
   { "attribute": "cache-control", "description": "Spécifie les règles de mise en cache pour la page." },
@@ -62,7 +62,7 @@
     
     
     
-"property": [
+"Attributs property": [
   { "attribute": "og:title", "description": "Titre utilisé pour le partage sur les réseaux sociaux (Open Graph)." },
   { "attribute": "og:description", "description": "Description affichée lors du partage sur les réseaux sociaux." },
   { "attribute": "og:image", "description": "Lien vers l'image utilisée pour le partage social." },
