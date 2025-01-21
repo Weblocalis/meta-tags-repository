@@ -37,20 +37,24 @@ Clonez votre fork
 git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
 cd meta-tags-repository
 
-3. Configurez le dépôt distant
+Configurez le dépôt distant
+'''bash
 git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
 
-4. Créez une branche pour vos modifications
+Créez une branche pour vos modifications
+'''bash
 git checkout -b feature/ma-nouvelle-fonctionnalite
 
-5. Faites vos modifications, puis commitez-les
+Faites vos modifications, puis commitez-les
+'''bash
 git add .
 git commit -m "Ajout de [description de votre modification]"
 
-6. Poussez les modifications
+'''bash
+Poussez les modifications
 git push origin feature/ma-nouvelle-fonctionnalite
 
-7. Créez une Pull Request depuis GitHub
+Créez une Pull Request depuis GitHub
 
 
 ---
