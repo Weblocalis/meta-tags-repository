@@ -34,3 +34,18 @@ fetch('data/meta-tags.json')
     });
   })
   .catch(error => console.error('Error loading meta-tags.json:', error));
+  
+  
+
+const searchInput = document.getElementById('search-input');
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.toLowerCase();
+  document.querySelectorAll('.meta-card').forEach(card => {
+    const title = card.querySelector('.card-title').textContent.toLowerCase();
+    card.style.display = title.includes(query) ? '' : 'none';
+  });
+});
+
+
+
+

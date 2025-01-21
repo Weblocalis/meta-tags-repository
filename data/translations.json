@@ -1,0 +1,24 @@
+{
+  "en": {
+    "title": "META Tags Documentation",
+    "description": "This document is generated automatically from meta-tags.json.",
+    "sections": {
+      "name": "Name",
+      "http-equiv": "HTTP-EQUIV",
+      "property": "Property"
+    },
+    "copyButton": "Copy",
+    "backToTop": "Back to Top"
+  },
+  "fr": {
+    "title": "Documentation des balises META",
+    "description": "Ce document est généré automatiquement à partir de meta-tags.json.",
+    "sections": {
+      "name": "Nom",
+      "http-equiv": "HTTP-EQUIV",
+      "property": "Propriété"
+    },
+    "copyButton": "Copier",
+    "backToTop": "Retour en haut"
+  }
+}
