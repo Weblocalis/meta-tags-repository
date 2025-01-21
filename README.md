@@ -95,7 +95,7 @@ Ce projet vise à créer une référence complète et détaillée sur les balise
 
 Chaque entrée doit suivre ce format JSON standard :
 
-  ```json
+
   {
   "attribute": "Nom de la balise META",
   "description": "Description détaillée de la balise.",
@@ -123,9 +123,9 @@ Chaque entrée doit suivre ce format JSON standard :
   "last_updated": "YYYY-MM-DD"
 }
 
-Merci de contribuer à améliorer ce projet !
+  Merci de contribuer à améliorer ce projet !
 
----
+  ---
 
 ## Feuille de route
 ### **Fonctionnalités déjà implémentées :**
