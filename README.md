@@ -33,6 +33,7 @@ Ce projet offre :
 
 ## Forkez le projet via GitHub
 Clonez votre fork
+```bash
 git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
 cd meta-tags-repository
 
