@@ -83,7 +83,6 @@ Les contributions sont les bienvenues !
 ### **9. Feuille de route**
 Donnez une vision à long terme pour motiver les contributeurs.
 
-```markdown
 ## Feuille de route
 - [x] Documentation des balises SEO et HTTP.
 - [x] Compatibilité des navigateurs.
