@@ -23,6 +23,32 @@ Ce projet offre une documentation complète des balises META pour optimiser vos 
 
 ---
 
+## Installation
+
+1. Clonez votre fork du dépôt :
+   ```bash
+   git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
+   cd meta-tags-repository
+
+2. Configurez le dépôt distant pour synchroniser avec l'original :
+
+git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
+
+
+3. Installez les dépendances (si nécessaire) :
+
+npm install
+
+
+4. Lancez le projet localement :
+
+npm start
+
+
+
+
+---
+
 ## Contribuer
 Les contributions sont les bienvenues !
 
