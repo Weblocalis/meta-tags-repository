@@ -14,12 +14,17 @@ Ce projet offre une documentation complète des balises META pour optimiser vos 
 - Une interface claire pour explorer et comprendre chaque balise.
 - Des exemples d’utilisation et des informations de compatibilité.
 
-## Caractéristiques
-- **Documentation structurée :** Balises classées par usage (SEO, HTTP, Mobile, etc.).
-- **Compatibilité des navigateurs :** Indication des compatibilités et incompatibilités.
-- **Exemples concrets :** Modèles prêts à copier pour chaque balise.
-- **Support multilingue :** Documentation disponible en plusieurs langues (ex. : anglais, français).
-- **Facilité de contribution :** Structure flexible pour ajouter de nouvelles balises ou traductions.
+## Fonctionnalités
+
+- Documentation des balises META, classées par catégories :
+  - SEO et Indexation
+  - Optimisation mobile
+  - Partage sur les réseaux sociaux
+  - Balises personnalisées
+- **Compatibilité des navigateurs** : Informations sur les navigateurs supportés.
+- **Exemples prêts à l'emploi** : Copiez facilement les balises dans vos projets.
+- **Multilingue** : Support des langues (actuellement Français et Anglais).
+- **Contributions ouvertes** : Ajoutez vos propres balises ou traductions.
 
 ---
 
