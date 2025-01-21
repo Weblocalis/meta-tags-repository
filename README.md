@@ -36,8 +36,6 @@ Ce projet offre :
 1. Clonez le dépôt :
    ```bash
    git clone https://github.com/Weblocalis/meta-tags-repository.git
-
-'''bash
 cd meta-tags-repository
 
 
