@@ -38,17 +38,17 @@ Ce projet offre :
 cd meta-tags-repository`
 
 **Configurez le dépôt distant**
-git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git
+`git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git`
 
 **Créez une branche pour vos modifications**
-git checkout -b feature/ma-nouvelle-fonctionnalite
+`git checkout -b feature/ma-nouvelle-fonctionnalite`
 
 **Faites vos modifications, puis commitez-les**
-git add .
-git commit -m "Ajout de [description de votre modification]"
+`git add .
+git commit -m "Ajout de [description de votre modification]"`
 
 **Poussez les modifications**
-git push origin feature/ma-nouvelle-fonctionnalite
+`git push origin feature/ma-nouvelle-fonctionnalite`
 
 Créez une Pull Request depuis GitHub
 
