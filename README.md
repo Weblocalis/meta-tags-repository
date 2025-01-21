@@ -118,4 +118,15 @@ Pour plus de détails, consultez le fichier CONTRIBUTING.md.
   Un outil simple pour générer des balises META.
 
 ## Licence
-Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plus d’informations.
+
+Ce projet est sous licence **MIT**. Cela signifie que vous êtes libre de l'utiliser, le modifier et le distribuer, tant que vous incluez une copie de la licence d'origine.  
+
+Consultez le fichier [LICENSE](LICENSE) pour plus d’informations sur les droits et obligations liés à cette licence.  
+
+**Résumé de la licence :**
+- Vous pouvez utiliser ce projet à des fins personnelles ou commerciales.
+- Vous pouvez modifier le projet selon vos besoins.
+- Vous devez inclure une attribution au projet d'origine si vous le redistribuez.
+- Le projet est fourni "tel quel", sans garantie d'aucune sorte.
+
+Nous encourageons également les contributions pour enrichir et améliorer ce projet. Consultez la section [Contribuer](#contribuer) pour savoir comment participer.
