@@ -38,6 +38,7 @@ Ce projet offre :
 cd meta-tags-repository`
 
 **Configurez le dépôt distant**
+
 `git remote add upstream https://github.com/Weblocalis/meta-tags-repository.git`
 
 **Créez une branche pour vos modifications**
