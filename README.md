@@ -63,24 +63,43 @@ Pour plus de détails, consultez le fichier CONTRIBUTING.md.
 
 ---
 
-
-### **9. Feuille de route**
-Donnez une vision à long terme pour motiver les contributeurs.
-
 ## Feuille de route
+
+### **Fonctionnalités déjà implémentées :**
 - [x] Documentation des balises SEO et HTTP.
 - [x] Compatibilité des navigateurs.
-- [ ] Ajout de nouvelles catégories de balises.
-- [ ] Traductions supplémentaires (ex. : espagnol, allemand).
-- [ ] Intégration avec des outils de validation.
+- [x] Support multilingue (Français et Anglais).
 
+### **Fonctionnalités à venir :**
+- [ ] Ajout de nouvelles catégories de balises :
+  - [ ] Balises liées à l'accessibilité (WCAG).
+  - [ ] Balises pour les Progressive Web Apps (PWA).
+  - [ ] Balises expérimentales et spécifiques à certains navigateurs.
+- [ ] Traductions supplémentaires :
+  - [ ] Espagnol.
+  - [ ] Allemand.
+  - [ ] Autres langues selon les contributions.
+- [ ] Intégration avec des outils de validation :
+  - [ ] Détection des balises obsolètes ou incorrectes.
+  - [ ] Recommandations automatiques pour améliorer les balises.
+- [ ] Amélioration de l'interface utilisateur :
+  - [ ] Ajout de filtres par catégorie et compatibilité.
+  - [ ] Mode sombre pour la lecture.
+  - [ ] Aperçu interactif des balises.
+
+### **Projets futurs :**
+- [ ] Développement d'un générateur automatique de balises META :
+  - Basé sur les besoins des utilisateurs (SEO, réseaux sociaux, HTTP, etc.).
+- [ ] Création d'un guide interactif pour chaque balise :
+  - Avec des tutoriels détaillés et des cas d’utilisation.
+- [ ] Intégration avec des services tiers :
+  - Validation avec Google, Facebook (Open Graph) et Twitter (Twitter Cards).
 
 ## Ressources et Références
 - [MDN Web Docs - Meta Tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)
 - [Open Graph Protocol](https://ogp.me/)
 - [Twitter Cards Documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 - [Can I Use](https://caniuse.com/)
-
 
 ## Licence
 Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plus d’informations.
