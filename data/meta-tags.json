@@ -1,0 +1,19 @@
+{
+  "metaTypes": {
+    "name": [
+      { "attribute": "keywords", "description": "List of keywords for SEO." },
+      { "attribute": "description", "description": "A concise description of the page for search engines." },
+      { "attribute": "robots", "description": "Controls indexing and crawling by search engines." }
+    ],
+    "http-equiv": [
+      { "attribute": "content-type", "description": "Defines the content type and character encoding of the page." },
+      { "attribute": "expires", "description": "Indicates when the content expires." },
+      { "attribute": "cache-control", "description": "Specifies caching rules for the page." }
+    ],
+    "property": [
+      { "attribute": "og:title", "description": "Title used for social media sharing (Open Graph)." },
+      { "attribute": "og:description", "description": "Description displayed during social sharing." },
+      { "attribute": "og:image", "description": "Link to the image used for social sharing." }
+    ]
+  }
+}

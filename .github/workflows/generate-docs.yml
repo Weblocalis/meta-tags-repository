@@ -1,0 +1,33 @@
+name: Generate Documentation
+
+on:
+  push:
+    paths:
+      - 'data/meta-tags.json'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Generate Markdown documentation
+      run: node scripts/generate-markdown.js
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add docs/meta-tags.md
+        git commit -m "Update META tags documentation"
+        git push
