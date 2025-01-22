@@ -15,20 +15,32 @@ fetch('data/meta-tags.json')
         <h2>${type}</h2>
         <div class="row">
           ${metaTypes[type]
-            .map(tag => `
-              <div class="col-12">
-                <div class="card meta-card">
-                  <div class="card-body">
-                    <h5 class="card-title">${tag.attribute}</h5>
-                    <p class="card-text">${tag.description}</p>
-                    <pre class="code-block">
-<span class="tag">&lt;meta</span> <span class="attribute">${type}</span>=<span class="value">"${tag.attribute}"</span> 
-      <span class="attribute">content</span>=<span class="value">"..."</span><span class="tag">&gt;</span>
+            .map(tag => {
+              // Détermine le bon attribut à utiliser
+              let attributeType = 'name'; // Par défaut
+              if (tag.attribute.startsWith('og:') || tag.attribute.startsWith('twitter:')) {
+                attributeType = 'property';
+              } else if (tag.attribute.startsWith('DC.')) {
+                attributeType = 'name'; // Dublin Core utilise 'name'
+              } else if (tag.category === 'HTTP') {
+                attributeType = 'http-equiv';
+              }
+
+              return `
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card meta-card">
+                    <div class="card-body">
+                      <h5 class="card-title">${tag.attribute}</h5>
+                      <p class="card-text">${tag.description || 'No description available.'}</p>
+<pre class="code-block">
+<span class="tag">&lt;meta</span> <span class="attribute">${attributeType}</span>=<span class="value">"${tag.attribute}"</span> 
+<span class="attribute">content</span>=<span class="value">"${tag.default_value || '...'}"</span><span class="tag">&gt;</span>
 </pre>
+                    </div>
                   </div>
                 </div>
-              </div>
-            `)
+              `;
+            })
             .join('')}
         </div>
       `;
@@ -37,7 +49,6 @@ fetch('data/meta-tags.json')
     });
   })
   .catch(error => console.error('Error loading meta-tags.json:', error));
-  
   
 
 const searchInput = document.getElementById('search-input');

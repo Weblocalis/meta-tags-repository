@@ -1,5 +1,661 @@
 {
     "metaTypes": {
+        "metaTagsDublinCore": [
+         {
+                "attribute": "DC.title",
+                "description": "Définit le titre de la page selon les normes Dublin Core.",
+                "compatibility": [
+                    "Chrome",
+                    "Firefox",
+                    "Edge"
+                ],
+                "incompatibility": [
+                    "Safari"
+                ],
+                "creator": "Dublin Core Metadata Initiative",
+                "category": "Metadata",
+                "required": false,
+                "reference": "https://www.dublincore.org/",
+                "examples": [
+                    "<meta name='DC.title' content='Introduction to META Tags'>"
+                ],
+                "tags": [
+                    "Dublin Core",
+                    "Title",
+                    "Metadata"
+                ],
+                "deprecated": false,
+                "default_value": "",
+                "value_constraints": "Titre textuel court et descriptif.",
+                "related_tags": [
+                    "title",
+                    "og:title"
+                ],
+                "usage_notes": "Utilisé pour les normes de métadonnées interopérables.",
+                "seo_impact": "Peu d'impact direct, mais utile pour des normes spécifiques.",
+                "last_updated": "2025-01-21",
+                "deprecated_alternatives": [],
+                "example_usage": "Ajoutez 'DC.title' pour répondre aux normes Dublin Core.",
+                "common_mistakes": [
+                    "Confondre avec la balise 'title'.",
+                    "Utiliser des titres trop longs ou vagues."
+                ],
+                "performance_tips": "Incluez cette balise si votre public cible utilise des standards Dublin Core.",
+                "status": "",
+                "importance": "",
+                "legal_implications": "",
+                "accessibility_notes": ".",
+                "maintenance": "",
+                "security_risks": "",
+                "future_proofing": "",
+                "internationalization": ""
+            },
+            
+            
+            
+            
+            
+        {
+    "attribute": "DC.identifier",
+    "description": "Identifie de manière unique une ressource, comme une page web ou un document. Utilisé principalement dans les métadonnées Dublin Core.",
+    "compatibility": [
+        "Chrome",
+        "Firefox",
+        "Edge"
+    ],
+    "incompatibility": [
+        "Safari",
+        "Internet Explorer"
+    ],
+    "creator": "Dublin Core Metadata Initiative",
+    "category": "Metadata",
+    "required": false,
+    "reference": "https://www.dublincore.org/specifications/",
+    "examples": [
+        "<meta name='DC.identifier' content='https://example.com/page1'>",
+        "<meta name='DC.identifier' content='doi:10.1234/abcd1234'>"
+    ],
+    "tags": [
+        "Dublin Core",
+        "Metadata",
+        "Identification"
+    ],
+    "deprecated": false,
+    "default_value": "",
+    "value_constraints": "Chaîne de caractères représentant un identifiant unique tel qu'une URL ou un DOI.",
+    "related_tags": [
+        "DC.title",
+        "DC.subject"
+    ],
+    "usage_notes": "Utile pour les bases de données académiques ou bibliographiques pour identifier des documents ou des pages web de manière unique.",
+    "seo_impact": "Aucun impact direct sur le SEO, mais améliore l'interopérabilité avec des systèmes tiers.",
+    "last_updated": "2025-01-21",
+    "deprecated_alternatives": [],
+    "example_usage": "Ajoutez un identifiant unique pour vos contenus comme un DOI pour des articles scientifiques.",
+    "common_mistakes": [
+        "Fournir un identifiant non valide ou mal formaté.",
+        "Utiliser des chaînes non uniques comme identifiant."
+    ],
+    "performance_tips": "Assurez-vous que les identifiants sont courts et conformes aux normes Dublin Core.",
+    "status": "",
+    "importance": "",
+    "legal_implications": "Peut nécessiter une conformité avec des normes académiques ou institutionnelles.",
+    "accessibility_notes": "N'a pas d'impact direct sur l'accessibilité, mais peut faciliter la recherche de contenu.",
+    "maintenance": "Les identifiants doivent être mis à jour si l'URL ou le contenu change.",
+    "security_risks": "L'utilisation d'un identifiant incorrect pourrait entraîner une confusion ou une duplication des données.",
+    "future_proofing": "Cette balise est conforme aux normes actuelles et peu susceptible d'être dépréciée.",
+    "internationalization": "Recommandé de fournir des identifiants globaux, tels que des DOI ou URN, pour éviter les problèmes liés aux langues ou régions."
+},
+
+{
+    "attribute": "DC.description",
+    "description": "Une description textuelle résumant le contenu ou l'objet de la ressource. Utilisé dans les métadonnées Dublin Core.",
+    "compatibility": [
+        "Chrome",
+        "Firefox",
+        "Edge"
+    ],
+    "incompatibility": [
+        "Safari",
+        "Internet Explorer"
+    ],
+    "creator": "Dublin Core Metadata Initiative",
+    "category": "Metadata",
+    "required": false,
+    "reference": "https://www.dublincore.org/specifications/",
+    "examples": [
+        "<meta name='DC.description' content='Un guide détaillé sur les balises META.'>",
+        "<meta name='DC.description' content='Article scientifique sur le changement climatique.'>"
+    ],
+    "tags": [
+        "Dublin Core",
+        "Metadata",
+        "Description"
+    ],
+    "deprecated": false,
+    "default_value": "",
+    "value_constraints": "Chaîne de caractères décrivant la ressource de manière concise.",
+    "related_tags": [
+        "DC.title",
+        "DC.subject",
+        "description"
+    ],
+    "usage_notes": "Utilisé dans les bases de données bibliographiques ou académiques pour fournir une description concise de la ressource.",
+    "seo_impact": "Faible impact direct sur le SEO, mais utile pour les systèmes qui exploitent Dublin Core.",
+    "last_updated": "2025-01-21",
+    "deprecated_alternatives": [],
+    "example_usage": "Ajoutez une description claire et précise pour une meilleure interopérabilité des métadonnées.",
+    "common_mistakes": [
+        "Fournir une description vague ou générique.",
+        "Utiliser cette balise sans inclure d'autres balises Dublin Core associées."
+    ],
+    "performance_tips": "Assurez-vous que la description est concise et pertinente pour le contenu.",
+    "status": "",
+    "importance": "",
+    "legal_implications": "Peut être utilisée pour se conformer aux normes institutionnelles ou académiques.",
+    "accessibility_notes": "Améliore la compréhension et l'accessibilité du contenu dans les bases de données interopérables.",
+    "maintenance": "Mettre à jour la description si le contenu de la ressource change.",
+    "security_risks": "Aucun risque direct, mais une description incorrecte peut induire en erreur les utilisateurs.",
+    "future_proofing": "Cette balise est conforme aux normes actuelles et peu susceptible d'être dépréciée.",
+    "internationalization": "Aucune contrainte particulière, mais la description doit être dans la langue de la ressource."
+},
+
+
+
+
+
+
+{
+    "attribute": "DC.subject",
+    "description": "Liste de mots-clés ou de phrases décrivant les sujets ou thèmes principaux de la ressource. Utilisé dans les métadonnées Dublin Core.",
+    "compatibility": [
+        "Chrome",
+        "Firefox",
+        "Edge"
+    ],
+    "incompatibility": [
+        "Safari",
+        "Internet Explorer"
+    ],
+    "creator": "Dublin Core Metadata Initiative",
+    "category": "Metadata",
+    "required": false,
+    "reference": "https://www.dublincore.org/specifications/",
+    "examples": [
+        "<meta name='DC.subject' content='Développement Web, SEO, Balises META'>",
+        "<meta name='DC.subject' content='Science, Technologie, Éducation'>"
+    ],
+    "tags": [
+        "Dublin Core",
+        "Metadata",
+        "Sujets"
+    ],
+    "deprecated": false,
+    "default_value": "",
+    "value_constraints": "Liste de mots ou phrases séparés par des virgules. Chaque mot-clé doit être pertinent.",
+    "related_tags": [
+        "DC.description",
+        "DC.title",
+        "keywords"
+    ],
+    "usage_notes": "Utilisé pour indexer la ressource par sujet ou thème dans les bases de données académiques ou bibliographiques.",
+    "seo_impact": "Faible impact direct sur le SEO, mais améliore la catégorisation et l'accessibilité dans les systèmes utilisant Dublin Core.",
+    "last_updated": "2025-01-21",
+    "deprecated_alternatives": [],
+    "example_usage": "Ajoutez des mots-clés spécifiques et pertinents pour le contenu afin d'améliorer son interopérabilité.",
+    "common_mistakes": [
+        "Ajouter des mots-clés non pertinents ou trop vagues.",
+        "Laisser des espaces ou des virgules inutiles sans valeur réelle."
+    ],
+    "performance_tips": "Gardez les mots-clés courts, spécifiques et pertinents pour éviter des ambiguïtés.",
+    "status": "",
+    "importance": "",
+    "legal_implications": "Peut nécessiter une validation pour respecter les normes académiques ou institutionnelles.",
+    "accessibility_notes": "Améliore la recherche et l'accès au contenu dans des bases de données interopérables.",
+    "maintenance": "Mettez à jour les mots-clés si le contenu ou le thème principal de la ressource change.",
+    "security_risks": "Aucun risque direct, mais des mots-clés incorrects ou trompeurs peuvent nuire à la fiabilité de la ressource.",
+    "future_proofing": "Cette balise est conforme aux normes actuelles et peu susceptible d'être dépréciée.",
+    "internationalization": "Les mots-clés doivent être adaptés à la langue principale du contenu."
+},
+
+
+
+{
+    "attribute": "DC.language",
+    "description": "Spécifie la langue principale de la ressource conformément aux normes Dublin Core.",
+    "compatibility": [
+        "Chrome",
+        "Firefox",
+        "Edge"
+    ],
+    "incompatibility": [
+        "Internet Explorer"
+    ],
+    "creator": "Dublin Core Metadata Initiative",
+    "category": "Metadata",
+    "required": false,
+    "reference": "https://www.dublincore.org/specifications/",
+    "examples": [
+        "<meta name='DC.language' scheme='ISO639-1' content='fr'>",
+        "<meta name='DC.language' scheme='ISO639-1' content='en'>"
+    ],
+    "tags": [
+        "Dublin Core",
+        "Metadata",
+        "Langue"
+    ],
+    "deprecated": false,
+    "default_value": "",
+    "value_constraints": "Code de langue conforme au standard ISO 639-1 (par exemple, 'en' pour anglais, 'fr' pour français).",
+    "related_tags": [
+        "DC.description",
+        "DC.title"
+    ],
+    "usage_notes": "Cette balise est utile pour spécifier la langue de la ressource dans des bases de données interopérables. Le schéma doit être renseigné (par exemple, 'ISO639-1').",
+    "seo_impact": "Améliore la précision des résultats pour les moteurs de recherche multilingues.",
+    "last_updated": "2025-01-21",
+    "deprecated_alternatives": [],
+    "example_usage": "Utilisez cette balise pour identifier la langue principale de votre contenu, surtout pour des ressources multilingues.",
+    "common_mistakes": [
+        "Omettre le schéma (par exemple, 'ISO639-1').",
+        "Utiliser un code de langue incorrect ou non standardisé."
+    ],
+    "performance_tips": "Assurez-vous que la langue est cohérente avec le contenu de la ressource et la balise `<html lang=''>`.",
+    "status": "",
+    "importance": "",
+    "legal_implications": "Peut être requis pour se conformer à des réglementations internationales ou institutionnelles.",
+    "accessibility_notes": "Améliore l'expérience utilisateur pour les contenus multilingues.",
+    "maintenance": "Mettez à jour la balise si la langue principale du contenu change.",
+    "security_risks": "Aucun risque direct, mais une langue incorrecte peut induire en erreur les utilisateurs.",
+    "future_proofing": "Cette balise est conforme aux normes Dublin Core et reste pertinente.",
+    "internationalization": "Les codes de langue doivent être conformes au standard ISO639-1 pour garantir l'interopérabilité."
+},
+
+
+
+
+
+{
+    "attribute": "DC.creator",
+    "description": "Indique le créateur principal ou l'auteur de la ressource. Utilisé dans les métadonnées Dublin Core.",
+    "compatibility": [
+        "Chrome",
+        "Firefox",
+        "Edge"
+    ],
+    "incompatibility": [
+        "Internet Explorer"
+    ],
+    "creator": "Dublin Core Metadata Initiative",
+    "category": "Metadata",
+    "required": false,
+    "reference": "https://www.dublincore.org/specifications/",
+    "examples": [
+        "<meta name='DC.creator' content='John Doe'>",
+        "<meta name='DC.creator' content='Jane Smith'>"
+    ],
+    "tags": [
+        "Dublin Core",
+        "Metadata",
+        "Auteur"
+    ],
+    "deprecated": false,
+    "default_value": "",
+    "value_constraints": "Chaîne de caractères représentant le nom de l'auteur ou du créateur principal.",
+    "related_tags": [
+        "DC.title",
+        "DC.description",
+        "author"
+    ],
+    "usage_notes": "Utilisé principalement pour les contenus académiques, artistiques ou toute ressource nécessitant une attribution claire de la création.",
+    "seo_impact": "Peu d'impact direct sur le SEO, mais utile pour les systèmes exploitant Dublin Core.",
+    "last_updated": "2025-01-21",
+    "deprecated_alternatives": [],
+    "example_usage": "Ajoutez le nom de l'auteur principal pour une meilleure attribution dans les bases de données.",
+    "common_mistakes": [
+        "Omettre le nom complet de l'auteur.",
+        "Utiliser des pseudonymes ou des noms imprécis sans contexte supplémentaire."
+    ],
+    "performance_tips": "Ajoutez des informations claires et précises sur l'auteur pour une meilleure interopérabilité des métadonnées.",
+    "status": "",
+    "importance": "",
+    "legal_implications": "Peut être requis pour se conformer à des normes académiques ou institutionnelles.",
+    "accessibility_notes": "Améliore la recherche et l'attribution dans des bases de données interopérables.",
+    "maintenance": "Mettez à jour la balise si l'auteur principal de la ressource change.",
+    "security_risks": "Aucun risque direct, mais des informations incorrectes peuvent nuire à la crédibilité de la ressource.",
+    "future_proofing": "Cette balise est conforme aux normes Dublin Core et peu susceptible d'être dépréciée.",
+    "internationalization": "Aucun impact direct, mais les noms d'auteurs peuvent inclure des caractères spécifiques à certaines langues ou régions."
+},
+
+
+
+
+
+          
+          
+{
+    "attribute": "DC.contributor",
+    "description": "Indique une personne ou une entité ayant contribué à la création ou au développement de la ressource. Utilisé dans les métadonnées Dublin Core.",
+    "compatibility": [
+        "Chrome",
+        "Firefox",
+        "Edge"
+    ],
+    "incompatibility": [
+        "Internet Explorer"
+    ],
+    "creator": "Dublin Core Metadata Initiative",
+    "category": "Metadata",
+    "required": false,
+    "reference": "https://www.dublincore.org/specifications/",
+    "examples": [
+        "<meta name='DC.contributor' content='Alice Johnson'>",
+        "<meta name='DC.contributor' content='Development Team'>"
+    ],
+    "tags": [
+        "Dublin Core",
+        "Metadata",
+        "Contributeur"
+    ],
+    "deprecated": false,
+    "default_value": "",
+    "value_constraints": "Chaîne de caractères représentant le nom d'une personne, d'une équipe ou d'une organisation ayant contribué.",
+    "related_tags": [
+        "DC.creator",
+        "author"
+    ],
+    "usage_notes": "Utile pour attribuer du crédit aux contributeurs secondaires ou non principaux de la ressource.",
+    "seo_impact": "Aucun impact direct sur le SEO, mais peut améliorer la documentation de la ressource.",
+    "last_updated": "2025-01-21",
+    "deprecated_alternatives": [],
+    "example_usage": "Ajoutez les noms des contributeurs secondaires pour une attribution complète.",
+    "common_mistakes": [
+        "Inclure le créateur principal dans cette balise au lieu de la balise DC.creator.",
+        "Fournir des informations non précises ou incomplètes."
+    ],
+    "performance_tips": "Gardez les contributions bien organisées et précises pour une meilleure interopérabilité.",
+    "status": "",
+    "importance": "",
+    "legal_implications": "Peut être utilisée pour attribuer un crédit légalement ou dans un cadre académique.",
+    "accessibility_notes": "Améliore l'attribution et la recherche des contributions secondaires dans des bases de données interopérables.",
+    "maintenance": "Mettez à jour les contributeurs si de nouvelles personnes ou organisations participent au développement de la ressource.",
+    "security_risks": "Aucun risque direct, mais des informations incorrectes ou trompeuses peuvent nuire à la crédibilité de la ressource.",
+    "future_proofing": "Cette balise est conforme aux normes Dublin Core et reste pertinente pour les systèmes de métadonnées modernes.",
+    "internationalization": "Aucun impact direct, mais les noms des contributeurs peuvent inclure des caractères spécifiques à certaines langues ou régions."
+},
+
+
+
+{
+    "attribute": "DC.publisher",
+    "description": "Indique l'entité ou l'organisation responsable de la publication de la ressource. Utilisé dans les métadonnées Dublin Core.",
+    "compatibility": [
+        "Chrome",
+        "Firefox",
+        "Edge"
+    ],
+    "incompatibility": [
+        "Internet Explorer"
+    ],
+    "creator": "Dublin Core Metadata Initiative",
+    "category": "Metadata",
+    "required": false,
+    "reference": "https://www.dublincore.org/specifications/",
+    "examples": [
+        "<meta name='DC.publisher' content='Weblocalis'>",
+        "<meta name='DC.publisher' content='OpenAI'>"
+    ],
+    "tags": [
+        "Dublin Core",
+        "Metadata",
+        "Publisher"
+    ],
+    "deprecated": false,
+    "default_value": "",
+    "value_constraints": "Chaîne de caractères représentant le nom de l'organisation ou de l'entité responsable de la publication.",
+    "related_tags": [
+        "DC.creator",
+        "DC.contributor"
+    ],
+    "usage_notes": "Utilisé pour documenter clairement le responsable de la publication. Souvent employé dans les ressources académiques, éditoriales ou institutionnelles.",
+    "seo_impact": "Aucun impact direct sur le SEO, mais améliore la clarté et la documentation de la ressource.",
+    "last_updated": "2025-01-21",
+    "deprecated_alternatives": [],
+    "example_usage": "Ajoutez cette balise pour créditer l'organisation responsable de la publication.",
+    "common_mistakes": [
+        "Confondre avec DC.creator ou DC.contributor.",
+        "Ne pas spécifier clairement le nom de l'organisation."
+    ],
+    "performance_tips": "Assurez-vous que le nom de l'organisation est exact et reflète clairement le responsable de la publication.",
+    "status": "",
+    "importance": "",
+    "legal_implications": "Peut être utilisée pour attribuer un crédit légal ou institutionnel.",
+    "accessibility_notes": "Améliore la traçabilité de la ressource dans des bases de données interopérables.",
+    "maintenance": "Mettez à jour cette balise si le responsable de la publication change.",
+    "security_risks": "Aucun risque direct, mais une attribution incorrecte pourrait nuire à la crédibilité de la ressource.",
+    "future_proofing": "Conforme aux normes Dublin Core, cette balise reste pertinente pour documenter les publications.",
+    "internationalization": "Les noms d'entités ou organisations peuvent varier selon les langues ou régions."
+},
+
+
+{
+    "attribute": "DC.license",
+    "description": "Indique les conditions de licence de la ressource, décrivant les droits d'utilisation et les restrictions. Utilisé dans les métadonnées Dublin Core.",
+    "compatibility": [
+        "Chrome",
+        "Firefox",
+        "Edge"
+    ],
+    "incompatibility": [
+        "Internet Explorer"
+    ],
+    "creator": "Dublin Core Metadata Initiative",
+    "category": "Metadata",
+    "required": false,
+    "reference": "https://www.dublincore.org/specifications/",
+    "examples": [
+        "<meta name='DC.license' content='https://creativecommons.org/licenses/by/4.0/'>",
+        "<meta name='DC.license' content='All rights reserved'>"
+    ],
+    "tags": [
+        "Dublin Core",
+        "Metadata",
+        "Licence",
+        "Droits"
+    ],
+    "deprecated": false,
+    "default_value": "",
+    "value_constraints": "Chaîne de caractères indiquant une URL vers une licence ou un texte décrivant les conditions d'utilisation.",
+    "related_tags": [
+        "copyright",
+        "DC.publisher"
+    ],
+    "usage_notes": "Utilisé pour indiquer clairement les conditions d'utilisation de la ressource, ce qui peut être requis dans des contextes académiques ou commerciaux.",
+    "seo_impact": "Faible impact direct sur le SEO, mais utile pour améliorer la crédibilité et la traçabilité des ressources.",
+    "last_updated": "2025-01-21",
+    "deprecated_alternatives": [],
+    "example_usage": "Ajoutez un lien vers une licence Creative Commons ou une description des droits d'auteur associés à la ressource.",
+    "common_mistakes": [
+        "Ne pas inclure un lien valide vers une licence.",
+        "Utiliser des termes vagues ou non spécifiques pour décrire la licence."
+    ],
+    "performance_tips": "Utilisez un lien vers une licence bien connue, comme Creative Commons, pour améliorer la clarté et l'interopérabilité.",
+    "status": "",
+    "importance": "",
+    "legal_implications": "Peut être requis pour des ressources protégées par des droits d'auteur ou sous licence.",
+    "accessibility_notes": "Améliore la transparence des conditions d'utilisation pour les utilisateurs et les développeurs.",
+    "maintenance": "Mettez à jour la licence si les droits ou les restrictions associés à la ressource changent.",
+    "security_risks": "Aucun risque direct, mais une licence incorrecte ou trompeuse peut entraîner des litiges légaux.",
+    "future_proofing": "Conforme aux normes Dublin Core, cette balise reste pertinente pour documenter les licences et les droits.",
+    "internationalization": "Les licences peuvent varier selon les régions ; utilisez des liens ou des descriptions adaptées."
+},
+
+
+
+
+{
+    "attribute": "DC.type",
+    "description": "Indique le type de contenu de la ressource, comme 'Text', 'Image', 'Video'. Utilisé dans les métadonnées Dublin Core.",
+    "compatibility": [
+        "Chrome",
+        "Firefox",
+        "Edge"
+    ],
+    "incompatibility": [
+        "Internet Explorer"
+    ],
+    "creator": "Dublin Core Metadata Initiative",
+    "category": "Metadata",
+    "required": false,
+    "reference": "https://www.dublincore.org/specifications/",
+    "examples": [
+        "<meta name='DC.type' scheme='DCTERMS' content='Text'>",
+        "<meta name='DC.type' scheme='DCTERMS' content='Image'>",
+        "<meta name='DC.type' scheme='DCTERMS' content='Video'>"
+    ],
+    "tags": [
+        "Dublin Core",
+        "Metadata",
+        "Type"
+    ],
+    "deprecated": false,
+    "default_value": "",
+    "value_constraints": "Chaîne de caractères indiquant un type conforme au schéma spécifié, tel que 'Text', 'Image', ou 'Video'.",
+    "related_tags": [
+        "DC.format",
+        "DC.subject"
+    ],
+    "usage_notes": "Cette balise est utile pour catégoriser le type de contenu de la ressource, ce qui améliore l'interopérabilité dans des systèmes de gestion de métadonnées.",
+    "seo_impact": "Aucun impact direct sur le SEO, mais utile pour organiser et classer les ressources.",
+    "last_updated": "2025-01-21",
+    "deprecated_alternatives": [],
+    "example_usage": "Ajoutez cette balise pour décrire le type principal de contenu de votre ressource.",
+    "common_mistakes": [
+        "Omettre le schéma ou en utiliser un incorrect (par exemple, DCTERMS est recommandé).",
+        "Indiquer un type non standard ou non reconnu."
+    ],
+    "performance_tips": "Utilisez un type de contenu standard conforme au schéma Dublin Core pour assurer une meilleure interopérabilité.",
+    "status": "",
+    "importance": "",
+    "legal_implications": "Aucun impact légal direct, mais une description précise du type peut être exigée dans certains systèmes.",
+    "accessibility_notes": "Améliore la classification et la recherche des ressources dans des bases de données.",
+    "maintenance": "Mettez à jour cette balise si le type de contenu de la ressource change.",
+    "security_risks": "Aucun risque direct, mais une classification incorrecte pourrait induire en erreur les utilisateurs ou systèmes.",
+    "future_proofing": "Conforme aux standards Dublin Core, cette balise est peu susceptible de devenir obsolète.",
+    "internationalization": "Aucun impact direct, mais les types de contenu doivent être universellement compréhensibles."
+},
+
+
+
+
+
+{
+    "attribute": "DC.relation",
+    "description": "Indique une relation entre la ressource actuelle et une autre ressource associée. Utilisé dans les métadonnées Dublin Core.",
+    "compatibility": [
+        "Chrome",
+        "Firefox",
+        "Edge"
+    ],
+    "incompatibility": [
+        "Internet Explorer"
+    ],
+    "creator": "Dublin Core Metadata Initiative",
+    "category": "Metadata",
+    "required": false,
+    "reference": "https://www.dublincore.org/specifications/",
+    "examples": [
+        "<meta name='DC.relation' content='http://example.com/related-resource'>",
+        "<meta name='DC.relation' content='https://example.com/another-related-resource'>"
+    ],
+    "tags": [
+        "Dublin Core",
+        "Metadata",
+        "Relation"
+    ],
+    "deprecated": false,
+    "default_value": "",
+    "value_constraints": "URL valide pointant vers une ressource liée.",
+    "related_tags": [
+        "DC.source",
+        "DC.identifier"
+    ],
+    "usage_notes": "Cette balise est utile pour indiquer des relations importantes entre des ressources, comme des citations, des références, ou des versions associées.",
+    "seo_impact": "Aucun impact direct sur le SEO, mais améliore la documentation et l'organisation des ressources liées.",
+    "last_updated": "2025-01-21",
+    "deprecated_alternatives": [],
+    "example_usage": "Ajoutez une URL pointant vers une ressource liée pour améliorer la documentation des relations.",
+    "common_mistakes": [
+        "Utiliser une URL invalide ou obsolète.",
+        "Omettre les informations nécessaires pour comprendre la relation."
+    ],
+    "performance_tips": "Assurez-vous que les liens vers les ressources associées sont valides et accessibles.",
+    "status": "",
+    "importance": "",
+    "legal_implications": "Peut être utilisé pour respecter des exigences académiques ou institutionnelles.",
+    "accessibility_notes": "Améliore la traçabilité et la recherche dans des bases de données interopérables.",
+    "maintenance": "Mettez à jour cette balise si les relations avec d'autres ressources changent.",
+    "security_risks": "Aucun risque direct, mais des liens incorrects ou malveillants peuvent nuire à la crédibilité de la ressource.",
+    "future_proofing": "Cette balise est conforme aux normes Dublin Core et reste pertinente pour documenter des relations.",
+    "internationalization": "Aucun impact direct, mais les URL peuvent inclure des ressources multilingues ou régionales."
+},
+
+{
+    "attribute": "DCTERMS.created",
+    "description": "Spécifie la date et l'heure de création de la ressource, conformément au schéma Dublin Core Terms.",
+    "compatibility": [
+        "Chrome",
+        "Firefox",
+        "Edge",
+        "Safari"
+    ],
+    "incompatibility": [
+        "Internet Explorer"
+    ],
+    "creator": "Dublin Core Metadata Initiative",
+    "category": "Metadata",
+    "required": false,
+    "reference": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#created",
+    "examples": [
+        "<meta name='DCTERMS.created' scheme='W3CDTF' content='2023-01-01T12:00:00Z'>",
+        "<meta name='DCTERMS.created' scheme='W3CDTF' content='2025-01-21T08:30:00Z'>"
+    ],
+    "tags": [
+        "Dublin Core",
+        "Metadata",
+        "Date de création"
+    ],
+    "deprecated": false,
+    "default_value": "",
+    "value_constraints": "Chaîne de caractères au format ISO 8601, par exemple 'YYYY-MM-DDTHH:MM:SSZ'.",
+    "related_tags": [
+        "DCTERMS.modified",
+        "DC.date"
+    ],
+    "usage_notes": "Utile pour indiquer la date et l'heure précises de création de la ressource, particulièrement dans des contextes académiques, éditoriaux ou archivistiques.",
+    "seo_impact": "Aucun impact direct sur le SEO, mais améliore la documentation et la traçabilité de la ressource.",
+    "last_updated": "2025-01-21",
+    "deprecated_alternatives": [],
+    "example_usage": "Ajoutez cette balise pour indiquer la date exacte de création, utile pour les bases de données et archives.",
+    "common_mistakes": [
+        "Utiliser un format de date non conforme au schéma (par exemple, ne pas respecter le format ISO 8601).",
+        "Oublier de spécifier le fuseau horaire (par exemple, 'Z' pour UTC)."
+    ],
+    "performance_tips": "Assurez-vous que le format de la date est valide et conforme aux standards pour éviter les problèmes d'interopérabilité.",
+    "status": "",
+    "importance": "",
+    "legal_implications": "Peut être requis pour documenter des dates importantes dans des contextes légaux ou institutionnels.",
+    "accessibility_notes": "Facilite la recherche et l'organisation des ressources en fonction de leur date de création.",
+    "maintenance": "Mettez à jour cette balise si la ressource est révisée ou republiée avec une nouvelle date de création.",
+    "security_risks": "Aucun risque direct, mais des dates incorrectes peuvent causer de la confusion ou nuire à la crédibilité.",
+    "future_proofing": "Cette balise reste pertinente grâce à sa conformité avec les standards Dublin Core Terms.",
+    "internationalization": "Aucun impact direct, car le format ISO 8601 est universellement accepté."
+}        
+          
+        ],
+    
+    
+    
         "name": [
             {
                 "attribute": "keywords",
@@ -1174,55 +1830,7 @@
                 "future_proofing": "",
                 "internationalization": ""
             },
-            {
-                "attribute": "DC.title",
-                "description": "Définit le titre de la page selon les normes Dublin Core.",
-                "compatibility": [
-                    "Chrome",
-                    "Firefox",
-                    "Edge"
-                ],
-                "incompatibility": [
-                    "Safari"
-                ],
-                "creator": "Dublin Core Metadata Initiative",
-                "category": "Metadata",
-                "required": false,
-                "reference": "https://www.dublincore.org/",
-                "examples": [
-                    "<meta name='DC.title' content='Introduction to META Tags'>"
-                ],
-                "tags": [
-                    "Dublin Core",
-                    "Title",
-                    "Metadata"
-                ],
-                "deprecated": false,
-                "default_value": "",
-                "value_constraints": "Titre textuel court et descriptif.",
-                "related_tags": [
-                    "title",
-                    "og:title"
-                ],
-                "usage_notes": "Utilisé pour les normes de métadonnées interopérables.",
-                "seo_impact": "Peu d'impact direct, mais utile pour des normes spécifiques.",
-                "last_updated": "2025-01-21",
-                "deprecated_alternatives": [],
-                "example_usage": "Ajoutez 'DC.title' pour répondre aux normes Dublin Core.",
-                "common_mistakes": [
-                    "Confondre avec la balise 'title'.",
-                    "Utiliser des titres trop longs ou vagues."
-                ],
-                "performance_tips": "Incluez cette balise si votre public cible utilise des standards Dublin Core.",
-                "status": "",
-                "importance": "",
-                "legal_implications": "",
-                "accessibility_notes": ".",
-                "maintenance": "",
-                "security_risks": "",
-                "future_proofing": "",
-                "internationalization": ""
-            },
+           
             {
                 "attribute": "medium",
                 "description": "Spécifie le support ou le type de contenu (par exemple, 'blog', 'news').",
