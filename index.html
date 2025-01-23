@@ -47,49 +47,75 @@
   </header>
 
   <main class="container-xxl">
-    <section class="row mt-5">
-      <div class="col-8 mx-auto">
-        <h1 class="text-center mb-5">Doc balises META</h1>
-        <p id="meta-description" class="text-center">
-          Explorez une documentation complète et détaillée des balises META, conçue pour aider les développeurs et les
-          experts en SEO à optimiser efficacement leurs sites web. Découvrez des exemples pratiques, des descriptions
-          claires et des conseils sur l'utilisation des balises pour améliorer le référencement et l'expérience
-          utilisateur.
-        </p>
-      </div>
-    </section>
-    <!-- Barre de recherche -->
-    <div class="input-group mb-4 py-3">
-      <input type="text" id="search-input" class="form-control" placeholder="Recherchez une balise META..."
-        aria-label="Rechercher des balises META">
-      <button class="btn btn-outline-secondary" type="button" aria-label="Rechercher">
-        <i class="bi bi-search"></i>
+    <div class="row mt-5">
+      <!-- Bouton pour afficher/masquer le sommaire sur mobile -->
+      <button class="btn btn-primary d-md-none mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar"
+        aria-expanded="false" aria-controls="sidebar">
+        Sommaire
       </button>
-    </div>
-    <!-- Contenu des balises META -->
-    <div id="meta-content" class="py-3 container">
-      <!-- Les sections seront injectées dynamiquement ici -->
-    </div>
-    <section class="row py-5">
-      <h2 class="text-center mb-4">Optimisation SEO des Balises META</h2>
-      <div class="mb-5">
-        <h3>Importance des Balises META pour le SEO</h3>
-        <p>
-          Les balises META jouent un rôle crucial dans l'optimisation des moteurs de recherche (SEO). Elles fournissent
-          des informations aux moteurs de recherche sur le contenu de la page, ce qui peut améliorer le classement et la
-          visibilité de votre site web.
-        </p>
+      <!-- Colonne de sommaire -->
+      <nav id="sidebar" class="col-md-3 collapse d-md-block">
+        <h2>Sommaire</h2>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Section 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Section 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Section 3</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Contenu principal -->
+      <div class="col-md-9">
+        <section id="section1" class="mb-5">
+          <h1 class="text-center mb-5">Doc balises META</h1>
+          <p id="meta-description" class="text-center">
+            Explorez une documentation complète et détaillée des balises META, conçue pour aider les développeurs et les
+            experts en SEO à optimiser efficacement leurs sites web. Découvrez des exemples pratiques, des descriptions
+            claires et des conseils sur l'utilisation des balises pour améliorer le référencement et l'expérience
+            utilisateur.
+          </p>
+        </section>
+        <!-- Barre de recherche -->
+        <div class="input-group mb-4 py-3">
+          <input type="text" id="search-input" class="form-control" placeholder="Recherchez une balise META..."
+            aria-label="Rechercher des balises META">
+          <button class="btn btn-outline-secondary" type="button" aria-label="Rechercher">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <!-- Contenu des balises META -->
+        <div id="meta-content" class="py-3 container">
+          <!-- Les sections seront injectées dynamiquement ici -->
+        </div>
+        <section id="section2" class="row py-5">
+          <h2 class="text-center mb-4">Optimisation SEO des Balises META</h2>
+          <div class="mb-5">
+            <h3>Importance des Balises META pour le SEO</h3>
+            <p>
+              Les balises META jouent un rôle crucial dans l'optimisation des moteurs de recherche (SEO). Elles fournissent
+              des informations aux moteurs de recherche sur le contenu de la page, ce qui peut améliorer le classement et la
+              visibilité de votre site web.
+            </p>
+          </div>
+          <div class="mb-5">
+            <h3>Meilleures Pratiques pour Utiliser les Balises META</h3>
+            <p>
+              Pour maximiser l'efficacité des balises META, il est important de suivre les meilleures pratiques, telles que
+              l'utilisation de descriptions précises, l'inclusion de mots-clés pertinents et l'assurance que chaque page a
+              des
+              balises uniques.
+            </p>
+          </div>
+        </section>
+        <section id="section3" class="row py-5">
+          <!-- Contenu de la section 3 -->
+        </section>
       </div>
-      <div class="mb-5">
-        <h3>Meilleures Pratiques pour Utiliser les Balises META</h3>
-        <p>
-          Pour maximiser l'efficacité des balises META, il est important de suivre les meilleures pratiques, telles que
-          l'utilisation de descriptions précises, l'inclusion de mots-clés pertinents et l'assurance que chaque page a
-          des
-          balises uniques.
-        </p>
-      </div>
-    </section>
+    </div>
   </main>
 
   <footer class="bg-dark text-white py-4">
