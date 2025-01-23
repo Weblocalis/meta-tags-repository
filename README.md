@@ -1,5 +1,4 @@
 # META Tags Repository
-
 Prêt à découvrir et contribuer à un projet collaboratif ? Rejoignez-nous pour enrichir cette documentation !
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Weblocalis/meta-tags-repository)
@@ -64,7 +63,7 @@ Nous accueillons toutes les contributions avec plaisir ! 🚀
    git commit -m "Ajout de [description de votre modification]"
 5. Poussez vos modifications vers votre fork :
    ```bash
-   ```bashgit push origin feature/ma-nouvelle-fonctionnalite
+   git push origin feature/ma-nouvelle-fonctionnalite
 6. Créez une Pull Request depuis GitHub :
    1. Accédez à votre fork.
    2. Cliquez sur **"Compare & pull request"**.
@@ -73,13 +72,11 @@ Nous accueillons toutes les contributions avec plaisir ! 🚀
 
 Pour plus de détails, consultez le fichier CONTRIBUTING.md.
 
-# Guide pour les Contributeurs du Projet Meta-Tags Repository
+## Guide pour les Contributeurs du Projet Meta-Tags Repository
 
 Bienvenue et merci de contribuer à notre projet ! Votre aide est précieuse pour enrichir notre base de données sur les balises META. Voici un guide pour vous aider à structurer vos contributions de manière efficace.
 
----
-
-## 1. Objectif du Projet
+### 1. Objectif du Projet
 
 Ce projet vise à créer une référence complète et détaillée sur les balises META pour les développeurs web. Les informations incluent :
 - Description des balises.
@@ -87,11 +84,9 @@ Ce projet vise à créer une référence complète et détaillée sur les balise
 - Notes sur la sécurité, l'accessibilité et l'impact SEO.
 - Exemples et cas d'utilisation.
 
----
+### 2. Format des Contributions
 
-## 2. Format des Contributions
-
-### Structure des Entrées
+#### Structure des Entrées
 
 Chaque entrée doit suivre ce format JSON standard :
 

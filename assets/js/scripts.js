@@ -15,19 +15,19 @@ fetch('data/meta-tags.json')
         <h2>${type}</h2>
         <div class="row">
           ${metaTypes[type]
-            .map(tag => {
-              // Détermine le bon attribut à utiliser
-              let attributeType = 'name'; // Par défaut
-              if (tag.attribute.startsWith('og:') || tag.attribute.startsWith('twitter:')) {
-                attributeType = 'property';
-              } else if (tag.attribute.startsWith('DC.')) {
-                attributeType = 'name'; // Dublin Core utilise 'name'
-              } else if (tag.category === 'HTTP') {
-                attributeType = 'http-equiv';
-              }
+          .map(tag => {
+            // Détermine le bon attribut à utiliser
+            let attributeType = 'name'; // Par défaut
+            if (tag.attribute.startsWith('og:') || tag.attribute.startsWith('twitter:')) {
+              attributeType = 'property';
+            } else if (tag.attribute.startsWith('DC.')) {
+              attributeType = 'name'; // Dublin Core utilise 'name'
+            } else if (tag.category === 'HTTP') {
+              attributeType = 'http-equiv';
+            }
 
-              return `
-                <div class="col-12 col-md-6 col-lg-4">
+            return `
+                <div class="col-md-12">
                   <div class="card meta-card">
                     <div class="card-body">
                       <h5 class="card-title">${tag.attribute}</h5>
@@ -40,8 +40,8 @@ fetch('data/meta-tags.json')
                   </div>
                 </div>
               `;
-            })
-            .join('')}
+          })
+          .join('')}
         </div>
       `;
 
@@ -49,7 +49,7 @@ fetch('data/meta-tags.json')
     });
   })
   .catch(error => console.error('Error loading meta-tags.json:', error));
-  
+
 
 const searchInput = document.getElementById('search-input');
 searchInput.addEventListener('input', () => {
