@@ -1,0 +1,203 @@
+/* Variables pour les couleurs et les espacements */
+:root {
+  --primary-color: #f9f9f9;
+  --secondary-color: #ddd;
+  --text-color: #333;
+  --hover-color: #fff;
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --spacing-large: 50px;
+  --font-size-small: 0.95rem;
+  --font-size-medium: 1.25rem;
+}
+
+/* Navbar */
+header {
+  margin-bottom: var(--spacing-medium);
+}
+
+.navbar {
+  margin-bottom: var(--spacing-medium);
+}
+
+.navbar-brand {
+  font-size: var(--font-size-medium);
+  font-weight: bold;
+}
+
+#language-selector {
+  min-width: 120px;
+}
+
+.btn-outline-light {
+  padding: var(--spacing-small);
+}
+
+/* Message dans le header */
+header .text-center p {
+  font-size: var(--font-size-small);
+  color: var(--secondary-color);
+  margin-bottom: 0;
+}
+
+header .text-center a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+header .text-center a:hover {
+  text-decoration: underline;
+  color: var(--hover-color);
+}
+
+/* Sections META */
+.meta-section {
+  margin-bottom: var(--spacing-large);
+}
+
+.meta-card {
+  margin-bottom: var(--spacing-small);
+}
+
+.code-block {
+  background: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  
+  font-family: monospace;
+  overflow-x: auto;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #language-selector {
+    width: 100%;
+    margin-bottom: var(--spacing-small);
+  }
+
+  .btn-outline-light {
+    width: 100%;
+    margin-bottom: var(--spacing-small);
+  }
+
+  header .text-center p {
+    font-size: var(--font-size-small);
+  }
+
+  .meta-card {
+    margin-bottom: var(--spacing-medium);
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  header .text-center p {
+    font-size: 0.85rem;
+  }
+
+  .btn-outline-light {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .code-block {
+    font-size: 0.85rem;
+  }
+}
+
+/* Ajoutez ici vos styles personnalisés */
+
+/* Exemple de style personnalisé */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.meta-card {
+  margin-bottom: 20px;
+}
+
+.meta-card .card-body {
+  padding: 15px;
+}
+
+.meta-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.meta-card .card-text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.meta-card .code-block {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+footer {
+  background-color: #343a40; /* Couleur sombre pour s'harmoniser avec le header */
+  color: #ddd;
+}
+
+footer h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #17a2b8; /* Couleur Bootstrap info */
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+footer p, footer small {
+  margin: 0;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+.tag {
+  color: #61afef; /* Bleu pour les balises HTML */
+}
+
+.attribute {
+  color: #e06c75; /* Rouge pour les attributs */
+}
+
+.value {
+  color: #98c379; /* Vert pour les valeurs */
+}
