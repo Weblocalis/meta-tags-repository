@@ -7,13 +7,12 @@ Prêt à découvrir et contribuer à un projet collaboratif ? Rejoignez-nous pou
 ![GitHub issues](https://img.shields.io/github/issues/Weblocalis/meta-tags-repository)
 ![GitHub license](https://img.shields.io/github/license/Weblocalis/meta-tags-repository)
 
-
 ![GitHub code size](https://img.shields.io/github/languages/code-size/Weblocalis/meta-tags-repository)
 ![GitHub language count](https://img.shields.io/github/languages/count/Weblocalis/meta-tags-repository)
 
 ## Introduction
 
-Bienvenue dans le **META Tags Repository** ! 🎉  
+Bienvenue dans le projet **META Tags Repository** ! 🎉  
 Ce projet est conçu pour fournir une **documentation exhaustive et accessible** des balises META, un élément crucial pour l'optimisation de vos sites web.
 
 ---
@@ -35,6 +34,9 @@ Ces fonctionnalités font de ce référentiel une ressource indispensable pour l
 ---
 
 ## Installation
+
+### **Étape 1 : Cloner le dépôt**
+
 1. Clonez votre fork du dépôt :
    ```bash
    git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
@@ -46,9 +48,11 @@ Ces fonctionnalités font de ce référentiel une ressource indispensable pour l
 ---
 
 ## Contribuer
+
 Nous accueillons toutes les contributions avec plaisir ! 🚀
 
-Étapes pour contribuer :
+### **Étapes pour contribuer :**
+
 1. Forkez le projet.
 2. Clonez votre fork :
    ```bash
@@ -72,6 +76,8 @@ Nous accueillons toutes les contributions avec plaisir ! 🚀
 
 Pour plus de détails, consultez le fichier CONTRIBUTING.md.
 
+---
+
 ## Guide pour les Contributeurs du Projet Meta-Tags Repository
 
 Bienvenue et merci de contribuer à notre projet ! Votre aide est précieuse pour enrichir notre base de données sur les balises META. Voici un guide pour vous aider à structurer vos contributions de manière efficace.
@@ -90,8 +96,8 @@ Ce projet vise à créer une référence complète et détaillée sur les balise
 
 Chaque entrée doit suivre ce format JSON standard :
 
-
-  {
+```json
+{
   "attribute": "Nom de la balise META",
   "description": "Description détaillée de la balise.",
   "compatibility": ["Navigateur1", "Navigateur2"],
@@ -100,35 +106,39 @@ Chaque entrée doit suivre ce format JSON standard :
   "category": "Catégorie (par ex. SEO, HTTP, Mobile)",
   "required": true/false,
   "reference": "Lien vers des ressources officielles ou de la documentation.",
-    "examples": [
+  "examples": [
     "Exemple d'utilisation valide de la balise META."
-    ],
-    "tags": ["Mots-clés pertinents"],
-    "deprecated": true/false,
-    "default_value": "Valeur par défaut si applicable.",
-    "value_constraints": "Règles ou limites de valeur pour la balise.",
-    "related_tags": ["Autres balises associées"],
-    "usage_notes": "Conseils ou recommandations d'utilisation.",
-    "seo_impact": "Impact potentiel sur le SEO.",
+  ],
+  "tags": ["Mots-clés pertinents"],
+  "deprecated": true/false,
+  "default_value": "Valeur par défaut si applicable.",
+  "value_constraints": "Règles ou limites de valeur pour la balise.",
+  "related_tags": ["Autres balises associées"],
+  "usage_notes": "Conseils ou recommandations d'utilisation.",
+  "seo_impact": "Impact potentiel sur le SEO.",
   "common_mistakes": ["Liste des erreurs fréquentes"],
-    "performance_tips": "Conseils pour améliorer les performances.",
-    "security_risks": "Risques de sécurité associés à une mauvaise utilisation.",
-    "future_proofing": "Notes sur l'évolutivité ou la dépréciation future.",
-    "internationalization": "Considérations liées à la localisation ou aux langues.",
+  "performance_tips": "Conseils pour améliorer les performances.",
+  "security_risks": "Risques de sécurité associés à une mauvaise utilisation.",
+  "future_proofing": "Notes sur l'évolutivité ou la dépréciation future.",
+  "internationalization": "Considérations liées à la localisation ou aux langues.",
   "last_updated": "YYYY-MM-DD"
 }
+```
 
-  Merci de contribuer à améliorer ce projet !
+Merci de contribuer à améliorer ce projet !
 
-  ---
+---
 
 ## Feuille de route
+
 ### **Fonctionnalités déjà implémentées :**
+
 - [x] Documentation des balises SEO et HTTP.
 - [x] Compatibilité des navigateurs.
 - [x] Support multilingue (Français et Anglais).
 
 ### **Fonctionnalités à venir :**
+
 - [ ] Ajout de nouvelles catégories de balises :
   - [ ] Balises liées à l'accessibilité (WCAG).
   - [ ] Balises pour les Progressive Web Apps (PWA).
@@ -141,40 +151,51 @@ Chaque entrée doit suivre ce format JSON standard :
   - [ ] Détection des balises obsolètes ou incorrectes.
 
 ### **Projets futurs :**
+
 - [ ] Création d'un guide interactif pour chaque balise :
   - Avec des tutoriels détaillés et des cas d’utilisation.
+
+---
 
 ## Ressources et Références
 
 ### **Documentation Générale**
+
 - [MDN Web Docs - Meta Tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)  
   Référence complète pour comprendre et utiliser les balises META.
 
 ### **Partage sur les Réseaux Sociaux**
+
 - [Open Graph Protocol](https://ogp.me/)  
   Documentation officielle pour les balises Open Graph utilisées par Facebook et d'autres plateformes.
 - [Twitter Cards Documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)  
   Guide officiel pour configurer les balises Twitter Cards.
 
 ### **Compatibilité des Navigateurs**
+
 - [Can I Use](https://caniuse.com/)  
   Vérifiez la compatibilité des balises et des fonctionnalités avec les principaux navigateurs.
 
 ### **Bonnes Pratiques SEO**
+
 - [Google Search Central - Meta Tags](https://developers.google.com/search/docs/advanced/crawling/special-tags)  
   Conseils et recommandations de Google pour utiliser les balises META efficacement.
 - [Ahrefs Blog - A Guide to Meta Tags](https://ahrefs.com/blog/meta-tags/)  
   Un guide pratique pour optimiser vos balises META pour le référencement.
 
 ### **Accessibilité**
+
 - [W3C Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/)  
   Standards pour rendre vos sites accessibles grâce aux balises META.
 
 ### **Outils Pratiques**
+
 - [Meta Tags Tester](https://metatags.io/)  
   Testez vos balises META et prévisualisez leur rendu sur les moteurs de recherche et réseaux sociaux.
 - [Meta Tags Generator](https://www.metatags.org/)  
   Un outil simple pour générer des balises META.
+
+---
 
 ## Licence
 
@@ -183,6 +204,7 @@ Ce projet est sous licence **MIT**. Cela signifie que vous êtes libre de l'util
 Consultez le fichier [LICENSE](LICENSE) pour plus d’informations sur les droits et obligations liés à cette licence.  
 
 **Résumé de la licence :**
+
 - Vous pouvez utiliser ce projet à des fins personnelles ou commerciales.
 - Vous pouvez modifier le projet selon vos besoins.
 - Vous devez inclure une attribution au projet d'origine si vous le redistribuez.
