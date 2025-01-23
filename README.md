@@ -32,7 +32,7 @@ Nous accueillons toutes les contributions avec plaisir ! 🚀 Vos idées et am�
 
 ### Étapes pour contribuer :
 
-1. [Forkez le projet.](https://github.com/Weblocalis/meta-tags-repository/fork)
+#### [Forkez le projet.](https://github.com/Weblocalis/meta-tags-repository/fork)
 2. Clonez votre fork :
    ```bash
    git clone https://github.com/<votre-nom-utilisateur>/meta-tags-repository.git
@@ -56,6 +56,45 @@ Nous accueillons toutes les contributions avec plaisir ! 🚀 Vos idées et am�
    2. Cliquez sur **"Compare & pull request"**.
    3. Ajoutez une description détaillée de vos modifications.
    4. Soumettez la Pull Request pour examen.
+
+#### Utiliser les Issues GitHub
+
+Les **Issues** sur GitHub permettent de suivre les tâches, signaler des bogues ou proposer de nouvelles fonctionnalités. Voici comment les utiliser efficacement :
+
+##### Créer une Issue
+
+1. Accédez à l’onglet **Issues** du dépôt.
+2. Cliquez sur **"New Issue"**.
+3. Remplissez :
+   - **Titre** : Décrivez brièvement le problème ou la tâche.
+   - **Description** : Ajoutez des détails, exemples ou captures d’écran si nécessaire.
+4. Ajoutez des **labels** pour catégoriser (ex. : bug, enhancement).
+5. Attribuez la tâche à un contributeur (si applicable).
+6. Cliquez sur **Submit new issue**.
+
+##### Suivre une Issue
+
+- Consultez les Issues ouvertes ou fermées.
+- Ajoutez des commentaires pour discuter ou fournir des mises à jour.
+- Référencez des commits ou d’autres Issues avec `#numéro-de-l-issue`.
+
+##### Fermer une Issue
+
+1. Commentez pour expliquer comment le problème a été résolu.
+2. Cliquez sur **Close issue**.
+3. Utilisez `Fixes #numéro` dans un commit pour fermer automatiquement l’Issue après fusion.
+
+##### Utiliser des Modèles
+
+- Ajoutez des modèles (`ISSUE_TEMPLATE`) pour standardiser les descriptions.
+- Placez ces fichiers dans le dossier `.github/ISSUE_TEMPLATE`.
+
+##### Liens avec les Pull Requests
+
+- Associez une Pull Request à une Issue en mentionnant `Fixes #numéro` dans la description.
+- Cela ferme automatiquement l’Issue lorsque la Pull Request est fusionnée.
+
+Les Issues sont un excellent moyen de collaborer et de suivre l'avancement du projet.
 
 ---
 
