@@ -67,7 +67,7 @@
                 "required": false,
                 "reference": "https://www.dublincore.org/specifications/",
                 "examples": [
-                    "<meta name='DC.identifier' content='https://example.com/page1'>",
+                    "<meta name='DC.identifier' content='/page1'>",
                     "<meta name='DC.identifier' content='doi:10.1234/abcd1234'>"
                 ],
                 "tags": [
@@ -524,8 +524,8 @@
                 "required": false,
                 "reference": "https://www.dublincore.org/specifications/",
                 "examples": [
-                    "<meta name='DC.relation' content='http://example.com/related-resource'>",
-                    "<meta name='DC.relation' content='https://example.com/another-related-resource'>"
+                    "<meta name='DC.relation' content='http ://example.com/related-resource'>",
+                    "<meta name='DC.relation' content='/another-related-resource'>"
                 ],
                 "tags": [
                     "Dublin Core",
@@ -1555,7 +1555,7 @@
                 "required": true,
                 "reference": "",
                 "examples": [
-                    "<meta name='identifier-URL' content='https://example.com'>"
+                    "<meta name='identifier-URL' content=''>"
                 ],
                 "tags": [
                     "SEO",
@@ -1653,7 +1653,7 @@
                 "required": true,
                 "reference": "",
                 "examples": [
-                    "<meta name='url' content='https://example.com'>"
+                    "<meta name='url' content=''>"
                 ],
                 "tags": [
                     "URL",
@@ -1850,7 +1850,7 @@
                 "required": false,
                 "reference": "",
                 "examples": [
-                    "<meta name='syndication-source' content='https://example.com'>"
+                    "<meta name='syndication-source' content=''>"
                 ],
                 "tags": [
                     "Source",
@@ -1901,9 +1901,7 @@
                 "required": true,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type",
                 "examples": [
-                    "<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>",
-                    "<meta http-equiv='Content-Type' content='application/xhtml+xml; charset=UTF-8'>"
-                ],
+                   ],
                 "tags": [
                     "HTTP",
                     "Encodage",
@@ -1952,9 +1950,7 @@
                 "required": false,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expires",
                 "examples": [
-                    "<meta http-equiv='expires' content='Tue, 21 Jan 2025 10:00:00 GMT'>",
-                    "<meta http-equiv='expires' content='0'>"
-                ],
+                    ],
                 "tags": [
                     "HTTP",
                     "Cache",
@@ -2001,9 +1997,7 @@
                 "required": false,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control",
                 "examples": [
-                    "<meta http-equiv='cache-control' content='no-cache'>",
-                    "<meta http-equiv='cache-control' content='max-age=3600'>"
-                ],
+                    ],
                 "tags": [
                     "HTTP",
                     "Cache",
@@ -2052,8 +2046,7 @@
                 "required": false,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Pragma",
                 "examples": [
-                    "<meta http-equiv='pragma' content='no-cache'>"
-                ],
+                    ],
                 "tags": [
                     "HTTP",
                     "Cache",
@@ -2101,8 +2094,7 @@
                 "required": false,
                 "reference": "https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/jj676915(v=vs.85)",
                 "examples": [
-                    "<meta http-equiv='X-UA-Compatible' content='IE=edge'>"
-                ],
+                    ],
                 "tags": [
                     "HTTP",
                     "Compatibilité",
@@ -2150,9 +2142,7 @@
                 "required": false,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-http-equiv-refresh",
                 "examples": [
-                    "<meta http-equiv='refresh' content='30'>",
-                    "<meta http-equiv='refresh' content='5; url=https://example.com'>"
-                ],
+                    ],
                 "tags": [
                     "HTTP",
                     "Redirection",
@@ -2200,8 +2190,7 @@
                 "required": false,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
                 "examples": [
-                    "<meta http-equiv='Content-Security-Policy' content=\"default-src 'self'; script-src 'self' https://apis.google.com\">"
-                ],
+                  ],
                 "tags": [
                     "HTTP",
                     "Sécurité",
@@ -2247,8 +2236,7 @@
                 "required": false,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title#default-style",
                 "examples": [
-                    "<meta http-equiv='default-style' content='main'>"
-                ],
+                 ],
                 "tags": [
                     "HTTP",
                     "Styles",
@@ -2294,7 +2282,6 @@
                 "required": false,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie",
                 "examples": [
-                    "<meta http-equiv='set-cookie' content='sessionId=abc123; Secure; HttpOnly'>"
                 ],
                 "tags": [
                     "HTTP",
@@ -2341,7 +2328,6 @@
                 "required": true,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security",
                 "examples": [
-                    "<meta http-equiv='Strict-Transport-Security' content='max-age=31536000; includeSubDomains'>"
                 ],
                 "tags": [
                     "HTTP",
@@ -2388,9 +2374,7 @@
                 "required": false,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control",
                 "examples": [
-                    "<meta http-equiv='X-DNS-Prefetch-Control' content='on'>",
-                    "<meta http-equiv='X-DNS-Prefetch-Control' content='off'>"
-                ],
+                 ],
                 "tags": [
                     "HTTP",
                     "Performances",
@@ -2434,8 +2418,7 @@
                 "required": true,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options",
                 "examples": [
-                    "<meta http-equiv='X-Content-Type-Options' content='nosniff'>"
-                ],
+                 ],
                 "tags": [
                     "HTTP",
                     "Sécurité",
@@ -2481,8 +2464,6 @@
                 "required": true,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options",
                 "examples": [
-                    "<meta http-equiv='X-Frame-Options' content='DENY'>",
-                    "<meta http-equiv='X-Frame-Options' content='SAMEORIGIN'>"
                 ],
                 "tags": [
                     "HTTP",
@@ -2528,7 +2509,6 @@
                 "required": false,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Permitted-Cross-Domain-Policies",
                 "examples": [
-                    "<meta http-equiv='X-Permitted-Cross-Domain-Policies' content='none'>"
                 ],
                 "tags": [
                     "HTTP",
@@ -2620,7 +2600,6 @@
                 "required": false,
                 "reference": "https://developer.chrome.com/docs/origin-trials/",
                 "examples": [
-                    "<meta http-equiv='origin-trial' content='TOKEN_PROVIDED_BY_GOOGLE'>"
                 ],
                 "tags": [
                     "HTTP",
@@ -2666,7 +2645,6 @@
                 "required": false,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Download-Options",
                 "examples": [
-                    "<meta http-equiv='X-Download-Options' content='noopen'>"
                 ],
                 "tags": [
                     "HTTP",
@@ -2819,8 +2797,8 @@
                 "required": true,
                 "reference": "https://ogp.me/",
                 "examples": [
-                    "<meta property='og:image' content='https://example.com/image.jpg'>",
-                    "<meta property='og:image' content='https://example.com/featured-image.png'>"
+                    "<meta property='og:image' content='/image.jpg'>",
+                    "<meta property='og:image' content='/featured-image.png'>"
                 ],
                 "tags": [
                     "Open Graph",
@@ -2873,8 +2851,8 @@
                 "required": true,
                 "reference": "https://ogp.me/",
                 "examples": [
-                    "<meta property='og:url' content='https://example.com/page.html'>",
-                    "<meta property='og:url' content='https://example.com/article'>"
+                    "<meta property='og:url' content='/page.html'>",
+                    "<meta property='og:url' content='/article'>"
                 ],
                 "tags": [
                     "Open Graph",
@@ -3084,7 +3062,7 @@
                 "required": false,
                 "reference": "https://ogp.me/",
                 "examples": [
-                    "<meta property='og:video' content='https://example.com/video.mp4'>",
+                    "<meta property='og:video' content='/video.mp4'>",
                     "<meta property='og:video' content='https://cdn.example.com/promo-video.mp4'>"
                 ],
                 "tags": [
@@ -3848,8 +3826,8 @@
                 "required": true,
                 "reference": "https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary",
                 "examples": [
-                    "<meta name='twitter:image' content='https://example.com/image.jpg'>",
-                    "<meta name='twitter:image' content='https://example.com/featured-image.png'>"
+                    "<meta name='twitter:image' content='/image.jpg'>",
+                    "<meta name='twitter:image' content='/featured-image.png'>"
                 ],
                 "tags": [
                     "Twitter",

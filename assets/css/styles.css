@@ -113,8 +113,48 @@ header .text-center a:hover {
   }
 }
 
+/* Ajoutez ici vos styles personnalisés */
 
+/* Exemple de style personnalisé */
+body {
+  font-family: Arial, sans-serif;
+}
 
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.meta-card {
+  margin-bottom: 20px;
+}
+
+.meta-card .card-body {
+  padding: 15px;
+}
+
+.meta-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.meta-card .card-text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.meta-card .code-block {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+}
 
 footer {
   background-color: #343a40; /* Couleur sombre pour s'harmoniser avec le header */
