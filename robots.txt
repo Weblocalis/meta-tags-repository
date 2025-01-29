@@ -1,6 +1,8 @@
 User-agent: *
+Allow: /
 Disallow: /private/
 Disallow: /data/
+Disallow: .github
 
 
 Sitemap: https://weblocalis.github.io/meta-tags-repository/sitemap.xml
