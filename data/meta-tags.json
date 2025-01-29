@@ -729,10 +729,7 @@
                 "category": "SEO",
                 "required": false,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Robots_meta_tag",
-                "examples": [
-                    "<meta name='robots' content='index, follow'>",
-                    "<meta name='robots' content='noindex, nofollow'>"
-                ],
+                "examples": [],
                 "tags": [
                     "SEO",
                     "Indexation",
@@ -826,10 +823,7 @@
                 "category": "Mobile",
                 "required": true,
                 "reference": "https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag",
-                "examples": [
-                    "<meta name='viewport' content='width=device-width, initial-scale=1'>",
-                    "<meta name='viewport' content='width=1024'>"
-                ],
+                "examples": [],
                 "tags": [
                     "Mobile",
                     "Responsive",

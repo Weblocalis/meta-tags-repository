@@ -75,10 +75,6 @@ header .text-center a:hover {
     text-align: center;
   }
 
-  #language-selector {
-    width: 100%;
-    margin-bottom: var(--spacing-small);
-  }
 
   .btn-outline-light {
     width: 100%;
