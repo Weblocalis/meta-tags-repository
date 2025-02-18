@@ -7,11 +7,11 @@
                 "compatibility": [
                     "Chrome",
                     "Firefox",
-                    "Edge"
+                    "Edge",
+                    "Safari",
+                    "Opera"
                 ],
-                "incompatibility": [
-                    "Safari"
-                ],
+                "incompatibility": [],
                 "creator": "Dublin Core Metadata Initiative",
                 "category": "Metadata",
                 "required": false,
